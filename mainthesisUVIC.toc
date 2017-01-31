@@ -1,0 +1,59 @@
+\contentsline {chapter}{Supervisory Committee}{ii}
+\contentsline {chapter}{Abstract}{iii}
+\contentsline {chapter}{Table of Contents}{iv}
+\contentsline {chapter}{List of Tables}{vii}
+\contentsline {chapter}{List of Figures}{viii}
+\contentsline {chapter}{Acknowledgements}{ix}
+\contentsline {chapter}{Dedication}{x}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Structure of molecules adsorbed to surfaces}{1}
+\contentsline {section}{\numberline {1.2}Experimental probes: IR, Raman, SFG}{1}
+\contentsline {section}{\numberline {1.3}Current approaches to structure elucidation}{1}
+\contentsline {section}{\numberline {1.4}Linear programming}{1}
+\contentsline {section}{\numberline {1.5}Aims and scope}{2}
+\contentsline {chapter}{\numberline {2}Methods}{3}
+\contentsline {section}{\numberline {2.1}Generating model spectra}{3}
+\contentsline {subsection}{\numberline {2.1.1}IR absorption spectra}{3}
+\contentsline {subsection}{\numberline {2.1.2}Raman scattering spectra}{3}
+\contentsline {subsection}{\numberline {2.1.3}Sum-frequency spectra}{3}
+\contentsline {section}{\numberline {2.2}Surface orientation distribution functions}{3}
+\contentsline {section}{\numberline {2.3}Linear programming implementation}{3}
+\contentsline {section}{\numberline {2.4}Scoring methods}{3}
+\contentsline {chapter}{\numberline {3}Approach and Solution to Real Problem}{4}
+\contentsline {section}{\numberline {3.1}Description}{4}
+\contentsline {section}{\numberline {3.2}Linear Programming Model for Spectra Study}{5}
+\contentsline {section}{\numberline {3.3}Experiments}{7}
+\contentsline {subsection}{\numberline {3.3.1}Experiment 1 and 2 Setting}{7}
+\contentsline {subsection}{\numberline {3.3.2}Experiment 2 Result Plotting}{7}
+\contentsline {subsection}{\numberline {3.3.3}Experiment 3 Setting}{8}
+\contentsline {subsection}{\numberline {3.3.4}Experiment 3 Result Plotting}{8}
+\contentsline {subsection}{\numberline {3.3.5}Experiment 4 Setting}{8}
+\contentsline {subsection}{\numberline {3.3.6}Experiment 5 Setting}{8}
+\contentsline {subsection}{\numberline {3.3.7}Constraint Study Based on Experiment 4}{8}
+\contentsline {subsection}{\numberline {3.3.8}Constraint Study Based on Experiment 4}{8}
+\contentsline {subsection}{\numberline {3.3.9}Constraint Study Based on Experiment 5}{8}
+\contentsline {subsection}{\numberline {3.3.10}Constraint Study Based on Experiment 5}{8}
+\contentsline {subsection}{\numberline {3.3.11}Experiment 6 Setting}{10}
+\contentsline {subsection}{\numberline {3.3.12}Experiment 7 Setting}{10}
+\contentsline {subsection}{\numberline {3.3.13}Experiment 8 Setting}{10}
+\contentsline {subsection}{\numberline {3.3.14}C}{11}
+\contentsline {section}{\numberline {3.4}Result}{11}
+\contentsline {section}{\numberline {3.5}Discussion}{11}
+\contentsline {subsection}{\numberline {3.5.1}Conclusion}{11}
+\contentsline {chapter}{\numberline {4}Realistic Molecular Model}{12}
+\contentsline {section}{\numberline {4.1}Description}{12}
+\contentsline {section}{\numberline {4.2}Results}{12}
+\contentsline {section}{\numberline {4.3}Discussion}{12}
+\contentsline {section}{\numberline {4.4}Conclusions}{12}
+\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{15}
+\contentsline {chapter}{\numberline {6}Possibilities for treating experimental data}{17}
+\contentsline {section}{\numberline {6.1}Description}{17}
+\contentsline {section}{\numberline {6.2}Results}{17}
+\contentsline {section}{\numberline {6.3}Discussion}{17}
+\contentsline {section}{\numberline {6.4}Conclusions}{17}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{18}
+\contentsline {section}{\numberline {7.1}Conclusion}{18}
+\contentsline {subsection}{\numberline {7.1.1}Contributions}{18}
+\contentsline {section}{\numberline {7.2}Future Work}{18}
+\contentsline {chapter}{\numberline {A}Additional Information}{19}
+\contentsline {chapter}{Bibliography}{20}

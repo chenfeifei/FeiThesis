@@ -1,0 +1,151 @@
+\startchapter{Possibilities for treating experimental data} \label{ch:6}
+\section{Description}
+The experimental spectral data that we obtain from IR, Raman or SFG techniques have a amplitude scaling factor when comparing to the candidate spectra that we generate mathematically. This means that between candidates' theoretical spectra and the target one, there is an unknown scaling factor. However, this scaling factor is the same for any spectra obtained within a particular spectroscopy technique. For example, for IR, the scaling factor for spectrum of x projection is the same as the one for spectrum of z projection. Therefore, we need to introduce this scaling factor to our LP models. Since the LP models constructed by the 7 experiments(E2, E3, E4, E5, E6, and E7 for $\theta$ ranged from $0^{\circ}$ to $80^{\circ}$) in Chapter \ref{ch:5} are doing well in retrieving target composition for the mixed amino acids, we would like to know if the same LP models can be applied directly to real experimental data for the same $\theta$ range.\\
+
+The experiment set-ups are the same as what is listed in Table 5.1 in Chapter \ref{ch:5}. A group of 7 experiments with different spectroscopy information. The goal is also the same as what we have in Chapter \ref{ch:5}, we want to figure out which spectroscopy technique's data will help us to retrieve the correct composition when we combine spectroscopy information with LP models. The only difference is that, for each experiment group, we will generate an arbitrary scaling factor for IR, Raman and SFG respectively. Therefore, the target spectra is not only composed by the percentage composition of all candidates, but also need to multiple it by a randomly generated scaling factor. \\
+
+In addition, to start with, we limit the scaling factor to be smaller than 1. \\
+
+After a few runs of the experiment group, we observe that the returned compositions always contains one extra variable for each experiment.For E2, E4, E6 and E7, the models that are doing well in Chapter \ref{ch:5}, the returned composition contains the right candidates, however, the percentages of the candidates are different from the target one. If we take a further look, the ratio between returned percentage and the generated percentage equals one when it adds to the extra variable.
+For example, taking E2's data from one experiment group as an example, the percentages of candidates we use to generate the target spectra is shown as Array \ref{eqn:6.1}. And the return percentages is what's in Array \ref{eqn:6.2}.\\
+
+
+\begin{eqnarray}\label{eqn:6.1}
+\begin {bmatrix}
+0& 0& 0& 0& 0& 0& 0& 0.03218& 0 \\
+0& 0.73929& 0& 0& 0& 0& 0& 0& 0 \\
+0& 0& 0& 0.19745& 0& 0& 0& 0& 0 \\
+0.00173& 0& 0& 0& 0& 0& 0& 0& 0 \\
+0& 0& 0& 0& 0& 0& 0& 0.01819& 0 \\ 
+0& 0& 0& 0& 0& 0& 0.01116& 0& 0
+\end {bmatrix}
+\end{eqnarray}
+
+\begin{eqnarray}\label{eqn:6.2}
+\begin {bmatrix}
+0& 0& 0& 0& 0& 0& 0& 0.019308& 0 \\
+0& 0.443574& 0& 0& 0& 0& 0& 0& 0 \\
+0& 0& 0& 0.11847& 0& 0& 0& 0& 0  \\
+0.001038& 0& 0& 0& 0& 0& 0& 0& 0 \\ 
+0& 0& 0& 0& 0& 0& 0& 0.010914& 0 \\
+0& 0& 0& 0& 0& 0& 0.006696& 0& 0 \\
+0.4
+\end {bmatrix}
+\end{eqnarray}
+
+Comparing Array \ref{eqn:6.2} with Array \ref{eqn:6.1}, there is one extra variable in Array \ref{eqn:6.2}, which is 0.4. As Array \ref{eqn:6.3} shows, the ratio between every non-zero return percentage and every non-zero target percentage is the same which is 0.6.
+Moreover, when we add 0.6 up with last variable 0.4, we get a total of 100\%. Consistent with LP terminology, we call this last variable slack variable (Theory backup here).\\
+
+From the above observation, we know that the slack variable always equals 1 minus the scaling factor. And the ratio between the return percentage of existing candidate and target percentage equals to scaling factor. This meets the theory of LP when scaling factor is smaller than 1 (Theory backup here). \\
+
+\begin{eqnarray} \label{eqn:6.3}
+\frac{0.019308}{0.03218} = \frac{0.443574}{0.73929} = \frac{0.11847}{0.19745} =\frac{0.001038}{0.00173}  = \frac{0.010914}{0.01819} = \frac{0.006696}{0.01116} = 0.6
+\end{eqnarray}
+
+Based on this observation, we want to know if the conclusion can be applied generally. If it can, which experiment in the group will help us to achieve this conclusion. In addition, with how much accuracy. \\
+
+After running the experiment group 100 times, we have obtained the following picture Picture \ref{fig:6.1}.\\
+
+\begin{figure}[!ht] \label{fig:6.1}
+\centering
+\includegraphics[scale=0.3]{Figures/chapter6_1.png}
+\caption{Experiment Accuracy Analysis for Experiments using experimental spectra data that contains scaling factor that is smaller than 1 and candidates with $\theta$ from $0^{\circ}$ to $80^{\circ}$}
+\end{figure}
+
+As the picture indicates the LP model that built by using only Raman data is sufficient to help us to meet the above conclusion. The scaling factor equals the ratio between the return percentage of existing candidate and target percentage. And the scaling factor plus the slack variable equals 1. Therefore, by using experimental Raman spectra alone, we will be able to know the correct composition of the target spectrum. Moreover, knowing the scaling factor. \\
+Although the accuracy for E2 is high, it is not the case for E3 which LP model only contains SFG experimental spectrum. As we can see that the percent that it hits our previous observation is low, even lower than the LP model only contains IR spectra. From Chapter \ref{ch:5}, we know that for candidates with $\theta$ from $0^{\circ}$ to $80^{\circ}$, Raman or SFG alone are both sufficient to obtain the composition of target spectrum. However, when we introduce the scaling factor, the result for SFG is not sufficient any more. (Not sure how to explain this one theoretically)\\
+
+Even for E5, which combines IR and SFG spectra data, the result is not much better than E1 or E3. However, any experiment that contains Raman spectra data,result in good accuracy. \\
+
+
+%From the experiments that combine IR and Raman, or Raman and SFG, can we retrieve the scaling factors?
+For E4, E6 and E7, the scaling factor for each of these experiments is the same as the experiment only contains Raman spectra data. As well as the slack variable, its value for these experiments is the same as the one from LP model with only Raman spectra data. (Looks like Raman is dominating the result here.) \\
+What happens when scaling factor is greater than 1?\\
+When the scaling factor is greater than 1, all LP models built by the 7 experiments will fail to obtain the correct composition of target spectrum.\\
+All the experiments will fail.(Need to discuss how we can resolve this problem)\\
+
+Nevertheless, when we expand the candidates from $0^{\circ}$ to $180^{\circ}$ on $\theta$, with the scaling factor still smaller than 1. The result we observe is interesting as well.\\
+
+The LP model with only Raman spectra information E2, is able to tell us for each amino acid, candidate with which $\theta$ or this $\theta$'s complementary would exist in our target spectra. Because Raman spectra for candidate with $\theta$ on one degree is the same as its supplementary. This LP model can not distinguish between candidate with $\theta$ and the one with its complementary.However, with the help of SFG, we may be able to know which one between the above two dominates one amino acid's the total fraction, like what we have learnt from Chapter \ref{ch:5} about E6. Therefore we exam E6 here, and it displays which one of the two takes the major composition in the target spectra. With this information, we can decide between the $\theta$ and its complementary. 
+With the information coming from E2 and E6, we therefore, obtain the right composition of the target spectrum.\\
+
+Here goes the example, in one run of the experiment group. The composition for the target spectrum is Array \ref{eqn:6.4}. %($result8.txt of result_2016_09_28$)
+In this target spectrum, we have 0.14799 of $\theta = 40^{\circ}$ Methionine, 0.74202 of $\theta = 50^{\circ}$ Leucine, 0.08989 of $\theta = 150^{\circ}$ Ile, 0.01135 of $\theta = 40^{\circ}$ Ala, 0.00715 of $\theta = 0^{\circ}$ Thr, 0.0016 of $\theta = 20^{\circ}$ Val. 
+
+\begin{eqnarray}\label{eqn:6.4} 
+\resizebox{\linewidth}{!}{$
+\begin{bmatrix}
+0& 0& 0& 0& 0.14799& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0.74202& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0.08989& 0& 0& 0\\
+0& 0& 0& 0& 0.01135& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0.00715& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0.0016& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0
+\end{bmatrix}
+$}
+\end{eqnarray}
+
+\begin{eqnarray}\label{eqn:6.5} 
+\resizebox{\linewidth}{!}{$
+\begin{bmatrix}
+0& 0& 0& 0& 0.102936& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0& 0.516118& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0.0625238& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0& 0& 0.0078945& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0.00497324& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0& 0& 0.00111289& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0\\
+0.304441
+\end{bmatrix}
+$}
+\end{eqnarray}
+The result returned by E2 is shown in Array \ref{eqn:6.5}. You may notice same as Array \ref{eqn:6.2} to Array \ref{eqn:6.1}, Array \ref{eqn:6.5} contains one more value than Array \ref{eqn:6.4}, 0.304441, which is the slack variable. We already know that the scaling factor is 0.695560510845(generated randomly, but recorded). When we add the slack variable and the scaling factor, the total comes up to 1.0. \\
+
+In Array \ref{eqn:6.5}, we get 0.102936 of $\theta = 40^{\circ}$ Methionine, 0.516118 of $\theta = 50^{\circ}$ Leucine, 0.0625238 of $\theta = 30^{\circ}$ Ile, 0.0078945 of $\theta = 40^{\circ}$ Ala, 0.00497324 of $\theta = 0^{\circ}$ Thr, 0.00111289 of $\theta = 20^{\circ}$ Val. From Array \ref{eqn:6.6}, we can also deduce the value for the scaling factor.
+
+\begin{eqnarray} \label{eqn:6.6}
+\begin{split}
+\frac{0.102936}{0.14799} &= \frac{0.516118}{0.74202} = \frac{0.0625238}{0.08989}  =\frac{0.0078945}{0.01135}  
+\\
+\\
+&= \frac{0.00497324}{0.00715} = \frac{0.00111289}{0.0016} = 0.695560
+\end{split}
+\end{eqnarray}
+
+
+At first glance, we may guess that this LP model actually return the correct composition. However, not all amino acids' composition is correct. For Ile, it should be 0.0625238 of $\theta = 150^{\circ}$, but the result returned 0.0625238 of $\theta = 30^{\circ}$, which is the complimentary of $150^{\circ}$. It is because these two degrees' Raman spectra are identical, there is no way for current LP model to distinguish these two. \\
+
+With this information, we know the only thing we need to make sure is: is the $\theta$ returned by LP model the exact one in target spectrum or its complementary? (The above conclusion can also be applied to the experiments in Chapter \ref{ch:5} without the scaling factor. The LP model with only Raman spectra information can help us to see which $\theta$ of candidate and its complimentary should be for each amino acid. I did not observe this before.)\\
+
+To answer this question, we need the help of SFG data. Because only SFG can tell us the difference between one angle and its complementary, as their spectra are symmetry, not identical around the axis of wevenumber.\\
+
+In this experiment group, the result returned E6 is Array \ref{eqn:6.7}  (Second example???)
+\begin{eqnarray}\label{eqn:6.7} 
+\resizebox{\linewidth}{!}{$
+\begin{bmatrix}
+0& 0& 0& 0& 0.0776716& 0& 0& 0& 0& 0& 0& 0& 0& 0.0252641& 0& 0& 0& 0     \\
+0& 0& 0& 0& 0& 0.3894440& 0& 0& 0& 0& 0& 0& 0.1266740& 0& 0& 0& 0& 0     \\
+0& 0& 0& 0.0153456& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0.0471782& 0& 0& 0     \\
+0& 0& 0& 0& 0.00595697& 0& 0& 0& 0& 0& 0& 0& 0& 0.00193762& 0& 0& 0& 0   \\
+0.0037526& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0.00122061    \\
+0& 0& 0.000839749& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0& 0.000273144& 0& 0 \\
+0.304441 (any relation for the fraction???)
+\end{bmatrix}
+$}
+\end{eqnarray}
+
+The value of the slack variable is the same as what returned by E2. However, the returned composition is totally different than what returned by E2. The interesting thing is that for each amino acid, the return existing candidates are complementary on $\theta$. The total percentage of these two candidates, take Methionine as an instance, $0.0776716 + 0.0252641$ makes 0.1029357 which is the same as what is returned by E2. This is the same for every amino acid. What's more, the composition returned by the E6 indicates which $\theta$ dominates the composition for one amino acid. For Methionine, $\theta = 40^{\circ}$ takes major part; for Leucine, $\theta = 50^{\circ}$ does; for Ile, $\theta = 30^{\circ}$ does; for Ala, $\theta = 40^{\circ}$ does; for Thr, $\theta = 0^{\circ}$  does; for Val, $\theta = 20^{\circ}$ does; And those candidates are the correct components for target spectra. 
+
+
+
+
+IR+SFG, can you do anything with it???
+
+
+
+
+\section{Results}
+\section{Discussion}
+\section{Conclusions}
+\label{experimental}
+
+
