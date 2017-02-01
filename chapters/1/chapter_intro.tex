@@ -6,7 +6,6 @@ Many experimental techniques have been applied in the study of molecular orienta
 
 In order to analyse these vibrational spectra, various factors need to be considered. For example, a molecule's vibrational mode in the molecular frame, the orientation average of the molecules adsorbed onto the interface based on the mathematical distribution function(TODO: further explained) and projecting the vibrational mode properties from molecular frame to laboratory frame. The main focus of our study is to analyze the data of these three spectroscopy techniques using Linear Programming (LP). In the following, we will explore how LP can facilitate extracting quantitative structural information of molecules at interfaces.\\
 
-%the study of the composition of molecules and molecular orientation at interfaces (?). 
 Our approach is to first study a model of a small molecule using LP. built by using the spectroscopy information. We then apply our finding and method to real molecules which are six amino acids: methionine, leucine, isoleucine, alanine, threonine and valine.\\
 
 Before we explain the LP technique and LP model, as well as describe the molecules studied, we introduce the basic theory of  the IR, Raman and SFG spectra.\\
@@ -14,15 +13,12 @@ Before we explain the LP technique and LP model, as well as describe the molecul
 \section{Experimental Probes: IR, Raman, SFG}
 Vibrational spectra (IR, Raman and SFG) are produced by the changes of a molecule's dipole moment and polarizability. The dipole moment and polarizability are changing as the molecule's conformation is changing. \\
 
-%IR and Raman are linear optical processes, no surface specificity, sensitive to molecular orientation in even orders. 
 For IR, its absorption is the absorption-transmission-reflection mode (resonant). The physical principle is the variation of the static dipole moment $\mu$ (the first rank tensor) along the normal coordinates $Q$: $\sfrac{\partial\mu}{\partial Q}$. 
 
 \begin{equation} \label{eq:1.1}
 I_{IR} \approx \left| \frac{1}{\sqrt{2m_{Q}w_{Q}}} \frac{\partial\mu}{\partial Q} \right|^{2}
 \end{equation}
 where $m_{Q}$ is the reduced mass of the normal mode, and $w_{Q}$ is the resonance frequency. The dipole moment $\mu$ is a vector of $x$, $y$ and $z$. The dipole moment derivatives can be expressed as Equation \ref{eq:1.2}. The IR spectra can be obtained from 3 polarizations: $x$, $y$, $z$. 
-
-%where $|0\rangle$ is the vibrational ground state, $\langle 1|$ is the vibrational excited state, $m$ is the reduced mass of the normal mode, $\overline{\mu}$ is the transient dipole moment, and $w$ is the resonance frequency. The dipole moment $\mu$ is a vector with $x$, $y$ and $z$. Therefore, the dipole moment derivatives can be expressed as Equation \ref{eq:1.2}. The IR spectra can be obtained from 3 polarizations: $x$, $y$, $z$. 
 
 \begin{equation} \label{eq:1.2}
 \frac{\partial\mu}{\partial Q} = \begin{bmatrix}
@@ -31,9 +27,6 @@ where $m_{Q}$ is the reduced mass of the normal mode, and $w_{Q}$ is the resonan
 									\sfrac{\partial\mu_{z}}{\partial Q}
 								  \end{bmatrix}
 \end{equation}
-
-
-%IR: $\big<P_2\big> = \frac{1}{2} \big<3\cos^2\theta -1 \big> $ \\
 
 Raman is scattered from the molecule sample. Unlike IR, Raman spectra relate to the variation of the molecular polarizability $\alpha$ (the second rank tensor) along the normal coordinates $Q$: $\sfrac{\partial\alpha}{\partial Q}$. 
 
@@ -51,16 +44,11 @@ where $|0\rangle$, $\langle 1|$, $m$ are same as defined above. $w$ is the reson
 \end{bmatrix}
 \end{equation}
 
-%Raman: $\big<P_2\big> = \frac{1}{2} \big<3\cos^2\theta -1 \big> $, $\big<P_4\big> = \frac{1}{8} \big< 35\cos^4\theta -30\cos^2\theta + 3 \big> $ \\
 SFG stands for sum frequency generation vibrational spectroscopy. It is a surface-specific technique. SFG is a non-linear optical process. It is sensitive to the molecular orientation in odd orders. Comparing to linear optical spectroscopy, the biggest advantage of SFG is that it is surface specific. The spectroscopy signal only comes from the surface, not the bulk. SFG is the variation of the outer product of dipole moment and polarizability, $\chi^{(2)}$ (the third rank tensor): $\sfrac{\partial\mu}{\partial Q} \otimes \sfrac{\partial\alpha}{\partial Q} $. Therefore, there are 27 elements for SFG spectra, which result in 27 polarizations of SFG spectra. \\
 
 \begin{equation} \label{eq:1.5}
 I_{SFG} \approx \left| \frac{1}{2m_{Q}w_{Q}} \left( \frac{\partial\alpha^{(1)}}{\partial Q} \otimes \frac{\partial\mu}{\partial Q} \right) \right|^{2}
 \end{equation}
-
-%SFG: $\big<P_1\big> = \big< \cos\theta \big> $,
-%	$\big<P_3\big> = \frac{1}{2} \big<5\cos^3\theta -3\cos\theta \big> $ \\
-
 
 \section{Linear programming}
 Linear Programming (LP) problems are an optimization problems of a specific form. The standard form of LP is a minimization problem that has an objective function and constraints as shown in Equation \ref{eq:1.6} \cite{UULP}:
@@ -109,16 +97,13 @@ For a LP problem, there exist only three kinds of solutions: feasible and bounde
 
 A general LP problem can be a minimization or a maximization problem. Its constraints can be equalities or inequalities. For each non-standard LP problem, there are ways to convert it into its standard form. Furthermore, for a LP problem that contains $n$ decision variables, its solution would be in $n$-dimensional space that is called $R^{n}$, each constraint is a hyperplane that divides this $R^{n}$ space into two half-spaces. Therefore, all the constraints together cut this $R^{n}$ space into a convex polyhedron if there are feasible solutions. This makes LP a convex problem. The benefit of a convex problem is that the local optimal solution is also the global optimum. LP solvers return is the optimal solution. If a LP problem has a unique optimal solution, then this solution is a vertex of the convex polyhedron.\\
 
-%(Why we select LP as the tool to tackle this problem? The advantage of LP for this problem. Is there any previous work related?)\\
-
 LP is a convex, a deterministic process. It is guaranteed to converge to a single global optimum if there is a solution space. LP problems are intrinsically easier to solve than many non-linear problems. \\
 
 Another advantage of LP is that it can deal with thousands of variables, which makes it suitable for the study of a molecule's coordination composition at interfaces. \\
 
 Various algorithms are available in solving LP problems, such as: Simplex algorithm, Interior point, and Path-following algorithms. Both Interior Point and Simplex are common and mature algorithms that work well in practice. Simplex is comparatively easier to understand and implement than Interior Point.\\
 
-Among these algorithms, the most common one is the Simplex method. Most popular LP solvers have implemented Simplex and Interior point algorithms.  Comparing to Interior point, Simplex method is comparatively easier to understand and implement. Simplex method takes the advantage of the geometric concept that it visits the vertices of the feasible set (convex polyhedron), and check the optimal solution among each visited vertex. The converging approach is also different for these two methods. If there are $n$ decision variables, usually Simplex will converge in $O(n)$ operations with $O(n)$ pivots. Interior point traverses the edges between vertices on a polyhedral set. Generally speaking, Interior point method is faster for larger problems with sparse matrix. However, when experimenting with these two methods, the speed of them is not much different from each other for the current study. For our study, Simplex method has proved to be efficient and effective, it will be used for all the experiments.
-%As the previous research conducted by Kuo Kai Hung \cite{KuoKaiHung:Thesis:2015} was mainly using Simplex method, Simplex method will be used for the further experiments as well.\\
+Among these algorithms, the most common one is the Simplex method. Most popular LP solvers have implemented Simplex and Interior point algorithms.  Comparing to Interior point, Simplex method is comparatively easier to understand and implement. Simplex method takes the advantage of the geometric concept that it visits the vertices of the feasible set (convex polyhedron), and check the optimal solution among each visited vertex. The converging approach is also different for these two methods. If there are $n$ decision variables, usually Simplex will converge in $O(n)$ operations with $O(n)$ pivots. Interior point traverses the edges between vertices on a polyhedral set. Generally speaking, Interior point method is faster for larger problems with sparse matrix. However, when experimenting with these two methods, the speed of them is not much different from each other for the current study. For our study, Simplex method has proved to be efficient and effective, it will be used for all the experiments. \\
 
 Last but not the least advantage of LP is its speed. For any LP problem, if it has an optimal solution, this solution is always a vertex. Simplex method is based on this insight, namely that it starts at a vertex, then pivot from vertex to vertex, until it reaches the optimum. Although it has been shown that Simplex method is not a polynomial algorithm, in practice it usually takes $2n-3n$ steps to solve a problem ($n$ is the number of decision variables). \\
 
@@ -133,10 +118,5 @@ Also consider the model itself and solution space
 (The problem is defined as "Candidate ratio problem" in Kai's thesis, same here???)
 to determine the level of similarity between spectra is not an easy task 
 	
-
-	
 \section{Aims and scope}
 Given some target experimental spectra and a set of candidates spectra, to find out the right combination of candidates for the target spectra is the goal in this study. The approach is to build our LP model, and check if the optimal solutions returned by the solver match the target composition that was used to generate the target spectra. The LP models are built using spectra resulting from different techniques. Therefore, there are different LP models. for each of these models, we then analyze which model is best to reach the goal with the highest accuracy. From this, we can decide which spectroscopy technique(s) is sufficiently sensitive in finding the right combination of candidates. Furthermore, we will consider various study focuses, and for each focus, what spectroscopy techniques combined with LP modelling should be applied in order to obtain the accurate composition of the target spectra. 
-
-%Comparing the possible combination of the candidates, the information that the experiment spectra carry is comparatively limited. However, we want to put it into the optimum use. 
-

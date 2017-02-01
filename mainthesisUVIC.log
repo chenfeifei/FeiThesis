@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  31 JAN 2017 17:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  31 JAN 2017 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -779,96 +779,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 
-Overfull \hbox (0.81876pt too wide) in paragraph at lines 12--13
+Overfull \hbox (0.81876pt too wide) in paragraph at lines 11--12
 []\OT1/cmr/m/n/12 Before we ex-plain the LP tech-nique and LP model, as well as
  de-scribe the molecules
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 18.
+LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 16.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 18.
+(Font)              size <5> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.19998> not available
-(Font)              size <5> substituted on input line 18.
+(Font)              size <5> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 18.
+(Font)              size <5> substituted on input line 16.
 
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 18.
+(Font)              size <5> substituted on input line 16.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 77--80
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
@@ -963,12 +968,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--51
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
@@ -977,7 +982,7 @@ File: Figures/Met_candidates_plotting_ir_x.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_ir_x.png>
 Package pdftex.def Info: Figures/Met_candidates_plotting_ir_x.png used on input
- line 59.
+ line 58.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/Met_candidates_plotting_ir_z.png, id=80, 578.16pt x 433.62pt>
@@ -985,7 +990,7 @@ File: Figures/Met_candidates_plotting_ir_z.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_ir_z.png>
 Package pdftex.def Info: Figures/Met_candidates_plotting_ir_z.png used on input
- line 65.
+ line 64.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/Met_candidates_plotting_raman_xx.png, id=81, 578.16pt x 433.62pt>
@@ -993,7 +998,7 @@ File: Figures/Met_candidates_plotting_raman_xx.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_raman_xx.png>
 Package pdftex.def Info: Figures/Met_candidates_plotting_raman_xx.png used on i
-nput line 71.
+nput line 70.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/Met_candidates_plotting_sfg_yyz.png, id=82, 578.16pt x 433.62pt>
@@ -1001,10 +1006,10 @@ File: Figures/Met_candidates_plotting_sfg_yyz.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_sfg_yyz.png>
 Package pdftex.def Info: Figures/Met_candidates_plotting_sfg_yyz.png used on in
-put line 77.
+put line 76.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [13 <./Figures/Met_candidates_plotting_ir_x.png>] [14 <./Figures/Met_candidate
-s_plotting_ir_z.png> <./Figures/Met_candidates_plotting_raman_xx.png>]) [15 <./
+ [13 <./Figures/Met_candidates_plotting_ir_x.png>]) [14 <./Figures/Met_candidat
+es_plotting_ir_z.png> <./Figures/Met_candidates_plotting_raman_xx.png>] [15 <./
 Figures/Met_candidates_plotting_sfg_yyz.png>]
 \openout2 = `chapters/3/chapter_simplified_molecular_model.aux'.
 
@@ -1016,17 +1021,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
@@ -1039,29 +1044,44 @@ File: Figures/Toy_Model_IR_Cosine_Projection.png Graphic file (type png)
 
 <use Figures/Toy_Model_IR_Cosine_Projection.png>
 Package pdftex.def Info: Figures/Toy_Model_IR_Cosine_Projection.png used on inp
-ut line 24.
+ut line 18.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 [17 <./Figures/Toy_Model_IR_Cosine_Projection.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
 [18]
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
+
+ []
+
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
@@ -1072,22 +1092,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
@@ -1098,10 +1103,10 @@ File: Figures/toy_model_result_plotting_ir_cos_4candi_1.png Graphic file (type
 png)
  <use Figures/toy_model_result_plotting_ir_cos_4candi_1.png>
 Package pdftex.def Info: Figures/toy_model_result_plotting_ir_cos_4candi_1.png 
-used on input line 103.
+used on input line 92.
 (pdftex.def)             Requested size: 257.11037pt x 184.9969pt.
 
-Underfull \hbox (badness 2401) in paragraph at lines 121--122
+Underfull \hbox (badness 2401) in paragraph at lines 110--111
 []|\OT1/cmr/m/n/12 [0, 0, 0.730541, 0, 0.212061,0, 0,
  []
 
@@ -1112,20 +1117,20 @@ File: Figures/toy_model_result_plotting_ir_cos_10candi_1.png Graphic file (type
  png)
  <use Figures/toy_model_result_plotting_ir_cos_10candi_1.png>
 Package pdftex.def Info: Figures/toy_model_result_plotting_ir_cos_10candi_1.png
- used on input line 130.
+ used on input line 119.
 (pdftex.def)             Requested size: 254.51805pt x 197.01581pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
 [21 <./Figures/toy_model_result_plotting_ir_cos_4candi_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
@@ -1135,30 +1140,30 @@ File: Figures/Toy_Model_IR_Sine_Projection.png Graphic file (type png)
 
 <use Figures/Toy_Model_IR_Sine_Projection.png>
 Package pdftex.def Info: Figures/Toy_Model_IR_Sine_Projection.png used on input
- line 144.
+ line 131.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-Overfull \hbox (49.18648pt too wide) in paragraph at lines 150--165
+Overfull \hbox (49.18648pt too wide) in paragraph at lines 137--152
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
 [23 <./Figures/Toy_Model_IR_Sine_Projection.png>] [24]
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 190--190
+Underfull \hbox (badness 2626) in paragraph at lines 174--174
 []|\OT1/cmr/m/n/10.95 [2800, 3300, 5],
  []
 
 
-Overfull \hbox (28.38316pt too wide) in paragraph at lines 182--197
+Overfull \hbox (28.38316pt too wide) in paragraph at lines 166--181
  [] 
  []
 
@@ -1171,40 +1176,40 @@ nt4.png Graphic file (type png)
 <use Figures/toy_model_result_plotting_ir_sin_4candi_constraint_study_experimen
 t4.png>
 Package pdftex.def Info: Figures/toy_model_result_plotting_ir_sin_4candi_constr
-aint_study_experiment4.png used on input line 205.
+aint_study_experiment4.png used on input line 189.
 (pdftex.def)             Requested size: 249.09775pt x 192.06686pt.
 
-Underfull \hbox (badness 4366) in paragraph at lines 224--224
+Underfull \hbox (badness 4366) in paragraph at lines 208--208
 []|\OT1/cmr/m/n/6 [2800, 3300, 5], [2800,
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 225--225
+Underfull \hbox (badness 4366) in paragraph at lines 209--209
 []|\OT1/cmr/m/n/6 [2800, 3300, 5], [2800,
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 226--226
+Underfull \hbox (badness 4366) in paragraph at lines 210--210
 []|\OT1/cmr/m/n/6 [2800, 3300, 5], [2800,
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 227--227
+Underfull \hbox (badness 1931) in paragraph at lines 211--211
 []|\OT1/cmr/m/n/6 [2800, 3300, 20], [2800,
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 228--228
+Underfull \hbox (badness 4366) in paragraph at lines 212--212
 []|\OT1/cmr/m/n/6 [2800, 3300, 5], [2800,
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 229--229
+Underfull \hbox (badness 4366) in paragraph at lines 213--213
 []|\OT1/cmr/m/n/6 [2800, 3300, 5], [2800,
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 230--230
+Underfull \hbox (badness 4366) in paragraph at lines 214--214
 []|\OT1/cmr/m/n/6 [2800, 3300, 5], [2800,
  []
 
@@ -1217,16 +1222,16 @@ ent5.png Graphic file (type png)
 <use Figures/toy_model_result_plotting_ir_sin_10candi_constraint_study_experime
 nt5.png>
 Package pdftex.def Info: Figures/toy_model_result_plotting_ir_sin_10candi_const
-raint_study_experiment5.png used on input line 239.
+raint_study_experiment5.png used on input line 223.
 (pdftex.def)             Requested size: 252.8684pt x 192.53818pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 [26 <./Figures/toy_model_result_plotting_ir_sin_4candi_constraint_study_experim
 ent4.png>] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
@@ -1256,27 +1261,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-
-Overfull \hbox (27.65204pt too wide) in paragraph at lines 21--36
+Overfull \hbox (27.65204pt too wide) in paragraph at lines 17--32
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
@@ -1284,106 +1289,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--44
 File: Figures/ir_xz_result_plotting.png Graphic file (type png)
 
 <use Figures/ir_xz_result_plotting.png>
-Package pdftex.def Info: Figures/ir_xz_result_plotting.png used on input line 5
-1.
+Package pdftex.def Info: Figures/ir_xz_result_plotting.png used on input line 4
+2.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 [31 <./Figures/ir_xz_result_plotting.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 [32]
-Underfull \hbox (badness 2726) in paragraph at lines 112--112
+Underfull \hbox (badness 2726) in paragraph at lines 83--83
 []|\OT1/cmr/m/n/6 200(ramanxx) + 200(ra-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
 []|\OT1/cmr/m/n/6 200(irx) + 200(irz) +
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 114--114
+Underfull \hbox (badness 2726) in paragraph at lines 85--85
 \OT1/cmr/m/n/6 200(ra-manxx) + 200(ra-
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 114--114
+Underfull \hbox (badness 1888) in paragraph at lines 85--85
 \OT1/cmr/m/n/6 manxy) + 200(ra-manxz)
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 115--115
+Underfull \hbox (badness 2726) in paragraph at lines 86--86
 []|\OT1/cmr/m/n/6 200(ramanxx) + 200(ra-
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 115--115
+Underfull \hbox (badness 1888) in paragraph at lines 86--86
 \OT1/cmr/m/n/6 manxy) + 200(ra-manxz)
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 115--115
+Underfull \hbox (badness 4441) in paragraph at lines 86--86
 \OT1/cmr/m/n/6 gyyz) + 200(sf-gyzy) +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
 []|\OT1/cmr/m/n/6 200(irx) + 200(irz) +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--117
+Underfull \hbox (badness 10000) in paragraph at lines 88--88
 []|\OT1/cmr/m/n/6 200(irx) + 200(irz) +
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 117--117
+Underfull \hbox (badness 2726) in paragraph at lines 88--88
 \OT1/cmr/m/n/6 200(ra-manxx) + 200(ra-
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 117--117
+Underfull \hbox (badness 1888) in paragraph at lines 88--88
 \OT1/cmr/m/n/6 manxy) + 200(ra-manxz)
  []
 
 
-Underfull \hbox (badness 4441) in paragraph at lines 117--117
+Underfull \hbox (badness 4441) in paragraph at lines 88--88
 \OT1/cmr/m/n/6 gyyz) + 200(sf-gyzy) +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
 
-Overfull \hbox (52.21817pt too wide) in paragraph at lines 141--150
+Overfull \hbox (52.21817pt too wide) in paragraph at lines 102--111
  [] 
  []
 
@@ -1395,7 +1400,7 @@ ype png)
 
 <use Figures/chapter4_result_target_plotting_5datapoint_ir.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_5datapoint_ir.
-png used on input line 185.
+png used on input line 117.
 (pdftex.def)             Requested size: 309.89615pt x 121.36617pt.
 
 <Figures/chapter4_result_target_plotting_5datapoint_raman.png, id=166, 578.16pt
@@ -1405,7 +1410,7 @@ File: Figures/chapter4_result_target_plotting_5datapoint_raman.png Graphic file
 
 <use Figures/chapter4_result_target_plotting_5datapoint_raman.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_5datapoint_ram
-an.png used on input line 191.
+an.png used on input line 123.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/chapter4_result_target_plotting_5datapoint_sfg.png, id=167, 578.16pt x
@@ -1414,7 +1419,7 @@ File: Figures/chapter4_result_target_plotting_5datapoint_sfg.png Graphic file (
 type png)
  <use Figures/chapter4_result_target_plotting_5datapoint_sfg.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_5datapoint_sfg
-.png used on input line 197.
+.png used on input line 129.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/chapter4_result_target_plotting_500datapoint_ir.png, id=168, 615.86609
@@ -1424,7 +1429,7 @@ File: Figures/chapter4_result_target_plotting_500datapoint_ir.png Graphic file
 
 <use Figures/chapter4_result_target_plotting_500datapoint_ir.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_500datapoint_i
-r.png used on input line 203.
+r.png used on input line 135.
 (pdftex.def)             Requested size: 307.93228pt x 126.86496pt.
 
 <Figures/chapter4_result_target_plotting_500datapoint_raman.png, id=169, 578.16
@@ -1434,7 +1439,7 @@ le (type png)
 
 <use Figures/chapter4_result_target_plotting_500datapoint_raman.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_500datapoint_r
-aman.png used on input line 209.
+aman.png used on input line 141.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/chapter4_result_target_plotting_500datapoint_sfg.png, id=170, 578.16pt
@@ -1444,7 +1449,7 @@ File: Figures/chapter4_result_target_plotting_500datapoint_sfg.png Graphic file
 
 <use Figures/chapter4_result_target_plotting_500datapoint_sfg.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_500datapoint_s
-fg.png used on input line 215.
+fg.png used on input line 147.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
  [34 <./Figures/chapter4_result_target_plotting_5datapoint_ir.png>] [35 <./Figu
 res/chapter4_result_target_plotting_5datapoint_raman.png> <./Figures/chapter4_r
@@ -1882,7 +1887,7 @@ mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfrm1200.pfb>
-Output written on mainthesisUVIC.pdf (69 pages, 2104937 bytes).
+Output written on mainthesisUVIC.pdf (69 pages, 2104541 bytes).
 PDF statistics:
  327 PDF objects out of 1000 (max. 8388607)
  195 compressed objects within 2 object streams
