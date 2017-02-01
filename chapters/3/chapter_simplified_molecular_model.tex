@@ -1,36 +1,35 @@
 \startchapter{Simplified Molecular Model} \label{ch:3}
 
 \section{Description}
-The goal of Chapter \ref{ch:3} is to further expand the research focus and introduce the formulas used to generate the LP models. Before studying real life molecules, first a toy molecule with limited vibration modes is studied. By doing so, the nature of the LP formulas used to gain some further insights of the models built is carefully analyzed. The goal is to figure out with the all the available spectral information, could LP models built output any valuable information. If the LP models have limitation in achieving this goal, then the reason behind needed to further explained. \\
+The goal of Chapter \ref{ch:3} is to further expand the research focus and introduce the formulas used to generate the LP models. Before studying real life molecules, a toy molecule with limited vibration modes is first studied. By doing so, the nature of the LP formulas used to gain some further insights of the models we need is carefully analyzed. The goal is to figure out with the all the available spectral information, could LP models we build output any valuable information. If the LP models have limitation in achieving this goal, then the reason behind needed to further explained. \\
 
-A toy molecule with $4$ vibration modes is constructed. Theses vibrational peaks are at frequencies of $2850, 2960, 3050$ and $3200$. The width of the peak are $5, 10, 5$ and $15$ respectively. The amplitude of the peak are $1, 0.7, -0.2$ and $0.5$, respectively. The comparing angles of the peak is $15, 90, 0$ and $60$. (TODO: check with Dennis, how to explain those comparing angles?)  \\
+A toy molecule with $4$ vibration modes is constructed. Theses vibrational peaks are at frequencies of $2850, 2960, 3050$ and $3200$. The width of the peak are $5, 10, 5$ and $15~cm^{-1}$ respectively. The amplitude of the peak are $1, 0.7, -0.2cm^{-1}$ and $0.5$, respectively. The comparing angles of the peak is $15, 90, 0$ and $60$. (TODO: check with Dennis, how to explain those comparing angles?)  \\
 
-For this toy model, only IR spectroscopy is considered. Equation \ref{eq:3.1} is used to generate the cosine projection IR spectroscopy. Moreover, Only the difference on $\theta$ angle is considered. \\
+For this toy model, only IR spectroscopy is considered. Equation \ref{eq:3.1} is used to generate the cosine projection IR spectroscopy. Moreover, both $\phi$ and $\psi$ Euler angles are integrated, only the difference on $\theta$ angle is considered for the toy model as well. \\
 
 \begin{eqnarray} \label{eq:3.1}
-& f_{\theta}(x) = \displaystyle\sum^{4}_{q=1} A_q^2 * cos^2(\theta - \theta_q)\frac{\gamma^2}{(x- w_q)^2 + \gamma^2} 
+& f_{\theta}(x) = \displaystyle\sum^{4}_{q=1} A_q^2 * cos^2(\theta - \theta_q)\frac{\gamma^2}{(x- \omega_{\rm q})^2 + \gamma^2} 
 \end{eqnarray}
-
-where $A$ is the amplitude, $theta_{q}$ is the $tilt$ angle of the candidate, $\gamma$ is the width, $w_q$ is the frequency. (TODO: Double check the correct meaning of each symbol) $10$ different candidates' with 10 different $\theta$ values as followed: $0^{\circ}$, $10^{\circ}$, $20^{\circ}$, $30^{\circ}$, $40^{\circ}$, $50^{\circ}$, $60^{\circ}$, $70^{\circ}$, $80^{\circ}$, $90^{\circ}$. Their spectra are generated as shown in Figure \ref{fig:3.1}. The 10 candidates have peaks at the same frequencies. The spectral signal for candidates is comparatively strong at each peak, and distinguish each candidate more than other signal. \\
+where $A$ is the amplitude, $theta_{q}$ is the $tilt$ angle of the candidate, $\gamma$ is the width, $\omega_{\rm q}$ is the frequency. (TODO: Double check the correct meaning of each symbol) Ten different candidates' with $\theta$ values of the following values: $0^{\circ}$, $10^{\circ}$, $20^{\circ}$, $30^{\circ}$, $40^{\circ}$, $50^{\circ}$, $60^{\circ}$, $70^{\circ}$, $80^{\circ}$, $90^{\circ}$. Their spectra are generated as shown in Figure \ref{fig:3.1}. The 10 candidates have peaks at the same frequencies. The spectral signal for candidates is comparatively strong at each peak. \\
 
 \begin{figure}[!ht] \label{fig:3.1}
 \centering
 \includegraphics[scale=0.4]{Figures/Toy_Model_IR_Cosine_Projection.png} 
-\caption{Toy model IR candidates cosine projection} 
+\caption{Toy model IR candidates cosine polarization} 
 \end{figure}
 
-A target spectrum is composed by combining $15$ percent of candidate with $\theta$ of $20^{\circ}$ and $85$ percent of candidate of $\theta$ of $70^{\circ}$: $0.15*f_{20}(x) + 0.85*f_{70}(x)$ in the following experiment. \\
+%A target spectrum is composed by combining $15$ percent of candidate with $\theta$ of $20^{\circ}$ and $85$ percent of candidate of $\theta$ of $70^{\circ}$: $0.15*f_{20}(x) + 0.85*f_{70}(x)$ in the following experiment. \\
 
 \section{Linear Programming Model for Spectra Study}
 
-The LP model constructed to check if the optimal solution returned by the LP solver actually matches to the known composition is shown in Equation \ref{eq:3.2}. This model has also been used to study the composition analysis of Ribonucleic acid (RNA) with ultraviolet (UV) spectra and other UV spectroscopy studies back in 60s \cite{NYAS:NYAS900} \cite{LPATUAS}. \\
+The LP model constructed to check if the optimal solution returned by the LP solver actually matches to the target composition is shown in Equation \ref{eq:3.2}. This model has also been used to study the composition of Ribonucleic acid (RNA) with ultraviolet (UV) spectra \cite{NYAS:NYAS900} and other UV spectroscopy studies  \cite{LPATUAS} back in 60s. \\
 
 \begin{eqnarray} \label{eq:3.2}
 & minimize \displaystyle\sum^{points}_{p=1} \left| Target- \displaystyle\sum^{candidates}_{c=1}p_{c}f_{\theta}(x) \right| 
 \end{eqnarray}
-where $p_{c}$ is the unknown percentage of each candidate, which is the decision variable. $p$ is the number of points selected along the wavenumber, both from candidates and target spectra. For each data point, the absolute residual between target spectrum and the one composed by the decision variables is calculated. The objective function minimizes the sum of the absolute residuals over all the data points. \\
+where $p_{c}$ are the unknown percentages for each candidate, which are the decision variables. $p$ is the number of points selected along the wavenumber, both for candidates and target spectra. For each data point, the absolute residual between target spectrum and the one composed by the decision variables is calculated. The objective function minimizes the sum of the absolute residuals over all the data points. \\
 
-However, in order to apply LP, getting rid of the absolute signs in the objective function is needed. Because Equation \ref{eq:3.2} subject to no restrictions, meanwhile, the objection function is not in standard form. This is achieved by introducing one more variable $X$ and two more constraints for each data point as shown in Equation \ref{eq:3.3}. Then the previous model in Equation \ref{eq:3.2} is converted into Equation \ref{eq:3.4}, which can actually be solved by LP solver. At last, one more constraint is introduced to restrict the sum of the percentages to be 1, as shown in Equation \ref{eq:3.4}. \\
+However, in order to apply LP, getting rid of the absolute signs in the objective function is needed. Because Equation \ref{eq:3.2} subject to no restrictions, meanwhile, the objection function is not in standard form. This is achieved by introducing one more variable $X$ and two more constraints for each data point as shown in Equation \ref{eq:3.3}. Then the previous model in Equation \ref{eq:3.2} is converted into the one in Equation \ref{eq:3.4}, which can actually be solved by LP solver. At last, one more constraint is introduced to restrict the sum of the percentages to be 1, as shown in Equation \ref{eq:3.4}. \\
 
 For each point:
 \begin{eqnarray} \label{eq:3.3}
@@ -50,6 +49,11 @@ For each point:
 \end{eqnarray} 
 
 \section{Linear programming model implementation}
+For the toy model:
+
+
+For real molecule:
+
 
 To start, code is written to generate a file that contains all the candidates' spectral information needed for the experiments. For this step, the molecular properties in the pickle files are used. For a specific candidate, given the molecular propterties and the $\theta$ value, the candidate's spectral information is obtained. \\
 
