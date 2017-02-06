@@ -28,7 +28,7 @@ dataArray = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.299586, 0, 0, 0, 0, 0, 0],
 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.00789, 0, 0, 0, 0, 0]]
 
 plt.xticks(range(1,18))
-ax = sns.heatmap(dataArray,annot=True,square=True, cmap="Reds", vmin=0, vmax=1, linewidths=.5, fmt="g")
+ax = sns.heatmap(dataArray,annot=False,square=True, cmap="Reds", vmin=0, vmax=1, linewidths=.5, fmt="g")
 ax.set_xticklabels([0, 10, 20, 30, 40, 50, 60, 70, 80, 100, 110, 120, 130, 140, 150, 160, 170, 180])
 ax.set_yticklabels(['Methionine', 'Leucine', 'Isoleucine', 'Alanine', 'Threonine', 'Valine'])
 ax.set_xlabel(r'$\theta$' " Vaule")
