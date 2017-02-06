@@ -13,10 +13,11 @@ To generate these amino acids' vibrational spectra, a molecule's vibration modes
 
 In order to achieve the above steps, Hung first did a Hessian calculation. Secondly, 7 snapshots of a molecule vibrating in different modes were taken. Thirdly, he did a force field calculation to obtain the derivatives of dipole moment and polarizability for each 7 snapshot moment. Then the derivatives of dipole moment and polarizability are obtained by the interpolation of these 7 snapshot moment. Because the two obtained derivatives are in the molecular frame, Hung used DCM to convert these two derivatives into the lab frame. Then abstracted Euler angles from DCM. After this transformation, he restored the derivatives information into some molecular property files for any further usage. (TODO: double check the accuracy with Dennis)\\
 
-\begin{figure}[!ht] \label{fig:2.1}
+\begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.5]{Figures/Euler_angles_represented_as_the_spherical_polar_angles.png} 
 \caption{The Euler angles represented as the spherical polar angles $\theta$, $\phi$ and $\psi$, and the illustration of the three successive rotations that transform the lab $x$, $y$, $z$ coordinate system into the molecular $a$, $b$, $c$ frame \cite{hore0033-rotations}. }
+\label{fig:2.1}
 \end{figure}
 
 In my study, those molecular property files are used to generate the following amino acids' spectroscopy information: methionine, leucine, isoleucine, alanine, threonine and valine. Each molecular property file contains the derivatives of dipole moment and polarizabilities for vibrational mode of $3N-6$. $N$ is the number of atoms of a molecule. Furthermore, the following equations from Equation \ref{eq:2.2} to Equation \ref{eq:2.4} are used to generate each amino acid's IR, Raman and SFG spectra. \\

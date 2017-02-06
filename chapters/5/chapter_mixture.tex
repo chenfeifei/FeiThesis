@@ -30,7 +30,7 @@ Each experiment in the experiment set contains different spectroscopy informatio
 
 %Table 5.1 displays the detailed setting for the experiment group. 
 
-\begin{table}\tiny \label{tab:5.1} 
+\begin{table}\tiny 
 \begin{center}
 \begin{tabular}{| l | l | l  }
 \hline
@@ -53,6 +53,7 @@ Experiment 7 & x and z polarized IR spectra; xx, xy, xz and zz polarized Raman s
 \end{tabular} 
 \end{center}
 \caption{Detailed Experiment Group Setting} 
+\label{tab:5.1} 
 \end{table}	
 
 %or all the experiments in this group, the composition for the target spectrum is the same.  For each amino acid, we randomly select one  from the 8 candidates, the assigned a random percentage. This composition is generated before all the experiments are run.
@@ -81,10 +82,10 @@ The return composition of each experiment in the experiment set is obtained for 
 
 %For each run of the experiment group, we obtain the composition returned by each experiment. And based on the return composition, we calculate how many times each experiment returns the same composition as the target one. In result, we have Figure \ref{fig:5.1} as shown below.
 
-\begin{figure}[!ht] \label{fig:5.1}
+\begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.7]{Figures/accuracy_pecent_result8_mixture.png}
-\caption{Accuracy analysis for experiments considering a mixture of amino acids with candidates from $0^{\circ}$ to $80^{\circ}$ on $\theta$ for each amino acid} 
+\caption{Accuracy analysis for experiments considering a mixture of amino acids with candidates from $0^{\circ}$ to $80^{\circ}$ on $\theta$ for each amino acid}  \label{fig:5.1}
 \end{figure}
 
 The experiment set is ran for 100 times, the result is shown in 
@@ -102,10 +103,10 @@ When this experiment set is re-run 100 times, only Experiment 1's returned compo
 
 (TODO: rewrite or remove this paragraph) Comparatively, SFG has three unique polarizations, and Raman has four unique polarizations. From each projection's spectrum, we evenly select 200 data points. This means that one more projection will bring in 200 more constraints or 400 more (if we take the absolute sign off) constraints to the LP model. This would make a huge difference in LP model, in term of further refining the candidate selection in target composition. However, it is still too early for us to say that Raman has more coordination information because it has four unique polarizations. Because for Raman's any polarization, the spectrum of candidate with $\theta$ equals to one degree is identical to the one of candidate with this $\theta$ degree's complementary. For example, the Raman spectra for candidate with $\theta$ of $10^{\circ}$, is the same as candidate with $\theta$ of $170^{\circ}$. And for IR, it is the same case. Only SFG tells the differences between these two degrees, as the spectra for candidate with $\theta$ of one degree is symmetric to its complementary along wavenumber. \\
 
-\begin{figure}[!ht] \label{fig:5.2}
+\begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.7]{Figures/result_target_plotting_ir16.png}
-\caption{IR Spectra Plotted by Result Composition and Target Composition. TODO: add residual graph} 
+\caption{IR Spectra Plotted by Result Composition and Target Composition. TODO: add residual graph} \label{fig:5.2}
 \end{figure}
 
 %This shows that with the information that IR spectra have, it is not sufficient to abstract the orientation distribution of the mixed molecules at surface in this case.
@@ -134,22 +135,25 @@ The good result starts to emerge when using the combinations of IR and SFG or Ra
 Although the accuracy in Experiment 2 is low when each amino acid's candidates spread from $0^{\circ}$ to $180^{\circ}$ on $\theta$. There are still some noticable result in the return composition: for each amino acid, the percentage assigned to it is correct; however, the candidate presented may be the one with the correct degree, or the one with the correct degree's complementary. For example, a random run is selected. Figure \ref{fig:5.4} displays the target composition and Figure \ref{fig:5.5} displays the return composition of Experiment 2. Figure \ref{fig:5.6} is the return composition of Experiment 6. From the three figures, when extracting the non-zero values to generate a list, the three lists are the same. However, when overlapping Figure \ref{fig:5.4} with Figure  \ref{fig:5.5}, the position of each non-zero value is not identical. For example, value of $0.299586$ appears at $\theta$ of $150^{\circ}$ for Valine in Figure \ref{fig:5.4}. In Figure \ref{fig:5.5}, it appears at $\theta$ of $30^{\circ}$ for Valine. Same for value of $0.021196$, $0.00662804$, $0.000642609$, and $0.00789$. The LP model of E2 fails to tell which candidate is the exact one between the correct one and its complementary on $\theta$'s degree. This observation is a general case across all the experiment groups. From Experiment 6, as long as the spectra data from SFG is plugged into the LP model, the return composition is the same as the target one. \\
 
 
-\begin{figure}[!ht] \label{fig:5.4}
+\begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.4]{Figures/mixture_target_composition_for_one_run_theta_0_180.png}
 \caption{Target Composition for One Run of Mixed Amino Acids with $\theta$ Expanded from $0^{\circ}$ to $180^{\circ}$} 
+\label{fig:5.4}
 \end{figure}
 
-\begin{figure}[!ht] \label{fig:5.5}
+\begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.4]{Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png}
 \caption{Return Composition of Experiment 2 for One Run of Mixed Amino Acids with $\theta$ Expanded from $0^{\circ}$ to $180^{\circ}$ on $\theta$} 
+\label{fig:5.5}
 \end{figure}
 
-\begin{figure}[!ht] \label{fig:5.6}
+\begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.4]{Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png}
 \caption{Return Composition of Experiment 6 for One Run of Mixed Amino Acids with $\theta$ Expanded from $0^{\circ}$ to $180^{\circ}$ on $\theta$} 
+\label{fig:5.6}
 \end{figure}
 
 %We randomly take one group of experiment run as an example, Array \ref{eqn:5.1} is the target composition that we generated randomly. And Array \ref{eqn:5.2} is the return composition of E2, Array \ref{eqn:5.3} is the return composition of E6. When comparing Array \ref{eqn:5.1} with Array \ref{eqn:5.2}, if we take the percentage value of each existing candidate in the target composition and the composition returned by E2, the two arrays are identical. However, what's different is the existing candidate for each amino acid may not be correct. For example, in target composition, we have 0.299586 of candidate with $\theta$ of $120^{\circ}$ for methionine, but the one return by E2, has 0.299586 of candidate with $\theta$ of $60^{\circ}$ for methionine. $60^{\circ}$ and $120^{\circ}$ are complementary to each other, which means the Raman spectra for these two candidates of methionine are identical. E2's LP model may take each one of them as an existing candidate in the return composition, and this may not be surprising. In the result, it is the same case for isoleucine(ile), alanine, threonine and valine. The LP model of E2 fails to tell which candidate is the exact one between the correct one and its complementary on $\theta$'s degree. This observation is a general case across all the experiment groups. What's more, from E6, we know as long as we plug in the spectra data from SFG into our LP model, we can obtain the correct composition same as the target one. \\
