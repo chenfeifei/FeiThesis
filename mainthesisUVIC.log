@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  5 FEB 2017 23:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  5 FEB 2017 23:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -761,7 +761,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] (./mainthesisUVIC.lof [5]
+[4] (./mainthesisUVIC.lof
+
+LaTeX Warning: Citation `hore0033-rotations' on page v undefined on input line 
+3.
+
+[5]
 Overfull \hbox (0.71037pt too wide) in paragraph at lines 24--24
  [][] []\OT1/cmr/m/n/12 Accuracy anal-y-sis for ex-per-i-ments con-sid-er-ing a
  mix-ture of amino 
@@ -784,9 +789,20 @@ Overfull \hbox (0.71037pt too wide) in paragraph at lines 26--26
 (./chapters/1/chapter_intro.tex
 Chapter 1.
 
+LaTeX Warning: Citation `PhysRevB.59.12632' on page 1 undefined on input line 3
+.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
+
+
+LaTeX Warning: Citation `Brasselet:11' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Citation `PhysRevB.59.12632' on page 1 undefined on input line 5
+.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
@@ -851,6 +867,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
  []
 
 [3]
+
+LaTeX Warning: Citation `UULP' on page 4 undefined on input line 54.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
@@ -866,6 +886,9 @@ LaTeX Warning: Reference `tab:1.1' on page 4 undefined on input line 69.
 Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
+
+
+LaTeX Warning: Citation `LP' on page 5 undefined on input line 96.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 96--97
@@ -913,6 +936,14 @@ Overfull \hbox (2.29578pt too wide) in paragraph at lines 2--2
  []
 
 
+LaTeX Warning: Citation `hore0033-rotations' on page 8 undefined on input line 
+3.
+
+
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 8 undefined on input l
+ine 3.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -922,9 +953,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
 
 ]
+
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 9 undefined on input l
+ine 10.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
+
+
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 9 undefined on input l
+ine 12.
+
+
+LaTeX Warning: Citation `GAMESS' on page 9 undefined on input line 12.
 
 
 Package caption Warning: \label without proper \caption on input line 16.
@@ -932,6 +975,10 @@ See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:2.1' on page 9 undefined on input line 12.
+
+
+LaTeX Warning: Citation `hore0033-rotations' on page 9 undefined on input line 
+12.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
@@ -953,6 +1000,14 @@ c file (type png)
 Package pdftex.def Info: Figures/Euler_angles_represented_as_the_spherical_pola
 r_angles.png used on input line 18.
 (pdftex.def)             Requested size: 343.28166pt x 240.37572pt.
+
+
+LaTeX Warning: Citation `hore0033-rotations' on page 9 undefined on input line 
+19.
+
+
+LaTeX Warning: Citation `hore0033-rotations' on page 9 undefined on input line 
+19.
 
 [9]
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
@@ -993,6 +1048,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--45
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
+
+
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 12 undefined on input 
+line 50.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 49--51
@@ -1086,6 +1145,13 @@ Package pdftex.def Info: Figures/Toy_Model_IR_Cosine_Projection.png used on inp
 ut line 17.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
+
+LaTeX Warning: Citation `NYAS:NYAS900' on page 17 undefined on input line 25.
+
+
+LaTeX Warning: Citation `LPATUAS' on page 17 undefined on input line 25.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
@@ -1116,6 +1182,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
  []
 
 [19]
+
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 20 undefined on input 
+line 58.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
@@ -2174,21 +2245,9 @@ Overfull \hbox (20.00278pt too wide) in alignment at lines 38--49
  [][][] []
  []
 
-) [66] (./mainthesisUVIC.bbl
-Underfull \hbox (badness 2376) in paragraph at lines 26--30
-[]\OT1/cmr/m/n/12 S.T.Elbert. M.S.Gordon. J.H.Jensen. S.Koseki. N.Matsunaga. K.
-A.Nguyen.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--30
-\OT1/cmr/m/n/12 S.J.Su. T.L.Windus. M.Dupuis. J.A.Montgomery M.W.Schmidt.
- []
-
-[67
-
-
-]) [68] (./mainthesisUVIC.aux (./chapters/1/chapter_intro.aux)
+) [66]
+No file mainthesisUVIC.bbl.
+(./mainthesisUVIC.aux (./chapters/1/chapter_intro.aux)
 (./chapters/2/chapter_methods.aux)
 (./chapters/3/chapter_simplified_molecular_model.aux)
 (./chapters/4/chapter_realistic_molecular_model.aux)
@@ -2203,13 +2262,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 12038 strings out of 493304
- 220421 string characters out of 6139871
- 283126 words of memory out of 5000000
+ 12036 strings out of 493304
+ 220383 string characters out of 6139871
+ 283099 words of memory out of 5000000
  15167 multiletter control sequences out of 15000+600000
  19852 words of font info for 80 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,45p,10480b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,17n,45p,10480b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dis
@@ -2223,10 +2282,10 @@ mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfrm1200.pfb>
-Output written on mainthesisUVIC.pdf (76 pages, 2124382 bytes).
+Output written on mainthesisUVIC.pdf (74 pages, 2118936 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
+ 349 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
