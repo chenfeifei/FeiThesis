@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  5 FEB 2017 23:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  5 FEB 2017 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -764,16 +764,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [4] (./mainthesisUVIC.lof
 
 LaTeX Warning: Citation `hore0033-rotations' on page v undefined on input line 
-3.
+2.
 
 [5]
-Overfull \hbox (0.71037pt too wide) in paragraph at lines 24--24
+Overfull \hbox (0.71037pt too wide) in paragraph at lines 23--23
  [][] []\OT1/cmr/m/n/12 Accuracy anal-y-sis for ex-per-i-ments con-sid-er-ing a
  mix-ture of amino 
  []
 
 
-Overfull \hbox (0.71037pt too wide) in paragraph at lines 26--26
+Overfull \hbox (0.71037pt too wide) in paragraph at lines 25--25
  [][] []\OT1/cmr/m/n/12 Accuracy anal-y-sis for ex-per-i-ments con-sid-er-ing a
  mix-ture of amino 
  []
@@ -786,161 +786,22 @@ Overfull \hbox (0.71037pt too wide) in paragraph at lines 26--26
 \openout2 = `chapters/1/chapter_intro.aux'.
 
 
-(./chapters/1/chapter_intro.tex
-Chapter 1.
-
-LaTeX Warning: Citation `PhysRevB.59.12632' on page 1 undefined on input line 3
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-
-LaTeX Warning: Citation `Brasselet:11' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation `PhysRevB.59.12632' on page 1 undefined on input line 5
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--6
-
- []
-
-[1
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-
-Overfull \hbox (0.81876pt too wide) in paragraph at lines 11--12
-[]\OT1/cmr/m/n/12 Before we ex-plain the LP tech-nique and LP model, as well as
- de-scribe the molecules
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 16.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 16.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.19998> not available
-(Font)              size <5> substituted on input line 16.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 16.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 16.
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-[3]
-
-LaTeX Warning: Citation `UULP' on page 4 undefined on input line 54.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--68
-
- []
-
-
-Package caption Warning: \label without proper \caption on input line 71.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:1.1' on page 4 undefined on input line 69.
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
-
- []
-
-
-LaTeX Warning: Citation `LP' on page 5 undefined on input line 96.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-) [7]
+No file chapters/1/chapter_intro.tex.
 \openout2 = `chapters/2/chapter_methods.aux'.
 
- (./chapters/2/chapter_methods.tex
-Chapter 2.
+(./chapters/2/chapter_methods.tex
+Chapter 1.
 
 Overfull \hbox (2.29578pt too wide) in paragraph at lines 2--2
 []\OT1/cmr/bx/n/17.28 Current ap-proaches to molec-u-lar struc-ture elu-
  []
 
 
-LaTeX Warning: Citation `hore0033-rotations' on page 8 undefined on input line 
+LaTeX Warning: Citation `hore0033-rotations' on page 1 undefined on input line 
 3.
 
 
-LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 8 undefined on input l
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 1 undefined on input l
 ine 3.
 
 
@@ -948,13 +809,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[8
+[1
+
 
 
 
 ]
 
-LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 9 undefined on input l
+LaTeX Warning: Reference `ch:1' on page 2 undefined on input line 10.
+
+
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 2 undefined on input l
 ine 10.
 
 
@@ -963,21 +828,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
  []
 
 
-LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 9 undefined on input l
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 2 undefined on input l
 ine 12.
 
 
-LaTeX Warning: Citation `GAMESS' on page 9 undefined on input line 12.
+LaTeX Warning: Citation `GAMESS' on page 2 undefined on input line 12.
 
 
 Package caption Warning: \label without proper \caption on input line 16.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:2.1' on page 9 undefined on input line 12.
+LaTeX Warning: Reference `fig:2.1' on page 2 undefined on input line 12.
 
 
-LaTeX Warning: Citation `hore0033-rotations' on page 9 undefined on input line 
+LaTeX Warning: Citation `hore0033-rotations' on page 2 undefined on input line 
 12.
 
 
@@ -991,7 +856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
  []
 
 
-<Figures/Euler_angles_represented_as_the_spherical_polar_angles.png, id=64, 686
+<Figures/Euler_angles_represented_as_the_spherical_polar_angles.png, id=38, 686
 .565pt x 480.75261pt>
 File: Figures/Euler_angles_represented_as_the_spherical_polar_angles.png Graphi
 c file (type png)
@@ -1002,14 +867,14 @@ r_angles.png used on input line 18.
 (pdftex.def)             Requested size: 343.28166pt x 240.37572pt.
 
 
-LaTeX Warning: Citation `hore0033-rotations' on page 9 undefined on input line 
+LaTeX Warning: Citation `hore0033-rotations' on page 2 undefined on input line 
 19.
 
 
-LaTeX Warning: Citation `hore0033-rotations' on page 9 undefined on input line 
+LaTeX Warning: Citation `hore0033-rotations' on page 2 undefined on input line 
 19.
 
-[9]
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
@@ -1019,7 +884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[10 <./Figures/Euler_angles_represented_as_the_spherical_polar_angles.png>]
+[3 <./Figures/Euler_angles_represented_as_the_spherical_polar_angles.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
@@ -1039,7 +904,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-[11]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 43--45
 
  []
@@ -1050,8 +915,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
  []
 
 
-LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 12 undefined on input 
-line 50.
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 5 undefined on input l
+ine 50.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 49--51
@@ -1063,12 +928,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-[12]
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-<Figures/Met_candidates_plotting_ir_x.png, id=78, 578.16pt x 433.62pt>
+<Figures/Met_candidates_plotting_ir_x.png, id=55, 578.16pt x 433.62pt>
 File: Figures/Met_candidates_plotting_ir_x.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_ir_x.png>
@@ -1076,7 +941,7 @@ Package pdftex.def Info: Figures/Met_candidates_plotting_ir_x.png used on input
  line 58.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
-<Figures/Met_candidates_plotting_ir_z.png, id=80, 578.16pt x 433.62pt>
+<Figures/Met_candidates_plotting_ir_z.png, id=57, 578.16pt x 433.62pt>
 File: Figures/Met_candidates_plotting_ir_z.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_ir_z.png>
@@ -1084,7 +949,7 @@ Package pdftex.def Info: Figures/Met_candidates_plotting_ir_z.png used on input
  line 64.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
-<Figures/Met_candidates_plotting_raman_xx.png, id=81, 578.16pt x 433.62pt>
+<Figures/Met_candidates_plotting_raman_xx.png, id=58, 578.16pt x 433.62pt>
 File: Figures/Met_candidates_plotting_raman_xx.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_raman_xx.png>
@@ -1092,20 +957,20 @@ Package pdftex.def Info: Figures/Met_candidates_plotting_raman_xx.png used on i
 nput line 70.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
-<Figures/Met_candidates_plotting_sfg_yyz.png, id=82, 578.16pt x 433.62pt>
+<Figures/Met_candidates_plotting_sfg_yyz.png, id=59, 578.16pt x 433.62pt>
 File: Figures/Met_candidates_plotting_sfg_yyz.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_sfg_yyz.png>
 Package pdftex.def Info: Figures/Met_candidates_plotting_sfg_yyz.png used on in
 put line 76.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [13 <./Figures/Met_candidates_plotting_ir_x.png>]) [14 <./Figures/Met_candidat
-es_plotting_ir_z.png> <./Figures/Met_candidates_plotting_raman_xx.png>] [15 <./
-Figures/Met_candidates_plotting_sfg_yyz.png>]
+ [6 <./Figures/Met_candidates_plotting_ir_x.png>]) [7 <./Figures/Met_candidates
+_plotting_ir_z.png> <./Figures/Met_candidates_plotting_raman_xx.png>] [8 <./Fig
+ures/Met_candidates_plotting_sfg_yyz.png>]
 \openout2 = `chapters/3/chapter_simplified_molecular_model.aux'.
 
  (./chapters/3/chapter_simplified_molecular_model.tex
-Chapter 3.
+Chapter 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
@@ -1126,18 +991,18 @@ Package caption Warning: \label without proper \caption on input line 15.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:3.1' on page 16 undefined on input line 13.
+LaTeX Warning: Reference `fig:3.1' on page 9 undefined on input line 13.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 12--14
 
  []
 
-[16
+[9
 
 
 
-] <Figures/Toy_Model_IR_Cosine_Projection.png, id=99, 578.16pt x 433.62pt>
+] <Figures/Toy_Model_IR_Cosine_Projection.png, id=76, 578.16pt x 433.62pt>
 File: Figures/Toy_Model_IR_Cosine_Projection.png Graphic file (type png)
 
 <use Figures/Toy_Model_IR_Cosine_Projection.png>
@@ -1146,10 +1011,10 @@ ut line 17.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
 
-LaTeX Warning: Citation `NYAS:NYAS900' on page 17 undefined on input line 25.
+LaTeX Warning: Citation `NYAS:NYAS900' on page 10 undefined on input line 25.
 
 
-LaTeX Warning: Citation `LPATUAS' on page 17 undefined on input line 25.
+LaTeX Warning: Citation `LPATUAS' on page 10 undefined on input line 25.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
@@ -1161,12 +1026,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--31
 
  []
 
-[17 <./Figures/Toy_Model_IR_Cosine_Projection.png>]
+[10 <./Figures/Toy_Model_IR_Cosine_Projection.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-[18]
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
@@ -1181,9 +1046,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-[19]
+[12]
 
-LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 20 undefined on input 
+LaTeX Warning: Citation `KuoKaiHung:Thesis:2015' on page 13 undefined on input 
 line 58.
 
 
@@ -1201,21 +1066,21 @@ Package caption Warning: \label without proper \caption on input line 64.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:3.1' on page 20 undefined on input line 62.
+LaTeX Warning: Reference `tab:3.1' on page 13 undefined on input line 62.
 
 
 Package caption Warning: \label without proper \caption on input line 87.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:3.2' on page 20 undefined on input line 85.
+LaTeX Warning: Reference `fig:3.2' on page 13 undefined on input line 85.
 
 
 Package caption Warning: \label without proper \caption on input line 93.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:3.2' on page 20 undefined on input line 85.
+LaTeX Warning: Reference `tab:3.2' on page 13 undefined on input line 85.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
@@ -1223,22 +1088,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
  []
 
 
-<Figures/toy_model_result_plotting_ir_cos_4candi_1.png, id=111, 578.16pt x 433.
-62pt>
+<Figures/toy_model_result_plotting_ir_cos_4candi_1.png, id=88, 578.16pt x 433.6
+2pt>
 File: Figures/toy_model_result_plotting_ir_cos_4candi_1.png Graphic file (type 
 png)
  <use Figures/toy_model_result_plotting_ir_cos_4candi_1.png>
 Package pdftex.def Info: Figures/toy_model_result_plotting_ir_cos_4candi_1.png 
 used on input line 89.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
- [20] [21]
+ [13] [14]
 Underfull \hbox (badness 2401) in paragraph at lines 107--108
 []|\OT1/cmr/m/n/12 [0, 0, 0.730541, 0, 0.212061,0, 0,
  []
 
 
-<Figures/toy_model_result_plotting_ir_cos_10candi_1.png, id=118, 578.16pt x 433
-.62pt>
+<Figures/toy_model_result_plotting_ir_cos_10candi_1.png, id=95, 578.16pt x 433.
+62pt>
 File: Figures/toy_model_result_plotting_ir_cos_10candi_1.png Graphic file (type
  png)
  <use Figures/toy_model_result_plotting_ir_cos_10candi_1.png>
@@ -1251,14 +1116,14 @@ Package caption Warning: \label without proper \caption on input line 93.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:3.2' on page 22 undefined on input line 120.
+LaTeX Warning: Reference `tab:3.2' on page 15 undefined on input line 120.
 
 
 Package caption Warning: \label without proper \caption on input line 114.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:3.3' on page 22 undefined on input line 120.
+LaTeX Warning: Reference `fig:3.3' on page 15 undefined on input line 120.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 120--121
@@ -1270,28 +1135,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-[22 <./Figures/toy_model_result_plotting_ir_cos_4candi_1.png>] [23]
+[15 <./Figures/toy_model_result_plotting_ir_cos_4candi_1.png>] [16]
 
 Package caption Warning: \label without proper \caption on input line 130.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:3.4' on page 24 undefined on input line 128.
+LaTeX Warning: Reference `fig:3.4' on page 17 undefined on input line 128.
 
 
 Package caption Warning: \label without proper \caption on input line 136.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:3.3' on page 24 undefined on input line 128.
+LaTeX Warning: Reference `tab:3.3' on page 17 undefined on input line 128.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-[24 <./Figures/toy_model_result_plotting_ir_cos_10candi_1.png>]
-<Figures/Toy_Model_IR_Sine_Projection.png, id=131, 578.16pt x 433.62pt>
+[17 <./Figures/toy_model_result_plotting_ir_cos_10candi_1.png>]
+<Figures/Toy_Model_IR_Sine_Projection.png, id=108, 578.16pt x 433.62pt>
 File: Figures/Toy_Model_IR_Sine_Projection.png Graphic file (type png)
 
 <use Figures/Toy_Model_IR_Sine_Projection.png>
@@ -1308,13 +1173,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
-[25 <./Figures/Toy_Model_IR_Sine_Projection.png>]
+[18 <./Figures/Toy_Model_IR_Sine_Projection.png>]
 
 Package caption Warning: \label without proper \caption on input line 165.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:3.4' on page 26 undefined on input line 161.
+LaTeX Warning: Reference `tab:3.4' on page 19 undefined on input line 161.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 161--162
@@ -1336,18 +1201,18 @@ Package caption Warning: \label without proper \caption on input line 165.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:3.4' on page 26 undefined on input line 186.
+LaTeX Warning: Reference `tab:3.4' on page 19 undefined on input line 186.
 
 
 Package caption Warning: \label without proper \caption on input line 188.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:3.5' on page 26 undefined on input line 186.
+LaTeX Warning: Reference `fig:3.5' on page 19 undefined on input line 186.
 
 
 <Figures/toy_model_result_plotting_ir_sin_4candi_constraint_study_experiment4.p
-ng, id=137, 830.31946pt x 640.21794pt>
+ng, id=114, 830.31946pt x 640.21794pt>
 File: Figures/toy_model_result_plotting_ir_sin_4candi_constraint_study_experime
 nt4.png Graphic file (type png)
 
@@ -1362,21 +1227,21 @@ Package caption Warning: \label without proper \caption on input line 199.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:3.6' on page 26 undefined on input line 197.
+LaTeX Warning: Reference `tab:3.6' on page 19 undefined on input line 197.
 
 
 Package caption Warning: \label without proper \caption on input line 165.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:3.4' on page 26 undefined on input line 197.
+LaTeX Warning: Reference `tab:3.4' on page 19 undefined on input line 197.
 
 
 Package caption Warning: \label without proper \caption on input line 222.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:3.6' on page 26 undefined on input line 197.
+LaTeX Warning: Reference `fig:3.6' on page 19 undefined on input line 197.
 
 
 Underfull \hbox (badness 4366) in paragraph at lines 209--209
@@ -1415,7 +1280,7 @@ Underfull \hbox (badness 4366) in paragraph at lines 215--215
 
 
 <Figures/toy_model_result_plotting_ir_sin_10candi_constraint_study_experiment5.
-png, id=138, 842.88815pt x 641.78902pt>
+png, id=115, 842.88815pt x 641.78902pt>
 File: Figures/toy_model_result_plotting_ir_sin_10candi_constraint_study_experim
 ent5.png Graphic file (type png)
 
@@ -1429,18 +1294,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
-[26] [27] [28 <./Figures/toy_model_result_plotting_ir_sin_4candi_constraint_stu
+[19] [20] [21 <./Figures/toy_model_result_plotting_ir_sin_4candi_constraint_stu
 dy_experiment4.png> <./Figures/toy_model_result_plotting_ir_sin_10candi_constra
 int_study_experiment5.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
-) [29]
+) [22]
 \openout2 = `chapters/4/chapter_realistic_molecular_model.aux'.
 
  (./chapters/4/chapter_realistic_molecular_model.tex
-Chapter 4.
+Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
@@ -1456,7 +1321,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[30
+[23
 
 
 
@@ -1475,7 +1340,7 @@ Package caption Warning: \label without proper \caption on input line 13.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:4.1' on page 31 undefined on input line 34.
+LaTeX Warning: Reference `tab:4.1' on page 24 undefined on input line 34.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
@@ -1487,14 +1352,14 @@ Package caption Warning: \label without proper \caption on input line 39.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:4.1' on page 31 undefined on input line 37.
+LaTeX Warning: Reference `fig:4.1' on page 24 undefined on input line 37.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-[31] <Figures/ir_xz_result_plotting.png, id=159, 578.16pt x 433.62pt>
+[24] <Figures/ir_xz_result_plotting.png, id=136, 578.16pt x 433.62pt>
 File: Figures/ir_xz_result_plotting.png Graphic file (type png)
 
 <use Figures/ir_xz_result_plotting.png>
@@ -1507,7 +1372,7 @@ Package caption Warning: \label without proper \caption on input line 47.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:4.2' on page 32 undefined on input line 45.
+LaTeX Warning: Reference `tab:4.2' on page 25 undefined on input line 45.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
@@ -1519,27 +1384,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-[32 <./Figures/ir_xz_result_plotting.png>] [33]
+[25 <./Figures/ir_xz_result_plotting.png>] [26]
 
 Package caption Warning: \label without proper \caption on input line 13.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:4.1' on page 34 undefined on input line 67.
+LaTeX Warning: Reference `tab:4.1' on page 27 undefined on input line 67.
 
 
 Package caption Warning: \label without proper \caption on input line 47.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:4.2' on page 34 undefined on input line 67.
+LaTeX Warning: Reference `tab:4.2' on page 27 undefined on input line 67.
 
 
 Package caption Warning: \label without proper \caption on input line 73.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:4.3' on page 34 undefined on input line 67.
+LaTeX Warning: Reference `tab:4.3' on page 27 undefined on input line 67.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
@@ -1556,14 +1421,14 @@ Package caption Warning: \label without proper \caption on input line 73.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:4.3' on page 34 undefined on input line 71.
+LaTeX Warning: Reference `tab:4.3' on page 27 undefined on input line 71.
 
 
 Package caption Warning: \label without proper \caption on input line 99.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:4.4' on page 34 undefined on input line 71.
+LaTeX Warning: Reference `tab:4.4' on page 27 undefined on input line 71.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
@@ -1635,48 +1500,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-[34] [35]
+[27] [28]
 
 Package caption Warning: \label without proper \caption on input line 114.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:4.2' on page 36 undefined on input line 97.
+LaTeX Warning: Reference `fig:4.2' on page 29 undefined on input line 97.
 
 
 Package caption Warning: \label without proper \caption on input line 120.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:4.3' on page 36 undefined on input line 97.
+LaTeX Warning: Reference `fig:4.3' on page 29 undefined on input line 97.
 
 
 Package caption Warning: \label without proper \caption on input line 126.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:4.4' on page 36 undefined on input line 97.
+LaTeX Warning: Reference `fig:4.4' on page 29 undefined on input line 97.
 
 
 Package caption Warning: \label without proper \caption on input line 132.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:4.5' on page 36 undefined on input line 97.
+LaTeX Warning: Reference `fig:4.5' on page 29 undefined on input line 97.
 
 
 Package caption Warning: \label without proper \caption on input line 138.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:4.6' on page 36 undefined on input line 97.
+LaTeX Warning: Reference `fig:4.6' on page 29 undefined on input line 97.
 
 
 Package caption Warning: \label without proper \caption on input line 144.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:4.7' on page 36 undefined on input line 97.
+LaTeX Warning: Reference `fig:4.7' on page 29 undefined on input line 97.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 97--98
@@ -1689,7 +1554,7 @@ Overfull \hbox (52.21817pt too wide) in paragraph at lines 101--110
  []
 
 
-<Figures/chapter4_result_target_plotting_5datapoint_ir.png, id=174, 578.16pt x 
+<Figures/chapter4_result_target_plotting_5datapoint_ir.png, id=150, 578.16pt x 
 433.62pt>
 File: Figures/chapter4_result_target_plotting_5datapoint_ir.png Graphic file (t
 ype png)
@@ -1698,7 +1563,7 @@ Package pdftex.def Info: Figures/chapter4_result_target_plotting_5datapoint_ir.
 png used on input line 116.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
-<Figures/chapter4_result_target_plotting_5datapoint_raman.png, id=175, 578.16pt
+<Figures/chapter4_result_target_plotting_5datapoint_raman.png, id=151, 578.16pt
  x 433.62pt>
 File: Figures/chapter4_result_target_plotting_5datapoint_raman.png Graphic file
  (type png)
@@ -1708,7 +1573,7 @@ Package pdftex.def Info: Figures/chapter4_result_target_plotting_5datapoint_ram
 an.png used on input line 122.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-<Figures/chapter4_result_target_plotting_5datapoint_sfg.png, id=176, 578.16pt x
+<Figures/chapter4_result_target_plotting_5datapoint_sfg.png, id=152, 578.16pt x
  433.62pt>
 File: Figures/chapter4_result_target_plotting_5datapoint_sfg.png Graphic file (
 type png)
@@ -1717,7 +1582,7 @@ Package pdftex.def Info: Figures/chapter4_result_target_plotting_5datapoint_sfg
 .png used on input line 128.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-<Figures/chapter4_result_target_plotting_500datapoint_ir.png, id=177, 578.16pt 
+<Figures/chapter4_result_target_plotting_500datapoint_ir.png, id=153, 578.16pt 
 x 433.62pt>
 File: Figures/chapter4_result_target_plotting_500datapoint_ir.png Graphic file 
 (type png)
@@ -1726,7 +1591,7 @@ Package pdftex.def Info: Figures/chapter4_result_target_plotting_500datapoint_i
 r.png used on input line 134.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-<Figures/chapter4_result_target_plotting_500datapoint_raman.png, id=178, 578.16
+<Figures/chapter4_result_target_plotting_500datapoint_raman.png, id=154, 578.16
 pt x 433.62pt>
 File: Figures/chapter4_result_target_plotting_500datapoint_raman.png Graphic fi
 le (type png)
@@ -1736,7 +1601,7 @@ Package pdftex.def Info: Figures/chapter4_result_target_plotting_500datapoint_r
 aman.png used on input line 140.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-<Figures/chapter4_result_target_plotting_500datapoint_sfg.png, id=179, 578.16pt
+<Figures/chapter4_result_target_plotting_500datapoint_sfg.png, id=155, 578.16pt
  x 433.62pt>
 File: Figures/chapter4_result_target_plotting_500datapoint_sfg.png Graphic file
  (type png)
@@ -1745,17 +1610,17 @@ File: Figures/chapter4_result_target_plotting_500datapoint_sfg.png Graphic file
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_500datapoint_s
 fg.png used on input line 146.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
- [36])
-[37 <./Figures/chapter4_result_target_plotting_5datapoint_ir.png>] [38 <./Figur
-es/chapter4_result_target_plotting_5datapoint_raman.png>] [39 <./Figures/chapte
-r4_result_target_plotting_5datapoint_sfg.png>] [40 <./Figures/chapter4_result_t
-arget_plotting_500datapoint_ir.png>] [41 <./Figures/chapter4_result_target_plot
-ting_500datapoint_raman.png>] [42 <./Figures/chapter4_result_target_plotting_50
+ [29])
+[30 <./Figures/chapter4_result_target_plotting_5datapoint_ir.png>] [31 <./Figur
+es/chapter4_result_target_plotting_5datapoint_raman.png>] [32 <./Figures/chapte
+r4_result_target_plotting_5datapoint_sfg.png>] [33 <./Figures/chapter4_result_t
+arget_plotting_500datapoint_ir.png>] [34 <./Figures/chapter4_result_target_plot
+ting_500datapoint_raman.png>] [35 <./Figures/chapter4_result_target_plotting_50
 0datapoint_sfg.png>]
 \openout2 = `chapters/5/chapter_mixture.aux'.
 
  (./chapters/5/chapter_mixture.tex
-Chapter 5.
+Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
@@ -1771,7 +1636,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[43
+[36
 
 
 
@@ -1795,7 +1660,7 @@ Package caption Warning: \label without proper \caption on input line 33.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:5.1' on page 44 undefined on input line 29.
+LaTeX Warning: Reference `tab:5.1' on page 37 undefined on input line 29.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
@@ -1817,7 +1682,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
-[44] [45]
+[37] [38]
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
@@ -1827,7 +1692,7 @@ Package caption Warning: \label without proper \caption on input line 33.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:5.1' on page 46 undefined on input line 68.
+LaTeX Warning: Reference `tab:5.1' on page 39 undefined on input line 68.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
@@ -1849,8 +1714,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-[46]
-<Figures/accuracy_pecent_result8_mixture.png, id=221, 578.16pt x 433.62pt>
+[39]
+<Figures/accuracy_pecent_result8_mixture.png, id=197, 578.16pt x 433.62pt>
 File: Figures/accuracy_pecent_result8_mixture.png Graphic file (type png)
 
 <use Figures/accuracy_pecent_result8_mixture.png>
@@ -1863,7 +1728,7 @@ Package caption Warning: \label without proper \caption on input line 84.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.1' on page 47 undefined on input line 91.
+LaTeX Warning: Reference `fig:5.1' on page 40 undefined on input line 91.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 90--92
@@ -1875,7 +1740,7 @@ Package caption Warning: \label without proper \caption on input line 84.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.1' on page 47 undefined on input line 93.
+LaTeX Warning: Reference `fig:5.1' on page 40 undefined on input line 93.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--94
@@ -1887,7 +1752,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-[47 <./Figures/accuracy_pecent_result8_mixture.png>]
+[40 <./Figures/accuracy_pecent_result8_mixture.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
@@ -1897,14 +1762,14 @@ Package caption Warning: \label without proper \caption on input line 105.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.2' on page 48 undefined on input line 100.
+LaTeX Warning: Reference `fig:5.2' on page 41 undefined on input line 100.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<Figures/result_target_plotting_ir16.png, id=227, 578.16pt x 433.62pt>
+<Figures/result_target_plotting_ir16.png, id=202, 578.16pt x 433.62pt>
 File: Figures/result_target_plotting_ir16.png Graphic file (type png)
 
 <use Figures/result_target_plotting_ir16.png>
@@ -1917,7 +1782,7 @@ Package caption Warning: \label without proper \caption on input line 33.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:5.1' on page 48 undefined on input line 115.
+LaTeX Warning: Reference `tab:5.1' on page 41 undefined on input line 115.
 
 
 Overfull \hbox (6.21164pt too wide) in paragraph at lines 115--117
@@ -1930,8 +1795,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
-[48]
-<Figures/accuracy_pecent_result10_mixture.png, id=231, 578.16pt x 433.62pt>
+[41]
+<Figures/accuracy_pecent_result10_mixture.png, id=207, 578.16pt x 433.62pt>
 File: Figures/accuracy_pecent_result10_mixture.png Graphic file (type png)
 
 <use Figures/accuracy_pecent_result10_mixture.png>
@@ -1948,7 +1813,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
-[49 <./Figures/result_target_plotting_ir16.png>]
+[42 <./Figures/result_target_plotting_ir16.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
@@ -1958,57 +1823,57 @@ Package caption Warning: \label without proper \caption on input line 137.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.4' on page 50 undefined on input line 134.
+LaTeX Warning: Reference `fig:5.4' on page 43 undefined on input line 134.
 
 
 Package caption Warning: \label without proper \caption on input line 143.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.5' on page 50 undefined on input line 134.
+LaTeX Warning: Reference `fig:5.5' on page 43 undefined on input line 134.
 
 
 Package caption Warning: \label without proper \caption on input line 149.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.6' on page 50 undefined on input line 134.
+LaTeX Warning: Reference `fig:5.6' on page 43 undefined on input line 134.
 
 
 Package caption Warning: \label without proper \caption on input line 137.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.4' on page 50 undefined on input line 134.
+LaTeX Warning: Reference `fig:5.4' on page 43 undefined on input line 134.
 
 
 Package caption Warning: \label without proper \caption on input line 143.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.5' on page 50 undefined on input line 134.
+LaTeX Warning: Reference `fig:5.5' on page 43 undefined on input line 134.
 
 
 Package caption Warning: \label without proper \caption on input line 137.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.4' on page 50 undefined on input line 134.
+LaTeX Warning: Reference `fig:5.4' on page 43 undefined on input line 134.
 
 
 Package caption Warning: \label without proper \caption on input line 143.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:5.5' on page 50 undefined on input line 134.
+LaTeX Warning: Reference `fig:5.5' on page 43 undefined on input line 134.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-[50 <./Figures/accuracy_pecent_result10_mixture.png>]
-<Figures/mixture_target_composition_for_one_run_theta_0_180.png, id=240, 1136.6
+[43 <./Figures/accuracy_pecent_result10_mixture.png>]
+<Figures/mixture_target_composition_for_one_run_theta_0_180.png, id=217, 1136.6
 8141pt x 673.21075pt>
 File: Figures/mixture_target_composition_for_one_run_theta_0_180.png Graphic fi
 le (type png)
@@ -2023,7 +1888,7 @@ Overfull \hbox (21.04451pt too wide) in paragraph at lines 139--140
  []
 
 
-<Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png, id=241, 
+<Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png, id=218, 
 1113.90065pt x 652.00108pt>
 File: Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png Grap
 hic file (type png)
@@ -2038,7 +1903,7 @@ Overfull \hbox (11.93236pt too wide) in paragraph at lines 145--146
  []
 
 
-<Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png, id=242, 
+<Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png, id=219, 
 1132.7537pt x 663.78424pt>
 File: Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png Grap
 hic file (type png)
@@ -2057,8 +1922,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-[51 <./Figures/mixture_target_composition_for_one_run_theta_0_180.png>]
-<Figures/Ala_candidates_plotting_ir_z_2.png, id=246, 578.16pt x 433.62pt>
+[44 <./Figures/mixture_target_composition_for_one_run_theta_0_180.png>]
+<Figures/Ala_candidates_plotting_ir_z_2.png, id=223, 578.16pt x 433.62pt>
 File: Figures/Ala_candidates_plotting_ir_z_2.png Graphic file (type png)
 
 <use Figures/Ala_candidates_plotting_ir_z_2.png>
@@ -2066,7 +1931,7 @@ Package pdftex.def Info: Figures/Ala_candidates_plotting_ir_z_2.png used on inp
 ut line 165.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-<Figures/Ala_candidates_plotting_raman_zz_2.png, id=247, 578.16pt x 433.62pt>
+<Figures/Ala_candidates_plotting_raman_zz_2.png, id=224, 578.16pt x 433.62pt>
 File: Figures/Ala_candidates_plotting_raman_zz_2.png Graphic file (type png)
 
 <use Figures/Ala_candidates_plotting_raman_zz_2.png>
@@ -2074,23 +1939,23 @@ Package pdftex.def Info: Figures/Ala_candidates_plotting_raman_zz_2.png used on
  input line 171.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-<Figures/Ala_candidates_plotting_sfg_zzz_2.png, id=248, 578.16pt x 433.62pt>
+<Figures/Ala_candidates_plotting_sfg_zzz_2.png, id=225, 578.16pt x 433.62pt>
 File: Figures/Ala_candidates_plotting_sfg_zzz_2.png Graphic file (type png)
 
 <use Figures/Ala_candidates_plotting_sfg_zzz_2.png>
 Package pdftex.def Info: Figures/Ala_candidates_plotting_sfg_zzz_2.png used on 
 input line 177.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
-) [52 <./Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png>]
- [53 <./Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png>] 
-[54 <./Figures/Ala_candidates_plotting_ir_z_2.png>] [55 <./Figures/Ala_candidat
-es_plotting_raman_zz_2.png>] [56 <./Figures/Ala_candidates_plotting_sfg_zzz_2.p
+) [45 <./Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png>]
+ [46 <./Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png>] 
+[47 <./Figures/Ala_candidates_plotting_ir_z_2.png>] [48 <./Figures/Ala_candidat
+es_plotting_raman_zz_2.png>] [49 <./Figures/Ala_candidates_plotting_sfg_zzz_2.p
 ng>]
 \openout2 = `chapters/6/chapter_experimental.aux'.
 
 
 (./chapters/6/chapter_experimental.tex
-Chapter 6.
+Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -2101,7 +1966,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[57
+[50
 
 
 
@@ -2120,7 +1985,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
-[58]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
@@ -2135,14 +2000,14 @@ Package caption Warning: \label without proper \caption on input line 49.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:6.1' on page 59 undefined on input line 47.
+LaTeX Warning: Reference `fig:6.1' on page 52 undefined on input line 47.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-<Figures/chapter6_1.png, id=274, 578.16pt x 433.62pt>
+<Figures/chapter6_1.png, id=251, 578.16pt x 433.62pt>
 File: Figures/chapter6_1.png Graphic file (type png)
 
 <use Figures/chapter6_1.png>
@@ -2153,7 +2018,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
-[59 <./Figures/chapter6_1.png>]
+[52 <./Figures/chapter6_1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
@@ -2173,7 +2038,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
-[60]
+[53]
 Overfull \hbox (20.00183pt too wide) in alignment at lines 75--86
  [][][] []
  []
@@ -2192,7 +2057,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--102
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 111.
 
-[61]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
@@ -2212,12 +2077,12 @@ Overfull \hbox (20.00546pt too wide) in alignment at lines 122--134
  [][][] []
  []
 
-[62]) [63]
+[55]) [56]
 \openout2 = `chapters/7/chapter_conclusions.aux'.
 
  (./chapters/7/chapter_conclusions.tex
-Chapter 7.
-) [64
+Chapter 6.
+) [57
 
 
 
@@ -2236,7 +2101,7 @@ Overfull \hbox (20.00278pt too wide) in alignment at lines 24--35
  [][][] []
  []
 
-[65
+[58
 
 
 
@@ -2245,7 +2110,7 @@ Overfull \hbox (20.00278pt too wide) in alignment at lines 38--49
  [][][] []
  []
 
-) [66]
+) [59]
 No file mainthesisUVIC.bbl.
 (./mainthesisUVIC.aux (./chapters/1/chapter_intro.aux)
 (./chapters/2/chapter_methods.aux)
@@ -2254,38 +2119,33 @@ No file mainthesisUVIC.bbl.
 (./chapters/5/chapter_mixture.aux) (./chapters/6/chapter_experimental.aux)
 (./chapters/7/chapter_conclusions.aux) (./chapters/appendix/chapter_app.aux))
 
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 2.90001pt have occurred.
-
-
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 12036 strings out of 493304
- 220383 string characters out of 6139871
- 283099 words of memory out of 5000000
- 15167 multiletter control sequences out of 15000+600000
- 19852 words of font info for 80 fonts, out of 8000000 for 9000
+ 11957 strings out of 493304
+ 219090 string characters out of 6139871
+ 282908 words of memory out of 5000000
+ 15090 multiletter control sequences out of 15000+600000
+ 14706 words of font info for 56 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,17n,45p,10480b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,13n,45p,10480b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm1200.pfb>
-Output written on mainthesisUVIC.pdf (74 pages, 2118936 bytes).
+s/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on mainthesisUVIC.pdf (67 pages, 2090870 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
+ 321 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
