@@ -1,14 +1,25 @@
 \startchapter{Possibilities for treating experimental data} \label{ch:6}
 \section{Description}
-The experimental spectral data that we obtain from IR, Raman or SFG techniques have a amplitude scaling factor when comparing to the candidate spectra that we generate mathematically. This means that between candidates' theoretical spectra and the target one, there is an unknown scaling factor. However, this scaling factor is the same for any spectra obtained within a particular spectroscopy technique. For example, for IR, the scaling factor for spectrum of x projection is the same as the one for spectrum of z projection. Therefore, we need to introduce this scaling factor to our LP models. Since the LP models constructed by the 7 experiments(E2, E3, E4, E5, E6, and E7 for $\theta$ ranged from $0^{\circ}$ to $80^{\circ}$) in Chapter \ref{ch:5} are doing well in retrieving target composition for the mixed amino acids, we would like to know if the same LP models can be applied directly to real experimental data for the same $\theta$ range.\\
+The experimental spectra obtained from IR, Raman or SFG techniques have an amplitude scaling factor when comparing to the candidate spectra generated mathematically. This means that between candidates' theoretical spectra and the experimental one, there is an unknown scaling factor. Within one particular spectroscopy technique, this scaling factor is the same for any polarization. Take IR as an example, the scaling factor for the spectrum of $x$ polarization is the same as the one for the spectrum of $z$ polarization. It is necessary to introduce this scaling factor to the LP models. The LP models constructed by Experiment 2 to 7 in Table \ref{tab:5.1} for $\theta$ ranged from $0^{\circ}$ to $80^{\circ}$) are doing well in retrieving the target composition for the mixed amino acids. Therefore, based on these experiments, we would like to know if the same LP models can be applied directly to the real experimental data for the same $\theta$ range.\\
 
-The experiment set-ups are the same as what is listed in Table 5.1 in Chapter \ref{ch:5}. A group of 7 experiments with different spectroscopy information. The goal is also the same as what we have in Chapter \ref{ch:5}, we want to figure out which spectroscopy technique's data will help us to retrieve the correct composition when we combine spectroscopy information with LP models. The only difference is that, for each experiment group, we will generate an arbitrary scaling factor for IR, Raman and SFG respectively. Therefore, the target spectra is not only composed by the percentage composition of all candidates, but also need to multiple it by a randomly generated scaling factor. \\
+Therefore, the same experiment setting in Table \ref{tab:5.1} are used for the following experiments. The goal is the same, to figure out which spectral information helps to retrieve the target composition for the mixture of six amino acids' candidates. The only difference is that, in each run of the experiment set, an arbitrary scaling factor is generated for IR, Raman and SFG, respectively. Therefore, the target spectra is not only composed by the target composition of all candidates, but also need to multiple by a randomly generated scaling factor. \\
 
-In addition, to start with, we limit the scaling factor to be smaller than 1. \\
+To start with, we limit the scaling factor to be smaller than 1. \\
 
-After a few runs of the experiment group, we observe that the returned compositions always contains one extra variable for each experiment.For E2, E4, E6 and E7, the models that are doing well in Chapter \ref{ch:5}, the returned composition contains the right candidates, however, the percentages of the candidates are different from the target one. If we take a further look, the ratio between returned percentage and the generated percentage equals one when it adds to the extra variable.
-For example, taking E2's data from one experiment group as an example, the percentages of candidates we use to generate the target spectra is shown as Array \ref{eqn:6.1}. And the return percentages is what's in Array \ref{eqn:6.2}.\\
+After a few runs of the experiment set, it is observed that the returned compositions always contains one extra variable in every experiment. For Experiment 2, 4, 6 and 7, the returned composition contains the right selected candidates. However, the percentage values of the candidates are different from the target composition. The ratio between the returned percentage and the target percentage are the same for selected candidates. Furthermore, when it adds up the extra variable, it equals $1$. Randomly select one run of the experiments, then take Experiment 2 as an example, the target composition target spectra is shown as Array \ref{eqn:6.1}. The return composition of Experiment 2 is shown as Array \ref{eqn:6.2}. \\
 
+\begin{figure}[!ht] 
+\centering
+\includegraphics[scale=0.7]{Figures/.png}
+\caption{} \label{fig:6.2}
+\end{figure}
+
+
+\begin{figure}[!ht] 
+\centering
+\includegraphics[scale=0.7]{Figures/.png}
+\caption{} \label{fig:6.3}
+\end{figure}
 
 \begin{eqnarray}\label{eqn:6.1}
 \begin {bmatrix}
@@ -34,6 +45,7 @@ For example, taking E2's data from one experiment group as an example, the perce
 \end{eqnarray}
 
 Comparing Array \ref{eqn:6.2} with Array \ref{eqn:6.1}, there is one extra variable in Array \ref{eqn:6.2}, which is 0.4. As Array \ref{eqn:6.3} shows, the ratio between every non-zero return percentage and every non-zero target percentage is the same which is 0.6.
+
 Moreover, when we add 0.6 up with last variable 0.4, we get a total of 100\%. Consistent with LP terminology, we call this last variable slack variable (Theory backup here).\\
 
 From the above observation, we know that the slack variable always equals 1 minus the scaling factor. And the ratio between the return percentage of existing candidate and target percentage equals to scaling factor. This meets the theory of LP when scaling factor is smaller than 1 (Theory backup here). \\
