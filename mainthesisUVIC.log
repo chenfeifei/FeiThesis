@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  7 FEB 2017 16:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  7 FEB 2017 21:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1797,101 +1797,114 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
+<Figures/chapter6_figure_one.png, id=268, 797.32663pt x 505.89pt>
+File: Figures/chapter6_figure_one.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+<use Figures/chapter6_figure_one.png>
+Package pdftex.def Info: Figures/chapter6_figure_one.png used on input line 13.
+
+(pdftex.def)             Requested size: 398.66234pt x 252.94437pt.
+
+<Figures/chapter6_figure_two.png, id=269, 974.85945pt x 695.99152pt>
+File: Figures/chapter6_figure_two.png Graphic file (type png)
+
+<use Figures/chapter6_figure_two.png>
+Package pdftex.def Info: Figures/chapter6_figure_two.png used on input line 20.
+
+(pdftex.def)             Requested size: 389.93687pt x 278.39168pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-[57]
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+[57 <./Figures/chapter6_figure_one.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-<Figures/chapter6_1.png, id=271, 578.16pt x 433.62pt>
+[58 <./Figures/chapter6_figure_two.png>]
+<Figures/chapter6_1.png, id=276, 578.16pt x 433.62pt>
 File: Figures/chapter6_1.png Graphic file (type png)
 
 <use Figures/chapter6_1.png>
-Package pdftex.def Info: Figures/chapter6_1.png used on input line 51.
-(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
+Package pdftex.def Info: Figures/chapter6_1.png used on input line 34.
+(pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
-
- []
-
-[58 <./Figures/chapter6_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--67
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 47--51
+
+ []
+
+[59 <./Figures/chapter6_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
-[59]
-Overfull \hbox (20.00183pt too wide) in alignment at lines 76--87
+
+Overfull \hbox (20.00183pt too wide) in alignment at lines 60--71
  [][][] []
  []
 
 
-Overfull \hbox (19.9991pt too wide) in alignment at lines 89--101
+Overfull \hbox (19.9991pt too wide) in alignment at lines 73--85
  [][][] []
  []
 
+[60]
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+LaTeX Warning: Reference `eqn:6.2' on page 61 undefined on input line 86.
+
+
+LaTeX Warning: Reference `eqn:6.1' on page 61 undefined on input line 86.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 112.
-
-[60]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
+(amsmath)                trying to recover with `aligned' on input line 96.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 
-Overfull \hbox (20.00546pt too wide) in alignment at lines 123--135
+Overfull \hbox (20.00546pt too wide) in alignment at lines 107--119
  [][][] []
  []
 
-[61]) [62]
+) [62]
 \openout2 = `chapters/7/chapter_conclusions.aux'.
 
  (./chapters/7/chapter_conclusions.tex
@@ -1939,12 +1952,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 12036 strings out of 493304
- 220533 string characters out of 6139871
- 282276 words of memory out of 5000000
- 15167 multiletter control sequences out of 15000+600000
+ 12048 strings out of 493304
+ 220878 string characters out of 6139871
+ 284276 words of memory out of 5000000
+ 15177 multiletter control sequences out of 15000+600000
  19852 words of font info for 80 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,17n,45p,10480b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1961,10 +1977,10 @@ mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfrm1200.pfb>
-Output written on mainthesisUVIC.pdf (73 pages, 2092404 bytes).
+Output written on mainthesisUVIC.pdf (73 pages, 2158086 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
+ 348 PDF objects out of 1000 (max. 8388607)
  205 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

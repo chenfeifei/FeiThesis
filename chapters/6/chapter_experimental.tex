@@ -6,66 +6,38 @@ Therefore, the same experiment setting in Table \ref{tab:5.1} are used for the f
 
 To start with, we limit the scaling factor to be smaller than 1. \\
 
-After a few runs of the experiment set, it is observed that the returned compositions always contains one extra variable in every experiment. For Experiment 2, 4, 6 and 7, the returned composition contains the right selected candidates. However, the percentage values of the candidates are different from the target composition. The ratio between the returned percentage and the target percentage are the same for selected candidates. Furthermore, when it adds up the extra variable, it equals $1$. Randomly select one run of the experiments, then take Experiment 2 as an example, the target composition target spectra is shown as Array \ref{eqn:6.1}. The return composition of Experiment 2 is shown as Array \ref{eqn:6.2}. \\
+After a few runs of the experiment set, it is observed that the returned compositions always contains one extra variable in every experiment. For Experiment 2, 4, 6 and 7, the returned composition contains the right selected candidates. However, the percentage values of the candidates are different from the target composition. The ratio between the returned percentage and the target percentage are the same for the selected candidates. Furthermore, when this ratio adds up the extra variable, it equals $1$. Randomly select one experiment run, then take Experiment 2 as an example. Figure \ref{fig:6.2} displays the target composition generated, only the selected candidates are annotated with assigned percentage. Figure \ref{fig:6.2} displays the return composition of Experiment 2. The selected candidates in the return composition are in the right position, however, each percentage value is different from the one in the target composition. There are one extra value in Figure \ref{fig:6.2} whith value of $0.4$. \\
 
 \begin{figure}[!ht] 
 \centering
-\includegraphics[scale=0.7]{Figures/.png}
-\caption{} \label{fig:6.2}
+\includegraphics[scale=0.5]{Figures/chapter6_figure_one.png}
+\caption{Target composition for one random run of experiment set with scaling foctor for mixed amino acids with $\theta$ expended from $0^{\circ}$ to $80^{\circ}$} \label{fig:6.1}
 \end{figure}
 
 
 \begin{figure}[!ht] 
 \centering
-\includegraphics[scale=0.7]{Figures/.png}
-\caption{} \label{fig:6.3}
+\includegraphics[scale=0.4]{Figures/chapter6_figure_two.png}
+\caption{Return composition of Experiment 2 for one random run of experiment set with scaling foctor for mixed amino acids with $\theta$ expended from $0^{\circ}$ to $80^{\circ}$} \label{fig:6.2}
 \end{figure}
 
-\begin{eqnarray}\label{eqn:6.1}
-\begin {bmatrix}
-0& 0& 0& 0& 0& 0& 0& 0.03218& 0 \\
-0& 0.73929& 0& 0& 0& 0& 0& 0& 0 \\
-0& 0& 0& 0.19745& 0& 0& 0& 0& 0 \\
-0.00173& 0& 0& 0& 0& 0& 0& 0& 0 \\
-0& 0& 0& 0& 0& 0& 0& 0.01819& 0 \\ 
-0& 0& 0& 0& 0& 0& 0.01116& 0& 0
-\end {bmatrix}
-\end{eqnarray}
-
-\begin{eqnarray}\label{eqn:6.2}
-\begin {bmatrix}
-0& 0& 0& 0& 0& 0& 0& 0.019308& 0 \\
-0& 0.443574& 0& 0& 0& 0& 0& 0& 0 \\
-0& 0& 0& 0.11847& 0& 0& 0& 0& 0  \\
-0.001038& 0& 0& 0& 0& 0& 0& 0& 0 \\ 
-0& 0& 0& 0& 0& 0& 0& 0.010914& 0 \\
-0& 0& 0& 0& 0& 0& 0.006696& 0& 0 \\
-0.4
-\end {bmatrix}
-\end{eqnarray}
-
-Comparing Array \ref{eqn:6.2} with Array \ref{eqn:6.1}, there is one extra variable in Array \ref{eqn:6.2}, which is 0.4. As Array \ref{eqn:6.3} shows, the ratio between every non-zero return percentage and every non-zero target percentage is the same which is 0.6.
-
-Moreover, when we add 0.6 up with last variable 0.4, we get a total of 100\%. Consistent with LP terminology, we call this last variable slack variable (Theory backup here).\\
-
-From the above observation, we know that the slack variable always equals 1 minus the scaling factor. And the ratio between the return percentage of existing candidate and target percentage equals to scaling factor. This meets the theory of LP when scaling factor is smaller than 1 (Theory backup here). \\
+Moreover, as Equation \ref{eqn:6.3} shows the ratio between the percentage of the selected candidates in the return composition and the target one is the same for all the amino acids. The value of this ratio is $0.6$. When this ratio is added up with the extra variable (referred as slack variable in LP) $0.4$, the total is $1$. As the scaling factor is pre-generated in the experiment set, the value is known, which is $0.6$. In conclusion, the slack variable (SV) is returned by LP. Then the scaling factor (SF) equals to $1 - SV$. From the scaling factor, the ratio between the return composition and the target one is known. At the end, the target composition can be re-built from the ratio and the return composition.\\
 
 \begin{eqnarray} \label{eqn:6.3}
 \frac{0.019308}{0.03218} = \frac{0.443574}{0.73929} = \frac{0.11847}{0.19745} =\frac{0.001038}{0.00173}  = \frac{0.010914}{0.01819} = \frac{0.006696}{0.01116} = 0.6
 \end{eqnarray}
 
-Based on this observation, we want to know if the conclusion can be applied generally. If it can, which experiment in the group will help us to achieve this conclusion. In addition, with how much accuracy. \\
-
-After running the experiment group 100 times, we have obtained the following picture Picture \ref{fig:6.1}.\\
+To check whether this observation is a general case, the experiment set in Table \ref{tab:5.1} is run 100 times with randomly generated scaling factor in each run. Figure \ref{fig:6.3} indicates the experiment result. \\
 
 \begin{figure}[!ht] 
 \centering
-\includegraphics[scale=0.3]{Figures/chapter6_1.png}
+\includegraphics[scale=0.4]{Figures/chapter6_1.png}
 \caption{Experiment Accuracy Analysis for Experiments using experimental spectra data that contains scaling factor that is smaller than 1 and candidates with $\theta$ from $0^{\circ}$ to $80^{\circ}$}
-\label{fig:6.1}
+\label{fig:6.3}
 \end{figure}
 
-As the picture indicates the LP model that built by using only Raman data is sufficient to help us to meet the above conclusion. The scaling factor equals the ratio between the return percentage of existing candidate and target percentage. And the scaling factor plus the slack variable equals 1. Therefore, by using experimental Raman spectra alone, we will be able to know the correct composition of the target spectrum. Moreover, knowing the scaling factor. \\
+
+Figure \ref{fig:6.3} shows that the LP model that built by using only Raman data is sufficient to help us to meet the above conclusion. The scaling factor equals the ratio between the return percentage of existing candidate and target percentage. And the scaling factor plus the slack variable equals 1. Therefore, by using experimental Raman spectra alone, we will be able to know the correct composition of the target spectrum. Moreover, knowing the scaling factor. \\
 Although the accuracy for E2 is high, it is not the case for E3 which LP model only contains SFG experimental spectrum. As we can see that the percent that it hits our previous observation is low, even lower than the LP model only contains IR spectra. From Chapter \ref{ch:5}, we know that for candidates with $\theta$ from $0^{\circ}$ to $80^{\circ}$, Raman or SFG alone are both sufficient to obtain the composition of target spectrum. However, when we introduce the scaling factor, the result for SFG is not sufficient any more. (Not sure how to explain this one theoretically)\\
 
 Even for E5, which combines IR and SFG spectra data, the result is not much better than E1 or E3. However, any experiment that contains Raman spectra data,result in good accuracy. \\
