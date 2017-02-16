@@ -2,16 +2,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-'''
+
 # Return Compostion of E6
-dataArray = [[np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.019308, np.nan],
-[np.nan, 0.443574, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan],
-[np.nan, np.nan, np.nan, 0.11847, np.nan, np.nan, np.nan, np.nan, np.nan],
-[0.001038, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan], 
-[np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.010914, np.nan],
-[np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.006696, np.nan, np.nan],
-[0.4, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]]
-'''
+dataArray = [[np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.03218, np.nan],
+[np.nan, 0.73929, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan],
+[np.nan, np.nan, np.nan, 0.19745, np.nan, np.nan, np.nan, np.nan, np.nan],
+[0.00173, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan], 
+[np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.01819, np.nan],
+[np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.01116, np.nan, np.nan]]
+
 '''
 #chapter6_figure_three.png
 dataArray = [[np.nan, np.nan, np.nan, np.nan, np.nan, 0.414239, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan], 
@@ -29,7 +28,7 @@ dataArray = [[np.nan, np.nan, np.nan, np.nan, np.nan, 0.27162, np.nan, np.nan, n
 [np.nan, np.nan, np.nan, np.nan, 0.00810383, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.00425508, np.nan, np.nan, np.nan, np.nan], 
 [np.nan, np.nan, 0.0121608, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.00638527, np.nan, np.nan], 
 [0.229495, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan,np.nan, np.nan, np.nan, np.nan, np.nan]]
-'''
+
 
 dataArray = [[np.nan, np.nan, np.nan, np.nan, np.nan, 0.53762, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan],
 [np.nan, np.nan, 0.26894, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan],
@@ -37,9 +36,10 @@ dataArray = [[np.nan, np.nan, np.nan, np.nan, np.nan, 0.53762, np.nan, np.nan, n
 [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 0.11382, np.nan, np.nan], 
 [np.nan, np.nan, np.nan, np.nan, 0.01604, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan],
 [np.nan, np.nan, 0.02407, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]]
+'''
 
 plt.xticks(range(1,9))
-ax = sns.heatmap(dataArray,annot=True,square=True, cmap="Reds", vmin=0, vmax=1, linewidths=.5, fmt="g")
+ax = sns.heatmap(dataArray,annot=True,square=True, cmap="Reds", vmin=0, vmax=1, linewidths=.5, fmt="g",cbar=False)
 ax.set_xticklabels([0, 10, 20, 30, 40, 50, 60, 70, 80, 100, 110, 120, 130, 140, 150, 160, 170, 180])
 #ax.set_xticklabels([0, 10, 20, 30, 40, 50, 60, 70, 80])
 ax.set_yticklabels(['Valine', 'Threonine', 'Alanine', 'Isoleucine', 'Leucine', 'Methionine'])
