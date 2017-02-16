@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  15 FEB 2017 21:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  15 FEB 2017 23:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1180,7 +1180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
@@ -1190,25 +1190,25 @@ File: Figures/Toy_Model_IR_Sine_Projection.png Graphic file (type png)
 
 <use Figures/Toy_Model_IR_Sine_Projection.png>
 Package pdftex.def Info: Figures/Toy_Model_IR_Sine_Projection.png used on input
- line 139.
+ line 137.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-Overfull \hbox (142.88528pt too wide) in paragraph at lines 145--160
+Overfull \hbox (142.88528pt too wide) in paragraph at lines 143--158
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 [25 <./Figures/Toy_Model_IR_Sine_Projection.png>] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 
-Overfull \hbox (57.71873pt too wide) in paragraph at lines 172--187
+Overfull \hbox (57.71873pt too wide) in paragraph at lines 170--185
  [] 
  []
 
@@ -1221,10 +1221,10 @@ nt4.png Graphic file (type png)
 <use Figures/toy_model_result_plotting_ir_sin_4candi_constraint_study_experimen
 t4.png>
 Package pdftex.def Info: Figures/toy_model_result_plotting_ir_sin_4candi_constr
-aint_study_experiment4.png used on input line 195.
+aint_study_experiment4.png used on input line 193.
 (pdftex.def)             Requested size: 249.09775pt x 192.06686pt.
  [27]
-Overfull \hbox (10.66612pt too wide) in paragraph at lines 206--222
+Overfull \hbox (10.66612pt too wide) in paragraph at lines 204--220
  [] 
  []
 
@@ -1237,16 +1237,16 @@ ent5.png Graphic file (type png)
 <use Figures/toy_model_result_plotting_ir_sin_10candi_constraint_study_experime
 nt5.png>
 Package pdftex.def Info: Figures/toy_model_result_plotting_ir_sin_10candi_const
-raint_study_experiment5.png used on input line 229.
+raint_study_experiment5.png used on input line 227.
 (pdftex.def)             Requested size: 252.8684pt x 192.53818pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 [28 <./Figures/toy_model_result_plotting_ir_sin_4candi_constraint_study_experim
 ent4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
@@ -1271,17 +1271,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
 [30
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-
-Overfull \hbox (27.65204pt too wide) in paragraph at lines 15--31
+Overfull \hbox (18.1689pt too wide) in paragraph at lines 15--31
 [][] 
  []
 
@@ -1308,98 +1308,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--47
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
 [32 <./Figures/ir_xz_result_plotting.png>] [33]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 84--84
-[]|\OT1/cmr/m/n/6 200(ramanxx) + 200(ra-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
-[]|\OT1/cmr/m/n/6 200(irx) + 200(irz) +
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 86--86
-\OT1/cmr/m/n/6 200(ra-manxx) + 200(ra-
- []
-
-
-Underfull \hbox (badness 1888) in paragraph at lines 86--86
-\OT1/cmr/m/n/6 manxy) + 200(ra-manxz)
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 87--87
-[]|\OT1/cmr/m/n/6 200(ramanxx) + 200(ra-
- []
-
-
-Underfull \hbox (badness 1888) in paragraph at lines 87--87
-\OT1/cmr/m/n/6 manxy) + 200(ra-manxz)
- []
-
-
-Underfull \hbox (badness 4441) in paragraph at lines 87--87
-\OT1/cmr/m/n/6 gyyz) + 200(sf-gyzy) +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
-[]|\OT1/cmr/m/n/6 200(irx) + 200(irz) +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--89
-[]|\OT1/cmr/m/n/6 200(irx) + 200(irz) +
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 89--89
-\OT1/cmr/m/n/6 200(ra-manxx) + 200(ra-
- []
-
-
-Underfull \hbox (badness 1888) in paragraph at lines 89--89
-\OT1/cmr/m/n/6 manxy) + 200(ra-manxz)
- []
-
-
-Underfull \hbox (badness 4441) in paragraph at lines 89--89
-\OT1/cmr/m/n/6 gyyz) + 200(sf-gyzy) +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
 [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
 
-Overfull \hbox (52.21817pt too wide) in paragraph at lines 103--112
- [] 
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/12 each 500
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+\OT1/cmr/m/n/12 wavenum-ber
  []
 
 
@@ -1409,7 +1354,7 @@ File: Figures/chapter4_result_target_plotting_5datapoint_ir.png Graphic file (t
 ype png)
  <use Figures/chapter4_result_target_plotting_5datapoint_ir.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_5datapoint_ir.
-png used on input line 119.
+png used on input line 124.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/chapter4_result_target_plotting_5datapoint_raman.png, id=179, 578.16pt
@@ -1419,7 +1364,7 @@ File: Figures/chapter4_result_target_plotting_5datapoint_raman.png Graphic file
 
 <use Figures/chapter4_result_target_plotting_5datapoint_raman.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_5datapoint_ram
-an.png used on input line 125.
+an.png used on input line 130.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 <Figures/chapter4_result_target_plotting_5datapoint_sfg.png, id=180, 578.16pt x
@@ -1428,7 +1373,7 @@ File: Figures/chapter4_result_target_plotting_5datapoint_sfg.png Graphic file (
 type png)
  <use Figures/chapter4_result_target_plotting_5datapoint_sfg.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_5datapoint_sfg
-.png used on input line 131.
+.png used on input line 136.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 <Figures/chapter4_result_target_plotting_500datapoint_ir.png, id=181, 578.16pt 
@@ -1437,7 +1382,7 @@ File: Figures/chapter4_result_target_plotting_500datapoint_ir.png Graphic file
 (type png)
  <use Figures/chapter4_result_target_plotting_500datapoint_ir.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_500datapoint_i
-r.png used on input line 137.
+r.png used on input line 142.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 <Figures/chapter4_result_target_plotting_500datapoint_raman.png, id=182, 578.16
@@ -1447,7 +1392,7 @@ le (type png)
 
 <use Figures/chapter4_result_target_plotting_500datapoint_raman.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_500datapoint_r
-aman.png used on input line 143.
+aman.png used on input line 148.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 <Figures/chapter4_result_target_plotting_500datapoint_sfg.png, id=183, 578.16pt
@@ -1457,7 +1402,7 @@ File: Figures/chapter4_result_target_plotting_500datapoint_sfg.png Graphic file
 
 <use Figures/chapter4_result_target_plotting_500datapoint_sfg.png>
 Package pdftex.def Info: Figures/chapter4_result_target_plotting_500datapoint_s
-fg.png used on input line 149.
+fg.png used on input line 154.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
  [36])
 [37 <./Figures/chapter4_result_target_plotting_5datapoint_ir.png>] [38 <./Figur
@@ -2344,7 +2289,7 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/type1/pu
 blic/cm-super/sfrm1200.pfb>
-Output written on mainthesisUVIC.pdf (77 pages, 2220148 bytes).
+Output written on mainthesisUVIC.pdf (77 pages, 2218912 bytes).
 PDF statistics:
  371 PDF objects out of 1000 (max. 8388607)
  219 compressed objects within 3 object streams
