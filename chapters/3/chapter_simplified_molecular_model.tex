@@ -130,9 +130,7 @@ Among Experiment 1, 2 and 3, only the return composition of Experiment 1 matches
 
 The above observation demonstrates that there are multiple compositions can achieve in constructing the spectrum that are close to the target one. The numerical limitation helps the LP solver to converge to a unique optimum solution. The reason for Experiment 1 to return a composition that matches to the target one, is that the spectral information used to construct the LP model is competent. The constraints constructed in the LP model of Experiment 1 eventually converge to the target composition. \\ 
 
-%the corresponding LP model, built with the presenting spectral information, may lack of competent information to guarantee the return composition actually  is the target one. Because of the high complexity in the setting of the candidates pool, the solution for the LP model may not be unique. However, in real LP problem solving, the numerical limitation helps LP solver to converge to an unique solution. This unique solution is the optimum one for the LP model with the information currently available. Further demonstration will also be expanded in Chapter \ref{ch:4} when real molecules are introduced. \\ %the complexity of Experiment 2 and 3 is higher than Experiment 1.\\
-
-In order to add necessary information to construct the constraints in our LP model, IR's second polarization is introduced to the toy model: the $sine$ polarization. Figure \ref{fig:3.4} describes how the $sine$-polarized spectra presented for $10$ candidates. Experiment 4 and 5 include both polarizations' spectral information in the LP model. In Table \ref{tab:3.3}, Experiment 4's setting is based on Experiment 2, with $sine$-polarized IR spectral information added. $100$ data points are selected from this additional spectrum, then converted to additional decision variables and constraints in the LP model. Same with Experiment 5, it is based on Experiment 3, with sine-polarization IR spectral information added. For both Experiment 4 and 5, the return composition now matches to the target one. This further proves that as long as we have sufficing information to build the constraints, the LP solver will return a composition matches to the target one. \\ 
+In order to add necessary information to construct the constraints in our LP model, IR's second polarization is introduced to the toy model: the $sine$ polarization. Figure \ref{fig:3.4} describes how the $sine$-polarized spectra presented for $10$ candidates. Experiment 4 and 5 include both polarizations' spectral information in the LP model. In Table \ref{tab:3.3}, Experiment 4's setting is based on Experiment 2, with $sine$-polarized IR spectral information added. $100$ data points are selected from this additional spectrum, then converted to additional decision variables and constraints in the LP model. Experiment 5, it is based on Experiment 3, with $sine$-polarized IR spectral information added. In both Experiment 4 and 5, the return composition matches to the target one. This further proves that as long as we have sufficing information for our LP model, the LP solver returns a composition matches to the target one. \\ 
 
 \begin{figure}[!ht]
 \centering
@@ -163,79 +161,82 @@ Return Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] \
 
 \section{Constraint Study Based on Experiment 4}
 
-From Experiment 1 to 5, we know having sufficient information in our LP model is the key to obtain the target composition. Having sufficient information means having enough constraints to help LP model converge to a desired result. Moreover, the information is coming from the valuable data points selected along the spectra. This leads us to do a further study on the constraints in order to see how many data points are enough to get the desired composition.\\ 
+From Experiment 1 to 5 of toy model, we know having sufficient information in our LP model is the key to obtain the target composition. Having sufficient information means having enough constraints to help LP model converge to a desired result. The information is coming from the valuable data points selected along the spectra. This leads us to do a more detailed study on the constraints in order to see how many data points are enough to get the desired composition.\\ 
 
-Based on Experiment 4, experiments about formulating the LP model with different data information are conducted in Table \ref{tab:3.4}. The number of data points indicates how many data points are selected. Points Selection shows how data points are selected. [2800, 3300, 50] means along wavenumber from 2500 to 3300, every 25 wavenumber. For example, Experiment 6 contains 10 data points from $cosine$- polarized IR spectrum. Every 50 wavenumber, one data point is selected. Similarly, for Experiment 7, 8, 9, 10, 11, every 25, 20, 15, 10 and 5 wavenumber, one data point is select. From Experiment 12 to 16, data points are selected from both cosine-polarized and sine-polarized IR spectrum. \\
-
-(TODO: rethink: What can we exactly get from the following two tables? Should we include this study?)
+Based on Experiment 4, experiments about formulating the LP model with different data information are conducted in Table \ref{tab:3.4}. The number of data points indicates how many data points are selected. Points Selection shows how data points are selected. For example, [2800, 3300, 50] means along wavenumber from 2500 to 3300, every 50 wavenumber a data point is selected along a spectrum. $cosine$ and $sine$ indicate the corresponding polarization of IR spectrum. \\
 
 \begin{table} \small
 \begin{center}
-\begin{tabular}{| l | l | p{3cm} | l |} \hline
-	Experiment Index & Number of Data Points & Points Selection & Result \\ \hline
-	6 & 10 & [2800, 3300, 50] & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	7 & 20 & [2800, 3300, 25] & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	8 & 25 & [2800, 3300, 20] & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	9 & 32 & [2800, 3300, 15] & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	10 & 50 & [2800, 3300, 10] & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	11 & 100 & [2800, 3300, 5] & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	12 & $100 + 1$ & [2800, 3300, 5], [2800, 3300, 500] & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	13 & $100 + 5$ & [2800, 3300, 20], [2800, 3300, 100] & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	14 & $100 + 10$ & [2800, 3300, 20], [2800, 3300, 50] & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	15 & $100 + 50$ & [2800, 3300, 20], [2800, 3300, 10] & [0.1, 0.5, 0.4, 0] \\ \hline
-	16 & $100 + 100$ & [2800, 3300, 20], [2800, 3300, 5] & [0.1, 0.5, 0.4, 0] \\ 
+\begin{tabular}{| p{3cm} | p{3cm} | p{5cm} | l |} \hline
+	Experiment \# & \# Data Points & Points Selection & Return Composition \\ \hline
+	6 & 10 & [2800, 3300, 50], $cosine$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	7 & 20 & [2800, 3300, 25], $cosine$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	8 & 25 & [2800, 3300, 20], $cosine$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	9 & 32 & [2800, 3300, 15], $cosine$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	10 & 50 & [2800, 3300, 10], $cosine$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	11 & 100 & [2800, 3300, 5], $cosine$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	12 & $100 + 1$ & [2800, 3300, 5], $cosine$ \newline [2800, 3300, 500], $sine$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	13 & $100 + 5$ & [2800, 3300, 20], $cosine$ \newline [2800, 3300, 100], $sine$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	14 & $100 + 10$ & [2800, 3300, 20], $cosine$ \newline  [2800, 3300, 50], $sine$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	15 & $100 + 50$ & [2800, 3300, 20], $cosine$ \newline  [2800, 3300, 10], $sine$ & [0.1, 0.5, 0.4, 0] \\ \hline
+	16 & $100 + 100$ & [2800, 3300, 20], $cosine$ \newline  [2800, 3300, 5], $sine$ & [0.1, 0.5, 0.4, 0] \\ 
 	\hline
 \end{tabular} 
 \end{center}
-\caption{Constraint Study Based on Experiment 4} \label{tab:3.4}
+\caption{Constraint study based on Experiment 4} \label{tab:3.4}
 \end{table}
 
-One interesting result from Table \ref{tab:3.4} is that: from Experiment 1 to 9, the result composition is the same. To the contrary, from Experiment 10, the return composition gets changed to the target one. Furthermore, if we plot the return composition of [0, 0.796962, 0.103038, 0.1] and the target one [0.1, 0.5, 0.4, 0] in  Picture \ref{fig:3.5}. In this picture, we can see that the spectra generated by these two composition are identical.
+As Table \ref{tab:3.4} indicates, the return compositions of Experiment 6 to 14 are the same. To the contrary, from Experiment 15, the return composition matches the target one. In Figure \ref{fig:3.5} displays the spectra conducted by $[0, 0.796962, 0.103038, 0.1]$ and $[0.1, 0.5, 0.4, 0]$, both $sine$- and $cosine$-polarized IR spectra generated by these two compositions are identical.
 
 \begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.3]{Figures/toy_model_result_plotting_ir_sin_4candi_constraint_study_experiment4.png} 
-\caption{Toy Model Constraint Study 1}\label{fig:3.5}
+\caption{IR spectra plotted by the return compositions from the constraint study based on Experiment 4 of toy model}\label{fig:3.5}
 \end{figure}
 
 
 \section{Constraint Study Based on Experiment 5}
 
-When the same constraint study is applied to the data based on Experiment 5 in Table \ref{tab:3.6}, the observation is the same as the experiments in Table \ref{tab:3.4}. This further proves that: We can obtain different solutions by have different constraints. When the  result composition [0, 0, 0.730541, 0, 0.212061,0, 0, 0.0573978, 0, 0] and target one [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] are plotted together, they are almost identical as well, as shown in Figure \ref{fig:3.6}.
+Based on Experiment 5, similar constraint study is conducted as displayed in Table \ref{tab:3.5}, and the same observation is obtained as the experiments in Table \ref{tab:3.4}. When the result composition $[0, 0, 0.730541, 0, 0.212061,0, 0, 0.0573978, 0, 0]$ and target one $[0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0]$ are used to plot the spectra, the produced spectra are almost identical as shown in Figure \ref{fig:3.6}.
 
 \begin{table} \tiny 
 \begin{center}
-\begin{tabular}{| l | l | p{3cm}  | p{6cm} |}
+\begin{tabular}{| p{2cm} | p{2cm} | p{4cm}  | l |}
 \hline
-Experiment Index & Points & Point Selection & Result \\ \hline
-17 & 10 & [2800, 3300, 50] & [0.156758, 0, 0, 0.825977, 0, 0, 0, 0, 0, 0.017265] \\ \hline
-18 & 25 & [2800, 3300, 20] & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
-19 & 50 & [2800, 3300, 10] & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
-20 & 100 & [2800, 3300, 5] & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
-21 & 500 & [2800, 3300, 5] & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline	
-22 & $100 + 1$ & [2800, 3300, 5], [2800, 3300, 500] & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
-23 & $100 + 10$ & [2800, 3300, 5], [2800, 3300, 50] & [0.361587, 0, 0.312061, 0.326352, 0, 0, 0, 0, 0] \\ \hline
-24 & $100 + 20$ & [2800, 3300, 5], [2800, 3300, 25] & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
-25 & $100 + 25$ & [2800, 3300, 20], [2800, 3300, 20] & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
-26 & $100 + 50$ & [2800, 3300, 5], [2800, 3300, 10] & [0, 0, 0.753209, 0, 0.146791, 0, 0.1, 0, 0, 0] \\ \hline
-27 & $100 + 84$ & [2800, 3300, 5], [2800, 3300, 6] & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
-28 & $100 + 100$ & [2800, 3300, 5], [2800, 3300, 5] & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] \\ 
+Experiment \# & \# of Data Points & Point Selection & Return Composition \\ \hline
+17 & 10 & [2800, 3300, 50], $cosine$ & [0.156758, 0, 0, 0.825977, 0, 0, 0, 0, 0, 0.017265] \\ \hline
+18 & 25 & [2800, 3300, 20], $cosine$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
+19 & 50 & [2800, 3300, 10], $cosine$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
+20 & 100 & [2800, 3300, 5], $cosine$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
+21 & 500 & [2800, 3300, 1], $cosine$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline	
+22 & $100 + 1$ & [2800, 3300, 5], $cosine$ \newline [2800, 3300, 500], $sine$  & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
+23 & $100 + 10$ & [2800, 3300, 5], $cosine$ \newline [2800, 3300, 50], $sine$  & [0.361587, 0, 0.312061, 0.326352, 0, 0, 0, 0, 0] \\ \hline
+24 & $100 + 20$ & [2800, 3300, 5], $cosine$ \newline [2800, 3300, 25], $sine$  & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
+25 & $100 + 25$ & [2800, 3300, 20], $cosine$ \newline [2800, 3300, 20], $sine$  & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
+26 & $100 + 50$ & [2800, 3300, 5], $cosine$ \newline [2800, 3300, 10], $sine$  & [0, 0, 0.753209, 0, 0.146791, 0, 0.1, 0, 0, 0] \\ \hline
+27 & $100 + 84$ & [2800, 3300, 5], $cosine$ \newline [2800, 3300, 6], $sine$  & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
+28 & $100 + 100$ & [2800, 3300, 5], $cosine$ \newline [2800, 3300, 5], $sine$  & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] \\ 
 \hline
 \end{tabular} \\
-\caption{Constraint Study Based on Experiment 5}\label{tab:3.6}
+\caption{Constraint study based on Experiment 5 of toy model}\label{tab:3.5}
 \end{center}
 \end{table}
 
 \begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.3]{Figures/toy_model_result_plotting_ir_sin_10candi_constraint_study_experiment5.png} 
-\caption{Toy Model Constraint Study 2}\label{fig:3.6}
+\caption{IR spectra plotted by the return compositions from the constraint study based on Experiment 5 of toy model}\label{fig:3.6}
 \end{figure}
 
 \section{Discussion and Conclusion}
-With all the experiments conducted with the toy model, we have learnt that the reason, that our LP model does not return a composition that matches the target one, is that the model does not have sufficient information to build the constraints. However, with the limited information, the optimal solution returned by our LP model does build the perfect target spectrum. This means that the solution for the composition that achieves minimum residual of the objective function is not unique. However, in real experiment, because numerical restriction, an unique optimal solution is obtained from the LP model. \\
 
-Above analysis simulates the following question: how can we know there is enough information to achieve the target composition? In the next step, we will experiment with real molecules. The goal is to investigate with all the spectral information that we can obtain for real molecules, can our LP model return the target composition for the target spectrum? If yes, can we apply the LP model systematically? Furthermore, to maximally explore the capacity of our LP model, and study its limitation. Finally, come up with some general instructions for applying our LP model. These are the main focus for the following chapters.\\
+Recall that our LP model, for the right data set is expected to return the target composition. We can conclude that, if the target composition is not returned correctly, then the data we collect is not sufficient to describe the experiments to our LP model. \\
+
+However, when the target composition is not returned correctly, the return composition does build spectra that are almost identical to the target ones. This means that there are more than one composition can build the spectra that are almost identical to the target ones. Because of the numerical limitation, an unique optimum solution is always obtained. \\
+
+The above conclusion leaves us a new question: how do we know there is sufficient spectral information in order to obtain the target composition of candidates at interfaces? To answer this question, further experiments are conducted by applying the spectral information of real molecules to the LP model. The goal is to investigate with all the spectral information we can obtain for real molecules, can the LP model return the target composition of candidates at interfaces. If this goal can be achieved, can this approach be applied systematically to various circumstances?
+
+%Above analysis simulates the following question: how can we know there is enough information to achieve the target composition? In the next step, we will experiment with real molecules. The goal is to investigate with all the spectral information that we can obtain for real molecules, can our LP model return the target composition for the target spectrum? If yes, can we apply the LP model systematically? Furthermore, to maximally explore the capacity of our LP model, and study its limitation. Finally, come up with some general instructions for applying our LP model. These are the main focus for the following chapters.\\
 
 		
 
