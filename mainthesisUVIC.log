@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  19 FEB 2017 17:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  19 FEB 2017 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -621,14 +621,7 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 (./chapters/3/chapter_simplified_molecular_model.aux)
 (./chapters/4/chapter_realistic_molecular_model.aux)
 (./chapters/5/chapter_mixture.aux) (./chapters/6/chapter_experimental.aux)
-(./chapters/7/chapter_conclusions.aux) (./chapters/appendix/chapter_app.aux
-
-LaTeX Warning: Label `eqn:7.' multiply defined.
-
-
-LaTeX Warning: Label `eqn:7.' multiply defined.
-
-))
+(./chapters/7/chapter_conclusions.aux) (./chapters/appendix/chapter_app.aux))
 \openout1 = `mainthesisUVIC.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -645,7 +638,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 9.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 9.
@@ -807,21 +801,27 @@ Overfull \hbox (0.71037pt too wide) in paragraph at lines 27--27
  mix-ture of amino 
  []
 
-
-LaTeX Warning: Reference `eqn:7.1' on page 53 undefined on input line 28.
-
 [6]
 
-LaTeX Warning: Reference `eqn:7.2' on page 54 undefined on input line 29.
+LaTeX Warning: Reference `eqn:A.4' on page 57 undefined on input line 32.
 
 
-LaTeX Warning: Reference `eqn:7.3' on page 54 undefined on input line 30.
+LaTeX Warning: Reference `eqn:A.5' on page 58 undefined on input line 33.
 
-)
+
+LaTeX Warning: Reference `eqn:A.6' on page 60 undefined on input line 35.
+
+
+LaTeX Warning: Reference `eqn:A.7' on page 60 undefined on input line 36.
+
+
+LaTeX Warning: Reference `eqn:A.8' on page 61 undefined on input line 37.
+
+[7])
 \tf@lof=\write4
 \openout4 = `mainthesisUVIC.lof'.
 
- (./frontmatter/ack.tex [7] [8]) (./frontmatter/ded.tex [9]) [10])
+ (./frontmatter/ack.tex [8]) (./frontmatter/ded.tex [9]) [10])
 \openout2 = `chapters/1/chapter_intro.aux'.
 
 
@@ -1641,13 +1641,6 @@ Package pdftex.def Info: Figures/mixture_target_composition_for_one_run_theta_0
 _180.png used on input line 102.
 (pdftex.def)             Requested size: 395.20326pt x 154.1222pt.
 
-
-LaTeX Warning: Reference `eqn:7.1' on page 53 undefined on input line 103.
-
-
-LaTeX Warning: Reference `eqn:7.1' on page 53 undefined on input line 103.
-
-
 <Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png, id=267, 
 441.47543pt x 170.46294pt>
 File: Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png Grap
@@ -1658,13 +1651,6 @@ Package pdftex.def Info: Figures/mixture_return_composition_of_E1_for_one_run_t
 heta_0_180.png used on input line 109.
 (pdftex.def)             Requested size: 397.32422pt x 153.4152pt.
 
-
-LaTeX Warning: Reference `eqn:7.2' on page 53 undefined on input line 110.
-
-
-LaTeX Warning: Reference `eqn:7.2' on page 53 undefined on input line 110.
-
-
 <Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png, id=268, 
 441.47543pt x 168.89185pt>
 File: Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png Grap
@@ -1674,13 +1660,6 @@ hic file (type png)
 Package pdftex.def Info: Figures/mixture_return_composition_of_E6_for_one_run_t
 heta_0_180.png used on input line 116.
 (pdftex.def)             Requested size: 397.32422pt x 152.00124pt.
-
-
-LaTeX Warning: Reference `eqn:7.3' on page 53 undefined on input line 117.
-
-
-LaTeX Warning: Reference `eqn:7.3' on page 53 undefined on input line 117.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
@@ -1864,7 +1843,7 @@ File: Figures/Ala_candidates_plotting_ir_z_2.png Graphic file (type png)
 
 <use Figures/Ala_candidates_plotting_ir_z_2.png>
 Package pdftex.def Info: Figures/Ala_candidates_plotting_ir_z_2.png used on inp
-ut line 128.
+ut line 131.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
  [64]
 <Figures/Ala_candidates_plotting_raman_zz_2.png, id=315, 578.16pt x 433.62pt>
@@ -1872,7 +1851,7 @@ File: Figures/Ala_candidates_plotting_raman_zz_2.png Graphic file (type png)
 
 <use Figures/Ala_candidates_plotting_raman_zz_2.png>
 Package pdftex.def Info: Figures/Ala_candidates_plotting_raman_zz_2.png used on
- input line 134.
+ input line 137.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
 <Figures/Ala_candidates_plotting_sfg_zzz_2.png, id=316, 578.16pt x 433.62pt>
@@ -1880,7 +1859,7 @@ File: Figures/Ala_candidates_plotting_sfg_zzz_2.png Graphic file (type png)
 
 <use Figures/Ala_candidates_plotting_sfg_zzz_2.png>
 Package pdftex.def Info: Figures/Ala_candidates_plotting_sfg_zzz_2.png used on 
-input line 140.
+input line 143.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 ) [65 <./Figures/Ala_candidates_plotting_ir_z_2.png>] [66 <./Figures/Ala_candid
 ates_plotting_raman_zz_2.png>] [67 <./Figures/Ala_candidates_plotting_sfg_zzz_2
@@ -1917,15 +1896,12 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 12274 strings out of 493304
- 224302 string characters out of 6139871
- 298381 words of memory out of 5000000
- 15381 multiletter control sequences out of 15000+600000
+ 12276 strings out of 493304
+ 224321 string characters out of 6139871
+ 299397 words of memory out of 5000000
+ 15383 multiletter control sequences out of 15000+600000
  22793 words of font info for 93 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,17n,45p,10480b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1943,7 +1919,7 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfrm1200.pfb>
-Output written on mainthesisUVIC.pdf (79 pages, 2437283 bytes).
+Output written on mainthesisUVIC.pdf (79 pages, 2438159 bytes).
 PDF statistics:
  386 PDF objects out of 1000 (max. 8388607)
  221 compressed objects within 3 object streams
