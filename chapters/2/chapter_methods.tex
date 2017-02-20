@@ -2,9 +2,47 @@
 \section{Current Approaches to Molecular Structure Elucidation}
 Currently, there are two main approaches in studying the orientation distribution of molecules at interface. One is comparing the experimental spectra with few predicted ones, and select the one that most matches to the experimental one. Another one is running an exhaustive algorithm to explore the most possible solution space \cite{hore0033-rotations}. However, both approaches take a lot of time and computational resources. In Hung's study \cite{KuoKaiHung:Thesis:2015}, a new approach is introduced. He applied LP to vibrational spectra to extract the molecular structure at interfaces. This LP approach helped to return the target orientation distribution information when the mock experimental spectrum consisted of different amino acids. However, when candidates are coming from the same amino acid, LP approach failed to return the target orientation distribution information. The reason why LP failed to return the target composition has not been thoroughly studied in Hung's study. Whether and how LP approach can be generally applied to different experiment situations have not been explored. My study is to figure out the underlying properties of our LP model. Furthermore, explore the applicability of the LP model to different experimental setting. \\
 	
-\section{Structure of Molecules Adsorbed to Interfaces}
-TODO:A picture to display molecules.
-
+\section{Structure of Molecules}
+\begin{figure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[height=5cm]{Figures/Ala.png}
+  \caption{Ala}
+  \label{fig:sfig1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[height=5cm]{Figures/Met.png}
+  \caption{Met}
+  \label{fig:sfig2}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[height=5cm]{Figures/Thr.png}
+  \caption{Thr}
+  \label{fig:sfig3}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[height=5cm]{Figures/Leu.png}
+  \caption{Leu}
+  \label{fig:sfig4}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[height=5cm]{Figures/Ile.png}
+  \caption{Ile}
+  \label{fig:sfig5}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[height=5cm]{Figures/Val.png}
+  \caption{Val}
+  \label{fig:sfig6}
+\end{subfigure}
+\caption{Molecule structure of six amino acids (Ala, Met, Thr, Leu, Ile and Val) in molecular coordination. Blue axis is designated as $z$ axis, red axis is designated as $a$ axis, green is designated as $b$ axis.}
+\label{fig:fig}
+\end{figure}
 
 \section{Generating Model Spectra}
 As mentioned in Chapter \ref{ch:1}, before analyzing the vibrational spectra of amino acids, there are a few factors to address. First of all, creating candidate spectra is an essential step. This part of research has been done thoroughly by Hung \cite{KuoKaiHung:Thesis:2015}. \\

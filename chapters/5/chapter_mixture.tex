@@ -81,7 +81,7 @@ To take a further insight into the return composition of Experiment 1, the exper
 \end{figure}
 
 \subsection{Experiments Considering Each Amino Acid Candidates from $0^{\circ}$ to $180^{\circ}$ on $\theta$ in the Mixture}
-To further study the capacity of the LP models built for the mixture of molecules,the candidate pool is expanded from $0^{\circ}$ to $180^{\circ}$ in terms of the $\theta$ value. Therefore, each amino acid has $18$ candidates. In total, there are $108$ candidates in the mixture. The same set of experiments in Table \ref{tab:5.1} is used. The only difference is instead of randomly select one candidate from $9$ candidates, it is selected from $9$. All $108$ candidates' IR, Raman and SFG spectra need to be generated. Figure \ref{fig:5.3} illustrates the results obtained in $100$ runs. The accuracy in Experiment 1 is still low. This is not surprising as the complexity of the candidates has increased. Moreover, IR spectra for candidate with $\theta$ of one degree is identical to the one with $\theta$ of this degree's complementary, as shown in Figure \ref{fig:5.7}. This also increases the difficulty for the LP model using IR spectral information to return the target composition. \\
+To further study the capacity of the LP models built for the mixture of molecules,the candidate pool is expanded from $0^{\circ}$ to $180^{\circ}$ in terms of the $\theta$ value. Therefore, each amino acid has $18$ candidates. In total, there are $108$ candidates in the mixture. The same set of experiments in Table \ref{tab:5.1} is used. The only difference is instead of randomly select one candidate from $9$ candidates, it is selected from $9$. All $108$ candidates' IR, Raman and SFG spectra need to be generated. Figure \ref{fig:5.3} illustrates the results obtained in $100$ runs. The accuracy in Experiment 1 is still low. This is not surprising as the complexity of the candidates has increased. Moreover, IR spectra for candidate with $\theta$ of one degree is identical to the one with $\theta$ of this degree's complementary, as shown in Figure \ref{fig:A.1}. This also increases the difficulty for the LP model using IR spectral information to return the target composition. \\
 
 \begin{figure}[!ht]
 \centering
@@ -89,9 +89,9 @@ To further study the capacity of the LP models built for the mixture of molecule
 \caption{Accuracy analysis for experiments considering a mixture of amino acids with candidates from $0^{\circ}$ to $180^{\circ}$ on $\theta$ for each amino acid. Accuracy indicates how many times each experiment in the set return a composition matches the target one.} \label{fig:5.3}
 \end{figure}
 
-However, it should be noticed that the accuracy for Experiment 2 has dramatically dropped. This can be caused by the Raman spectra for one candidate with a $\theta$ is identical to the one of this $\theta$ value's complementary as displayed in Figure \ref{fig:5.8}. \\
+However, it should be noticed that the accuracy for Experiment 2 has dramatically dropped. This can be caused by the Raman spectra for one candidate with a $\theta$ is identical to the one of this $\theta$ value's complementary as displayed in Figure \ref{fig:A.2}. \\
 
-In Figure \ref{fig:5.3}, the accuracy for Experiment 3 is no longer high neither. After increasing the number of amino acid candidates from $9$ to $18$, the complexity of the corresponding LP model has increased. Although the added candidates' SFG spectra are symmetric along wavenumber which may greatly increase the uniqueness of the candidates as shown in Figure \ref{fig:5.9}. The SFG spectral information is still insufficient to obtain the target composition. \\
+In Figure \ref{fig:5.3}, the accuracy for Experiment 3 is no longer high neither. After increasing the number of amino acid candidates from $9$ to $18$, the complexity of the corresponding LP model has increased. Although the added candidates' SFG spectra are symmetric along wavenumber which may greatly increase the uniqueness of the candidates as shown in Figure \ref{fig:A.3}. The SFG spectral information is still insufficient to obtain the target composition. \\
 
 The good result starts to emerge when using the combinations of IR and SFG or Raman and SFG. Figure \ref{fig:5.3} shows that Experiment 5, 6, and 7 all have 100\% accuracies. This phenomenon can be explained as follow: SFG helps to distinguish a candidate from its complementary on $\theta$ value. The extra spectral information coming from IR or Raman helps to further refine the LP model, which can then converge the return composition to the target one. \\
 
@@ -120,23 +120,6 @@ Although the accuracy in Experiment 2 is low. There is still some noticable resu
 
 The return composition of Experiment 4 is the same as the one of Experiment 2, which means combining IR spectra information with Raman is not sufficient for this experiments setting. This is because the IR spectra for one $\theta$ degree are also the same as its complementary. Spectral information from SFG is needed in order to study the cases that having $\theta$ expanded from $0^{\circ}$ to $180^{\circ}$. \\
 
-\begin{figure}[!ht] 
-\centering
-\includegraphics[scale=0.7]{Figures/Ala_candidates_plotting_ir_z_2.png}
-\caption{IR $z$ projection spectrum for alanine candidate with $\theta$ of $0^{\circ}$ is identical to alanine candidate with $\theta$ of $180^{\circ}$} \label{fig:5.7}
-\end{figure}
-
-\begin{figure}[!ht] 
-\centering
-\includegraphics[scale=0.7]{Figures/Ala_candidates_plotting_raman_zz_2.png}
-\caption{Raman $zz$ projection spectrum for alanine candidate with $\theta$ of $0^{\circ}$ is identical to alanine candidate with $\theta$ of $180^{\circ}$} \label{fig:5.8}
-\end{figure}
-
-\begin{figure}[!ht] 
-\centering
-\includegraphics[scale=0.7]{Figures/Ala_candidates_plotting_sfg_zzz_2.png}
-\caption{SFG $zzz$ projection spectrum for alanine candidate with $\theta$ of $0^{\circ}$ is not identical to alanine candidate with $\theta$ of $180^{\circ}$, but symmetric along wavelength} \label{fig:5.9}
-\end{figure}
 
 \section{Conclusion}
 Raman and SFG spectral information alone is sufficient to obtain the target composition, when considering a mixture of amino acids with candidates expanded from $0^{\circ}$ to $80^{\circ}$ on $\theta$ for each amino acid. \\
