@@ -1,11 +1,18 @@
 \startchapter{Conclusion and Future Work}  \label{ch:7}
 
 \section{Conclusion}
+In addition to existing two common approaches in studying the possible composition of candidates of model spectra, the use of LP has been explored by Hung \cite{KuoKaiHung:Thesis:2015}. It has been approved that LP can solve this problem in  pseudo polynomial time $O(n)$, which is much better than the two existing approaches in computational gain. However, the reason why the LP model does not always return the target composition of mock spectra was unknown. The goal of this study is to figure out this reason. \\
 
-\subsection{Contributions}
+With a detailed analysis of applying toy model IR spectral information to our LP model, we have learnt that the reason why our LP model does not return the target composition is that: the spectral data we extract does not always contain sufficient information in order for the LP model to converge to the target composition. As long as the data we collect is sufficient, the LP model guarantees to return a composition we expect. \\
+
+Based on this observation, we explore various cases. First of all, the case with candidates coming from type of molecule at interface is studied. In this case, the LP model cannot return a composition that match the target one most of the time. It is proved that is because the spectral data applied to the LP model does not contain sufficient information to obtain the target composition. \\
+
+Secondly, the case with candidates coming from different molecules are studied. When each molecule's candidates expanded from $0^{\circ}$ to $80^{\circ}$ on $\theta$, Raman and SFG spectral information alone is sufficient to obtain the target composition. When the candidates are expanded from $0^{\circ}$ to $180^{\circ}$ on $\theta$, SFG spectral information needs to combine with IR or Raman in order to obtain the target composition. \\
+
+Thirdly, instead of generating the target spectra by combining different candidates directly, they are from real experimental data. For each spectroscopy technique, there is a scaling factor between the candidate spectra generated theoretically and the real experimental target spectra. When consider a mixture of amino acids with candidates expanded from $0^{\circ}$ to $80^{\circ}$ on $\theta$, Raman spectral information alone is sufficient to obtain the target composition. Because the target composition can be re-constructed from the return SV and composition. The SF equals 1 minus SV. When each amino acid's candidates are expanded from $0^{\circ}$ to $180^{\circ}$, both return compositions from Experiment 2 and 6 are needed to obtain the target composition. \\
 
 \section{Future Work}
-
+Our LP model has proven its efficiency in studying molecular orientation at surfaces when different molecules are considered. However, when considering one type of molecule at the interface
 
 
 
