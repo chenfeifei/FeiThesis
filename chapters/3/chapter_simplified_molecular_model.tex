@@ -1,11 +1,11 @@
-\startchapter{Simplified Molecular Model} \label{ch:3}
+\startchapter{Simplified Molecule} \label{ch:3}
 
 \section{Description}
-The goal of Chapter \ref{ch:3} is to introduce the formulas used to describe our LP model. As well as exploring the properties of our LP model by using a toy molecule. This toy molecule contains limited vibration modesf. By doing so, the nature of the LP model we use to study the spectral information can be carefully analyzed. Our goal is to figure out with the the spectral information available, could LP model we use output any valuable information. \\
+The goal of Chapter \ref{ch:3} is to introduce the formulas used to describe our LP model. As well as exploring the properties of our LP model by using a simplified molecule. This simplified molecule contains limited vibration modesf. By doing so, the nature of the LP model we use to study the spectral information can be carefully analyzed. Our goal is to figure out with the the spectral information available, could LP model we use output any valuable information. \\
 
-The toy molecule contains $4$ vibration modes. Theses vibrational peaks are at frequencies of $2850, 2960, 3050$ and $3200$. The widths of the peaks are $5, 10, 5$ and $15~cm^{-1}$, respectively. The amplitudes of the peak are $1, 0.7, -0.2$ and $0.5~cm^{-1}$, respectively. The comparing angles of the peaks are $15, 90, 0$ and $60$. (TODO: check with Dennis, how to further explain those comparing angles?)  \\
+The simplified molecule contains $4$ vibration modes. Theses vibrational peaks are at frequencies of $2850, 2960, 3050$ and $3200$. The widths of the peaks are $5, 10, 5$ and $15~cm^{-1}$, respectively. The amplitudes of the peak are $1, 0.7, -0.2$ and $0.5~cm^{-1}$, respectively. The comparing angles of the peaks are $15, 90, 0$ and $60$. (TODO: check with Dennis, how to further explain those comparing angles?)  \\
 
-For the toy model, only IR spectroscopy is considered. Because we want to limit the complication that comes from the parameters needed to describe the real molecules. Equation \ref{eq:3.1} is used to generate the $cosine$-polarized IR spectrum. Both $\phi$ and $\psi$ Euler angles are integrated, only the difference on angle $\theta$ is considered. \\
+For the simplified molecule, only IR spectroscopy is considered. Because we want to limit the complication that comes from the parameters needed to describe the real molecules. Equation \ref{eq:3.1} is used to generate the $cosine$-polarized IR spectrum. Both $\phi$ and $\psi$ Euler angles are integrated, only the difference on angle $\theta$ is considered. \\
 
 \begin{eqnarray} \label{eq:3.1}
 & f_{\theta}(x) = \displaystyle\sum^{4}_{q=1} A_q^2 * cos^2(\theta - \theta_q)\frac{\gamma^2}{(x- \omega_{\rm q})^2 + \gamma^2} 
@@ -15,7 +15,7 @@ where $A$ is the amplitude, $\theta_{q}$ is the comparing angle, $\gamma$ is the
 \begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.7]{Figures/Toy_Model_IR_Cosine_Projection.png} 
-\caption{$cosine$- polarize IR spectra of toy model candidates} \label{fig:3.1}
+\caption{$cosine$- polarize IR spectra of simplified molecule candidates} \label{fig:3.1}
 \end{figure}
 
 %A target spectrum is composed by combining $15$ percent of candidate with $\theta$ of $20^{\circ}$ and $85$ percent of candidate of $\theta$ of $70^{\circ}$: $0.15*f_{20}(x) + 0.85*f_{70}(x)$ in the following experiment. \\
@@ -52,9 +52,9 @@ Note that our LP model exactly describes our problem to be solved. Assuming that
 
 \section{Linear Programming Model Implementation}
 
-Next, we describe how to solve Equation \ref{eq:3.4} by implementing our LP model. Code is written to generate a file that contains all the candidates' spectral information needed for the experiments. For this step, the molecular properties files are used. For a specific candidate, given a molecular properties file and a $\theta$ value, the candidate's spectral information is obtained. For toy model, only the value of $\theta$ is needed, then Equation \ref{eq:3.1} is used to synthesize the spectral information. To further illustrate, a candidate class is written. This class defines candidate's $x$- and $z$-polarized IR spectra; $xx$-, $xy$-, $xz$-, and $zz$-polarized Raman spectra; $yyz$-, $yzy$-, $zzz$-polarized SFG spectra. Given a candidate's molecular properties and a $\theta$ value, a instance of this specific candidate is created. For the toy model, it only contains IR spectral information. Therefore, one candidate only contains $cosine$- and $sine$-polarized IR spectra. \\
+Next, we describe how to solve Equation \ref{eq:3.4} by implementing our LP model. Code is written to generate a file that contains all the candidates' spectral information needed for the experiments. For this step, the molecular properties files are used. For a specific candidate, given a molecular properties file and a $\theta$ value, the candidate's spectral information is obtained. For simplified molecule, only the value of $\theta$ is needed, then Equation \ref{eq:3.1} is used to synthesize the spectral information. To further illustrate, a candidate class is written. This class defines candidate's $x$- and $z$-polarized IR spectra; $xx$-, $xy$-, $xz$-, and $zz$-polarized Raman spectra; $yyz$-, $yzy$-, $zzz$-polarized SFG spectra. Given a candidate's molecular properties and a $\theta$ value, a instance of this specific candidate is created. For the simplified molecule, it only contains IR spectral information. Therefore, one candidate only contains $cosine$- and $sine$-polarized IR spectra. \\
 
-In the second step, more code is written to generate a target composition of a list of needed candidates. Then the target composition is used to generate the target spectra. The probe range, which is the range of the wavenumber, is from 2800 to 3300 for toy model. The probe arrange is from $2000$ wavenumber to $3000$ wavenumber for real molecules. The target spectral information is generated in the same text file as candidate's spectral information. Depends on the experiment setting, code can be used to generate text files that contain different spectral information. \\
+In the second step, more code is written to generate a target composition of a list of needed candidates. Then the target composition is used to generate the target spectra. The probe range, which is the range of the wavenumber, is from 2800 to 3300 for simplified molecule. The probe arrange is from $2000$ wavenumber to $3000$ wavenumber for real molecules. The target spectral information is generated in the same text file as candidate's spectral information. Depends on the experiment setting, code can be used to generate text files that contain different spectral information. \\
 
 In the third step, the LP model is constructed by using the spectral information text file generated in the second step. This part of the code was written by Hung \cite{KuoKaiHung:Thesis:2015}. It reads all the candidates and target spectral information, and builds the LP model as shown in Equation \ref{eq:3.4}, then creates CPLEX LP input file. \\
 
@@ -82,7 +82,7 @@ Return Composition & [0.1, 0.5, 0.4, 0] & [0, 0.796962, 0.103038, 0.1] \\
 \hline
 \end{tabular} 
 \end{center}
-\caption{Experiment 1 and 2 setting using toy model}
+\caption{Experiment 1 and 2 setting using simplified molecule}
 \label{tab:3.1}
 \end{table}	
 
@@ -91,7 +91,7 @@ In order to figure out why the return composition in Experiment 2 is different f
 \begin{figure}[!ht] 
 %\centering
 \includegraphics[scale=0.7]{Figures/toy_model_result_plotting_ir_cos_4candi_1.png}
-\caption{a. toy model Experiment 2 resulting $cosine$-polarized IR spectrum plotted with the target spectrum; b. the residual plot between the spectra.}
+\caption{a. simplified molecule Experiment 2 resulting $cosine$-polarized IR spectrum plotted with the target spectrum; b. the residual plot between the spectra.}
 \label{fig:3.2}
 \end{figure}
 
@@ -113,14 +113,14 @@ Return Composition & [0, 0, 0.730541, 0, 0.212061,0, 0, 0.0573978, 0, 0] \\
 \hline
 \end{tabular}
 %\end{center}
-\caption{Experiment 3 setting of toy model}
+\caption{Experiment 3 setting of simplified molecule}
 \label{tab:3.2}
 \end{table}	
 
 \begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.7]{Figures/toy_model_result_plotting_ir_cos_10candi_1.png} 
-\caption{a. toy model Experiment 3 resulting $cosine$-polarized IR spectrum plotted with target spectrum; b. the residual plot between the two spectra}
+\caption{a. simplified molecule Experiment 3 resulting $cosine$-polarized IR spectrum plotted with target spectrum; b. the residual plot between the two spectra}
 \label{fig:3.3}
 \end{figure}
 
@@ -130,12 +130,12 @@ Among Experiment 1, 2 and 3, only the return composition of Experiment 1 matches
 
 The above observation demonstrates that there are multiple compositions can achieve in constructing the spectrum that are close to the target one. The numerical limitation helps the LP solver to converge to a unique optimum solution. The reason for Experiment 1 to return a composition that matches to the target one, is that the spectral information used to construct the LP model is competent. The constraints constructed in the LP model of Experiment 1 eventually converge to the target composition. \\ 
 
-In order to add necessary information to construct the constraints in our LP model, IR's second polarization is introduced to the toy model: the $sine$ polarization. Figure \ref{fig:3.4} describes how the $sine$-polarized spectra presented for $10$ candidates. Experiment 4 and 5 include both polarizations' spectral information in the LP model. In Table \ref{tab:3.3}, Experiment 4's setting is based on Experiment 2, with $sine$-polarized IR spectral information added. $100$ data points are selected from this additional spectrum, then converted to additional decision variables and constraints in the LP model. Experiment 5, it is based on Experiment 3, with $sine$-polarized IR spectral information added. In both Experiment 4 and 5, the return composition matches to the target one. This further proves that as long as we have sufficing information for our LP model, the LP solver returns a composition matches to the target one. \\ 
+In order to add necessary information to construct the constraints in our LP model, IR's second polarization is introduced to the simplified molecule: the $sine$ polarization. Figure \ref{fig:3.4} describes how the $sine$-polarized spectra presented for $10$ candidates. Experiment 4 and 5 include both polarizations' spectral information in the LP model. In Table \ref{tab:3.3}, Experiment 4's setting is based on Experiment 2, with $sine$-polarized IR spectral information added. $100$ data points are selected from this additional spectrum, then converted to additional decision variables and constraints in the LP model. Experiment 5, it is based on Experiment 3, with $sine$-polarized IR spectral information added. In both Experiment 4 and 5, the return composition matches to the target one. This further proves that as long as we have sufficing information for our LP model, the LP solver returns a composition matches to the target one. \\ 
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.7]{Figures/Toy_Model_IR_Sine_Projection.png} 
-\caption{$sine$-polaried IR spectra of toy model candidates with $\theta$ value expanded from $0^{\circ}$ to $90^{\circ}$}  \label{fig:3.4}
+\caption{$sine$-polaried IR spectra of simplified molecule candidates with $\theta$ value expanded from $0^{\circ}$ to $90^{\circ}$}  \label{fig:3.4}
 \end{figure}
 
 \begin{table} \small 
@@ -155,13 +155,13 @@ Number of Data Points & 100 from $cosine$-polarized IR \newline 100 from $sine$-
 Return Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] \\
 \hline
 \end{tabular} 
-\caption{Experiment 4 and 5 setting of toy model}\label{tab:3.3}
+\caption{Experiment 4 and 5 setting of simplified molecule}\label{tab:3.3}
 \end{center}
 \end{table}		
 
 \section{Constraint Study Based on Experiment 4}
 
-From Experiment 1 to 5 of toy model, we know having sufficient information in our LP model is the key to obtain the target composition. Having sufficient information means having enough constraints to help LP model converge to a desired result. The information is coming from the valuable data points selected along the spectra. This leads us to do a more detailed study on the constraints in order to see how many data points are enough to get the desired composition.\\ 
+From Experiment 1 to 5 of simplified molecule, we know having sufficient information in our LP model is the key to obtain the target composition. Having sufficient information means having enough constraints to help LP model converge to a desired result. The information is coming from the valuable data points selected along the spectra. This leads us to do a more detailed study on the constraints in order to see how many data points are enough to get the desired composition.\\ 
 
 Based on Experiment 4, experiments about formulating the LP model with different data information are conducted in Table \ref{tab:3.4}. The number of data points indicates how many data points are selected. Points Selection shows how data points are selected. For example, [2800, 3300, 50] means along wavenumber from 2500 to 3300, every 50 wavenumber a data point is selected along a spectrum. $cosine$ and $sine$ indicate the corresponding polarization of IR spectrum. \\
 
@@ -191,7 +191,7 @@ As Table \ref{tab:3.4} indicates, the return compositions of Experiment 6 to 14 
 \begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.7]{Figures/toy_model_result_plotting_ir_sin_4candi_constraint_study_experiment4.png} 
-\caption{IR spectra plotted by the return compositions from the constraint study based on Experiment 4 of toy model}\label{fig:3.5}
+\caption{IR spectra plotted by the return compositions from the constraint study based on Experiment 4 of simplified molecule}\label{fig:3.5}
 \end{figure}
 
 
@@ -218,14 +218,14 @@ Experiment \# & \# of Data Points & Point Selection & Return Composition \\ \hli
 28 & $100 + 100$ & [2800, 3300, 5], $cosine$ \newline [2800, 3300, 5], $sine$  & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] \\ 
 \hline
 \end{tabular} \\
-\caption{Constraint study based on Experiment 5 of toy model}\label{tab:3.5}
+\caption{Constraint study based on Experiment 5 of simplified molecule}\label{tab:3.5}
 \end{center}
 \end{table}
 
 \begin{figure}[!ht] 
 \centering
 \includegraphics[scale=0.7]{Figures/toy_model_result_plotting_ir_sin_10candi_constraint_study_experiment5.png} 
-\caption{IR spectra plotted by the return compositions from the constraint study based on Experiment 5 of toy model}\label{fig:3.6}
+\caption{IR spectra plotted by the return compositions from the constraint study based on Experiment 5 of simplified molecule}\label{fig:3.6}
 \end{figure}
 
 \section{Discussion and Conclusion}
