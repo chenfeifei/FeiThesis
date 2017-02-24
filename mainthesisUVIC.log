@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  23 FEB 2017 13:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  23 FEB 2017 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1073,23 +1073,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--83
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-
- []
-
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
@@ -1098,7 +1093,7 @@ File: Figures/Met_candidates_plotting_ir_x.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_ir_x.png>
 Package pdftex.def Info: Figures/Met_candidates_plotting_ir_x.png used on input
- line 96.
+ line 102.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/Met_candidates_plotting_ir_z.png, id=102, 578.16pt x 433.62pt>
@@ -1106,7 +1101,7 @@ File: Figures/Met_candidates_plotting_ir_z.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_ir_z.png>
 Package pdftex.def Info: Figures/Met_candidates_plotting_ir_z.png used on input
- line 102.
+ line 108.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/Met_candidates_plotting_raman_xx.png, id=103, 578.16pt x 433.62pt>
@@ -1114,7 +1109,7 @@ File: Figures/Met_candidates_plotting_raman_xx.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_raman_xx.png>
 Package pdftex.def Info: Figures/Met_candidates_plotting_raman_xx.png used on i
-nput line 108.
+nput line 114.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <Figures/Met_candidates_plotting_sfg_yyz.png, id=104, 578.16pt x 433.62pt>
@@ -1122,7 +1117,7 @@ File: Figures/Met_candidates_plotting_sfg_yyz.png Graphic file (type png)
 
 <use Figures/Met_candidates_plotting_sfg_yyz.png>
 Package pdftex.def Info: Figures/Met_candidates_plotting_sfg_yyz.png used on in
-put line 114.
+put line 120.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 ) [15] [16 <./Figures/Met_candidates_plotting_ir_x.png> <./Figures/Met_candidat
 es_plotting_ir_z.png>]
@@ -1379,14 +1374,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
-[35] <Figures/ir_xz_result_plotting.png, id=191, 578.16pt x 433.62pt>
+<Figures/ir_xz_result_plotting.png, id=188, 578.16pt x 433.62pt>
 File: Figures/ir_xz_result_plotting.png Graphic file (type png)
 
 <use Figures/ir_xz_result_plotting.png>
 Package pdftex.def Info: Figures/ir_xz_result_plotting.png used on input line 4
 2.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
-
+ [35]
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
@@ -1711,12 +1706,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
  []
 
 
-Overfull \hbox (19.24278pt too wide) in paragraph at lines 6--6
-[]\OT1/cmr/bx/n/14.4 Experiments with Scal-ing Fac-tor Con-sid-er-ing Each Amin
-o
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
@@ -1771,9 +1760,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
  []
 
 [60 <./Figures/chapter6_figure_one.png>]
-Overfull \hbox (19.24278pt too wide) in paragraph at lines 42--42
-[]\OT1/cmr/bx/n/14.4 Experiments with Scal-ing Fac-tor Con-sid-er-ing Each Amin
-o
+Overfull \hbox (3.31451pt too wide) in paragraph at lines 42--42
+[]\OT1/cmr/bx/n/14.4 Test Cases with Scal-ing Fac-tor Con-sid-er-ing Each Amino
+
  []
 
 
@@ -1825,6 +1814,7 @@ Package pdftex.def Info: Figures/chapter6_figure_four.png used on input line 66
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 73.
 
+[63 <./Figures/chapter6_figure_five.png> <./Figures/chapter6_figure_three.png>]
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
@@ -1835,12 +1825,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--20
 
  []
 
-[63 <./Figures/chapter6_figure_five.png>] [64 <./Figures/chapter6_figure_three.
-png> <./Figures/chapter6_figure_four.png>]
+[64 <./Figures/chapter6_figure_four.png>]
 \openout2 = `chapters/7/chapter_conclusions.aux'.
 
-
-(./chapters/7/chapter_conclusions.tex
+ (./chapters/7/chapter_conclusions.tex
 Chapter 7.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -1943,12 +1931,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 12280 strings out of 493304
- 224375 string characters out of 6139871
- 298451 words of memory out of 5000000
- 15387 multiletter control sequences out of 15000+600000
+ 12281 strings out of 493304
+ 224383 string characters out of 6139871
+ 298462 words of memory out of 5000000
+ 15388 multiletter control sequences out of 15000+600000
  22793 words of font info for 93 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,14n,45p,10480b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1966,7 +1957,7 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfrm1200.pfb>
-Output written on mainthesisUVIC.pdf (83 pages, 2445171 bytes).
+Output written on mainthesisUVIC.pdf (83 pages, 2444705 bytes).
 PDF statistics:
  398 PDF objects out of 1000 (max. 8388607)
  229 compressed objects within 3 object streams
