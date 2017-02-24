@@ -65,6 +65,7 @@ In Case 1 and 2, $4$ candidates are selected, the detailed setting is shown in T
 
 \begin{table} 
 \begin{center}
+{\def\arraystretch{1.5}
 \begin{tabular}{| l | l | l | }
 \hline
 Test Case index & 1 & 2  \\
@@ -75,11 +76,13 @@ Candidates & [0, 10, 20, 30] & [0, 5, 10, 15] \\
 \hline
 Target Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0.5, 0.4, 0]     \\
 \hline
-Number of Data Points & 100 from $cosine$-polarized IR &  100 from $cosine$-polarized IR     \\
+Number of Data Points & 100, $z$ &  100, $z$     \\
 \hline
-Return Composition & [0.1, 0.5, 0.4, 0] & [0, 0.796962, 0.103038, 0.1] \\
+%Return Composition & [0.1, 0.5, 0.4, 0] & [0, 0.796962, 0.103038, 0.1] \\
+Return Composition & [0.1, 0.5, 0.4, 0] & [0, 0.80, 0.10, 0.1] \\
 \hline
 \end{tabular} 
+}
 \end{center}
 \caption{Test case 1 and 2 setting using simplified molecule}
 \label{tab:3.1}
@@ -90,11 +93,12 @@ In order to figure out why the return composition in Case 2 is different from th
 \begin{figure}[!ht] 
 %\centering
 \includegraphics[scale=0.7]{Figures/toy_model_result_plotting_ir_cos_4candi_1.png}
-\caption{a. simplified molecule Case 2 resulting $cosine$-polarized IR spectrum plotted with the target spectrum; b. the residual plot between the spectra.}
+\caption{a. simplified molecule Case 2 resulting $z$-polarized IR spectrum plotted with the target spectrum; b. the residual plot between the spectra.}
 \label{fig:3.2}
 \end{figure}
 
 \begin{table} 
+\begin{center}
 \begin{tabular}{| l | p{7cm} | }
 \hline
 Test Case index & 3  \\
@@ -105,11 +109,13 @@ Candidates & [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]  \\
 \hline
 Target Composition & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] \\
 \hline
-Number of Data Points & 100 from $z$-polarized IR \\
+Number of Data Points & 100, $z$ \\
 \hline
-Return Composition & [0, 0, 0.730541, 0, 0.212061,0, 0, 0.0573978, 0, 0] \\
+%Return Composition & [0, 0, 0.730541, 0, 0.212061,0, 0, 0.0573978, 0, 0] \\
+Return Composition & [0, 0, 0.73, 0, 0.21,0, 0, 0.057, 0, 0] \\
 \hline
 \end{tabular}
+\end{center}
 \caption{Test case 3 setting of simplified molecule}
 \label{tab:3.2}
 \end{table}	
@@ -137,7 +143,8 @@ In order to add necessary information to construct the constraints in our LP mod
 
 \begin{table} \small 
 \begin{center}
-\begin{tabular}{| l | p{5cm} | p{6cm} |}
+{\def\arraystretch{1.5}
+\begin{tabular}{| l | p{3cm} | p{6cm} |}
 \hline
 Test Case index & 4 & 5\\
 \hline
@@ -147,11 +154,12 @@ Candidates & [0, 5, 10, 15] & [0, 10, 20, 30, 40, 50, 60, 70, 80, 90] \\
 \hline
 Target Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0]\\
 \hline
-Number of Data Points & 100 from $cosine$-polarized IR \newline 100 from $sine$-polarized IR & 100 from $cosine$-polarized IR \newline 100 from $sine$-polarized IR\\
+Number of Data Points & 100, $z$ \newline 100, $x$ & 100, $z$ \newline 100, $x$\\
 \hline
 Return Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] \\
 \hline
-\end{tabular} 
+\end{tabular}
+} 
 \caption{Test case 4 and 5 setting of simplified molecule}\label{tab:3.3}
 \end{center}
 \end{table}		
@@ -164,23 +172,25 @@ Based on Case 4, cases about applying different data information to the LP model
 
 \begin{table} \small
 \begin{center}
-\begin{tabular}{| p{3cm} | p{3cm} | p{5cm} | l |} \hline
+{\def\arraystretch{1.5}
+\begin{tabular}{| p{3cm} | p{3cm} | p{4cm} | l |} \hline
 	Test Case \# & \# Data Points & Points Selection & Return Composition \\ \hline
-	6 & 10 & [2800, 3300, 50], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	7 & 20 & [2800, 3300, 25], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	8 & 25 & [2800, 3300, 20], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	9 & 32 & [2800, 3300, 15], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	10 & 50 & [2800, 3300, 10], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	11 & 100 & [2800, 3300, 5], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	12 & $100 + 1$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 500], $x$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	13 & $100 + 5$ & [2800, 3300, 20], $z$ \newline [2800, 3300, 100], $x$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
-	14 & $100 + 10$ & [2800, 3300, 20], $z$ \newline  [2800, 3300, 50], $x$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	6 & 10 & [2800, 3300, 50], $z$ & [0, 0.8, 0.10, 0.1] \\ \hline
+	7 & 20 & [2800, 3300, 25], $z$ & [0, 0.8, 0.10, 0.1 \\ \hline
+	8 & 25 & [2800, 3300, 20], $z$ & [0, 0.8, 0.10, 0.1] \\ \hline
+	9 & 32 & [2800, 3300, 15], $z$ & [0, 0.8, 0.10, 0.1] \\ \hline
+	10 & 50 & [2800, 3300, 10], $z$ & [0, 0.8, 0.10, 0.1] \\ \hline
+	11 & 100 & [2800, 3300, 5], $z$ & [0, 0.8, 0.10, 0.1] \\ \hline
+	12 & $100 + 1$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 500], $x$ & [0, 0.8, 0.10, 0.1] \\ \hline
+	13 & $100 + 5$ & [2800, 3300, 20], $z$ \newline [2800, 3300, 100], $x$ & [0, 0.8, 0.10, 0.1] \\ \hline
+	14 & $100 + 10$ & [2800, 3300, 20], $z$ \newline  [2800, 3300, 50], $x$ & [0, 0.8, 0.10, 0.1] \\ \hline
 	15 & $100 + 50$ & [2800, 3300, 20], $z$ \newline  [2800, 3300, 10], $x$ & [0.1, 0.5, 0.4, 0] \\ \hline
 	16 & $100 + 100$ & [2800, 3300, 20], $z$ \newline  [2800, 3300, 5], $x$ & [0.1, 0.5, 0.4, 0] \\ 
 	\hline
 \end{tabular} 
+}
 \end{center}
-\caption{Constraint study based on Case 4} \label{tab:3.4}
+\caption{Constraint study based on Case 4 of simplified molecule. For more precise result data, refer Table \ref{tab:7.3}.} \label{tab:3.4}
 \end{table}
 
 As Table \ref{tab:3.4} indicates, the return compositions of Case 6 to 14 are the same. To the contrary, from Case 15, the return composition matches the target one. In Figure \ref{fig:3.5} displays the spectra conducted by $[0, 0.796962, 0.103038, 0.1]$ and $[0.1, 0.5, 0.4, 0]$, both $x$- and $z$-polarized IR spectra generated by these two compositions are identical.
@@ -196,26 +206,28 @@ As Table \ref{tab:3.4} indicates, the return compositions of Case 6 to 14 are th
 
 Based on Case 5, similar constraint study is conducted as displayed in Table \ref{tab:3.5}, and the same observation is obtained as the test cases in Table \ref{tab:3.4}. When the result composition $[0, 0, 0.730541, 0, 0.212061,0, 0, 0.0573978, 0, 0]$ and target one $[0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0]$ are used to plot the spectra, the produced spectra are almost identical as shown in Figure \ref{fig:3.6}.
 
-\begin{table} \tiny 
-\begin{center}
-\begin{tabular}{| p{2cm} | p{2cm} | p{4cm}  | l |}
+\begin{table} \small
+\begin{center} 
+{\def\arraystretch{1.5}
+\begin{tabular}{| p{1cm} | p{2cm} | p{4cm}  | l |}
 \hline
 Test Case \# & \# of Data Points & Point Selection & Return Composition \\ \hline
-17 & 10 & [2800, 3300, 50], $z$ & [0.156758, 0, 0, 0.825977, 0, 0, 0, 0, 0, 0.017265] \\ \hline
-18 & 25 & [2800, 3300, 20], $z$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
-19 & 50 & [2800, 3300, 10], $z$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
-20 & 100 & [2800, 3300, 5], $z$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
-21 & 500 & [2800, 3300, 1], $z$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline	
-22 & $100 + 1$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 500], $x$  & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
-23 & $100 + 10$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 50], $x$  & [0.361587, 0, 0.312061, 0.326352, 0, 0, 0, 0, 0] \\ \hline
-24 & $100 + 20$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 25], $x$  & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
-25 & $100 + 25$ & [2800, 3300, 20], $z$ \newline [2800, 3300, 20], $x$  & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
-26 & $100 + 50$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 10], $x$  & [0, 0, 0.753209, 0, 0.146791, 0, 0.1, 0, 0, 0] \\ \hline
-27 & $100 + 84$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 6], $x$  & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
+17 & 10 & [2800, 3300, 50], $z$ & [0.16, 0, 0, 0.83, 0, 0, 0, 0, 0, 0.017] \\ \hline
+18 & 25 & [2800, 3300, 20], $z$ & [0, 0, 0.73, 0, 0.21, 0, 0, 0.057, 0, 0, 0] \\ \hline
+19 & 50 & [2800, 3300, 10], $z$ & [0, 0, 0.73, 0, 0.21, 0, 0, 0.057, 0, 0, 0] \\ \hline
+20 & 100 & [2800, 3300, 5], $z$ & [0, 0, 0.73, 0, 0.21, 0, 0, 0.057, 0, 0, 0] \\ \hline
+21 & 500 & [2800, 3300, 1], $z$ & [0, 0, 0.73, 0, 0.21, 0, 0, 0.057, 0, 0, 0] \\ \hline	
+22 & $100 + 1$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 500], $x$  & [0, 0, 0.73, 0, 0.21, 0, 0, 0.057, 0, 0, 0] \\ \hline
+23 & $100 + 10$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 50], $x$  & [0.36, 0, 0.31, 0.33, 0, 0, 0, 0, 0] \\ \hline
+24 & $100 + 20$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 25], $x$  & [0.17, 0, 0, 0.79, 0, 0, 0.035, 0, 0, 0] \\ \hline
+25 & $100 + 25$ & [2800, 3300, 20], $z$ \newline [2800, 3300, 20], $x$  & [0.17, 0, 0, 0.79, 0, 0, 0.035, 0, 0, 0] \\ \hline
+26 & $100 + 50$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 10], $x$  & [0, 0, 0.75, 0, 0.15, 0, 0.1, 0, 0, 0] \\ \hline
+27 & $100 + 84$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 6], $x$  & [0.17, 0, 0, 0.79, 0, 0, 0.035, 0, 0, 0] \\ \hline
 28 & $100 + 100$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 5], $x$  & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] \\ 
 \hline
 \end{tabular} \\
-\caption{Constraint study based on Case 5 of simplified molecule}\label{tab:3.5}
+}
+\caption{Constraint study based on Case 5 of simplified molecule. For more precise result data, refer Table \ref{tab:7.4}.}\label{tab:3.5}
 \end{center}
 \end{table}
 

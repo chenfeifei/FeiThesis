@@ -198,3 +198,51 @@ Test Case \# & \# of Data Points & Result Composition \\ \hline
 \caption{More precise result data of Test case 17 and 18 to explain the limitation of our LP model for methionine molecule}
 \label{tab:7.2}
 \end{table}	
+
+\begin{table} \small
+\begin{center}
+{\def\arraystretch{1.5}
+\begin{tabular}{| p{1cm} | p{3cm} | p{5cm} | l |} \hline
+	Test Case \# & \# Data Points & Points Selection & Return Composition \\ \hline
+	6 & 10 & [2800, 3300, 50], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	7 & 20 & [2800, 3300, 25], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	8 & 25 & [2800, 3300, 20], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	9 & 32 & [2800, 3300, 15], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	10 & 50 & [2800, 3300, 10], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	11 & 100 & [2800, 3300, 5], $z$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	12 & $100 + 1$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 500], $x$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	13 & $100 + 5$ & [2800, 3300, 20], $z$ \newline [2800, 3300, 100], $x$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	14 & $100 + 10$ & [2800, 3300, 20], $z$ \newline  [2800, 3300, 50], $x$ & [0, 0.796962, 0.103038, 0.1] \\ \hline
+	15 & $100 + 50$ & [2800, 3300, 20], $z$ \newline  [2800, 3300, 10], $x$ & [0.1, 0.5, 0.4, 0] \\ \hline
+	16 & $100 + 100$ & [2800, 3300, 20], $z$ \newline  [2800, 3300, 5], $x$ & [0.1, 0.5, 0.4, 0] \\ 
+	\hline
+\end{tabular} 
+}
+\end{center}
+\caption{Constraint study based on Case 4 of simplified molecule.} \label{tab:7.3}
+\end{table}
+
+\begin{table} 
+\begin{center} \tiny
+{\def\arraystretch{1.5}
+\begin{tabular}{| p{1cm} | p{2cm} | p{4cm}  | l |}
+\hline
+Test Case \# & \# of Data Points & Point Selection & Return Composition \\ \hline
+17 & 10 & [2800, 3300, 50], $z$ & [0.156758, 0, 0, 0.825977, 0, 0, 0, 0, 0, 0.017265] \\ \hline
+18 & 25 & [2800, 3300, 20], $z$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
+19 & 50 & [2800, 3300, 10], $z$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
+20 & 100 & [2800, 3300, 5], $z$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
+21 & 500 & [2800, 3300, 1], $z$ & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline	
+22 & $100 + 1$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 500], $x$  & [0, 0, 0.730541, 0, 0.212061, 0, 0, 0.0573978, 0, 0, 0] \\ \hline
+23 & $100 + 10$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 50], $x$  & [0.361587, 0, 0.312061, 0.326352, 0, 0, 0, 0, 0] \\ \hline
+24 & $100 + 20$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 25], $x$  & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
+25 & $100 + 25$ & [2800, 3300, 20], $z$ \newline [2800, 3300, 20], $x$  & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
+26 & $100 + 50$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 10], $x$  & [0, 0, 0.753209, 0, 0.146791, 0, 0.1, 0, 0, 0] \\ \hline
+27 & $100 + 84$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 6], $x$  & [0.174023, 0, 0, 0.791447, 0, 0, 0.0345301, 0, 0, 0] \\ \hline
+28 & $100 + 100$ & [2800, 3300, 5], $z$ \newline [2800, 3300, 5], $x$  & [0.1, 0, 0.5, 0, 0.4, 0, 0, 0, 0, 0] \\ 
+\hline
+\end{tabular} \\
+}
+\caption{Constraint study based on Case 5 of simplified molecule.}\label{tab:7.4}
+\end{center}
+\end{table}
