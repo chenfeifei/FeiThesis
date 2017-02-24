@@ -25,7 +25,8 @@ Target Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0.5, 0.4, 0] \\
 \hline
 \# Data Points & 200 $x$ & 200 $z$ \\
 \hline
-Return Composition & [0.701654, 0, 0, 0.298346] & [0.701654, 0, 0, 0.298346] \\
+%Return Composition & [0.701654, 0, 0, 0.298346] & [0.701654, 0, 0, 0.298346] \\
+Return Composition & [0.70, 0, 0, 0.30] & [0.70, 0, 0, 0.30] \\
 \hline
 \end{tabular} 
 \end{center}
@@ -47,7 +48,8 @@ Target Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0.5, 0.4, 0]\\
 \hline
 \# Data Points & 200 $x$ + 200 $z$ & 200 $x$ + 200 $xx$\\
 \hline
-Return Composition & [0.701654, 0, 0, 0.298346] & [0.1, 0.5, 0.4, 0]\\
+%Return Composition & [0.701654, 0, 0, 0.298346] & [0.1, 0.5, 0.4, 0]\\
+Return Composition & [0.70, 0, 0, 0.30] & [0.1, 0.5, 0.4, 0]\\
 \hline
 \end{tabular} 
 \end{center}
@@ -75,7 +77,8 @@ In Case 4, combining IR and Raman spectral information is sufficient to obtain t
 Candidates & \multicolumn{2}{l|}{[0, 10, 20, 30]} \\ \hline
 Target Composition & \multicolumn{2}{l|}{[0.1, 0.5, 0.4, 0]} \\ \hline
 Test Case index & \# Data Points & Result Composition \\ \hline
-5 & 200 $x$ \newline 200 $z$ & [0.752528, 0, 0, 0.247472]  \\ \hline
+%5 & 200 $x$ \newline 200 $z$ & [0.752528, 0, 0, 0.247472]  \\ \hline
+5 & 200 $x$ \newline 200 $z$ & [0.75, 0, 0, 0.23]  \\ \hline
 6 & 200 $x$  \newline 200 $z$ \newline 200 $xx$& [0.1, 0.5, 0.4, 0] \\ \hline
 7 & 200 $xx$ \newline 200 $xy$ \newline 200 $xz$& [0.1, 0.5, 0.4, 0] \\ \hline
 8 & 200 $xx$ \newline 200 $xy$ \newline 200 $zz$ & [0.1, 0.5, 0.4, 0] \\ \hline
@@ -104,17 +107,17 @@ Number of Candidates & \multicolumn{2}{l|}{5} \\ \hline
 Candidates & \multicolumn{2}{l|}{[0, 10, 20, 30, 40]} \\ \hline
 Target Composition & \multicolumn{2}{l|}{[0.2, 0.2, 0.2, 0.2, 0.2]} \\ \hline
 Test case index & Constraints & Result  \\ \hline
-10 & 200 $x$ \newline 200 $z$& [0.607766, 0, 0, 0, 0.392234]  \\ \hline
-11 & 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$& [0.247792, 0, 0.502139, 0, 0.250069]  \\ \hline
-12 & 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.321014, 0, 0.31018, 0.163041, 0.205764]  \\ \hline
-13 & 200 $x$ \newline 200 $z$ \newline 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$& [0.247792, 0, 0.502139, 0, 0.250069]  \\ \hline
-14 & 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$ \newline 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.321014, 0, 0.31018, 0.163041, 0.205764]  \\ \hline
-15 & 200 $x$ \newline 200 $z$ \newline 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.321014, 0, 0.31018, 0.163041, 0.205764]  \\ \hline
-16 & 200 $x$ \newline 200 $z$ \newline 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$ \newline 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.321014, 0, 0.31018, 0.163041, 0.205764]  \\ \hline
+10 & 200 $x$ \newline 200 $z$& [0.61, 0, 0, 0, 0.40]  \\ \hline
+11 & 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$& [0.25, 0, 0.50, 0, 0.25]  \\ \hline
+12 & 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.32, 0, 0.31, 0.16, 0.21]  \\ \hline
+13 & 200 $x$ \newline 200 $z$ \newline 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$& [0.25, 0, 0.50, 0, 0.25]  \\ \hline
+14 & 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$ \newline 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.32, 0, 0.31, 0.16, 0.21]  \\ \hline
+15 & 200 $x$ \newline 200 $z$ \newline 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.32, 0, 0.31, 0.16, 0.21]  \\ \hline
+16 & 200 $x$ \newline 200 $z$ \newline 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$ \newline 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.32, 0, 0.31, 0.16, 0.2]  \\ \hline
 \end{tabular} 
 }
 \end{center}
-\caption{Test Case 10 to 16 setting for methionine candidates} \label{tab:4.3}
+\caption{Test Case 10 to 16 setting for methionine candidates. For more precise result data refer Table \ref{tab:7.1}.} \label{tab:4.3}
 \end{table}
 
 \section{Test Cases to Explain the Limitation of LP Model for Methionine Molecule}
@@ -130,14 +133,14 @@ However, in both Case 17 and 18, when the return composition is used to generate
 \hline
 \# Candidates & \multicolumn{2}{l|}{9} \\ \hline
 Candidates & \multicolumn{2}{l|}{[0, 10, 20, 30, 40, 50, 60, 70, 80]} \\ \hline
-Target Composition & \multicolumn{2}{l|}{[0.2201, 0.28905, 0.05201, 0.08251, 0.35633, 0, 0, 0, 0]} \\ \hline
+Target Composition & \multicolumn{2}{l|}{[0.22, 0.29, 0.052, 0.083, 0.36, 0, 0, 0, 0]} \\ \hline
 Test Case \# & \# of Data Points & Result Composition \\ \hline
-17 & each 5 wavenumber of IR, \newline Raman and SFG spectra & [0.158921, 0.388434, 0.0, 0.0985466, 0.354099, 0.0, 0.0, 0.0, 0.0] \\ \hline
-18 & each 500 wavenumber of IR, \newline Raman and SFG spectra & [0.397991, 0.0, 0.203394, 0.0357663, 0.362848, 0.0, 0.0, 0.0, 0.0] \\ \hline
+17 & each 5 wavenumber of IR, \newline Raman and SFG spectra & [0.16, 0.39, 0.0, 0.099, 0.35, 0.0, 0.0, 0.0, 0.0] \\ \hline
+18 & each 500 wavenumber of IR, \newline Raman and SFG spectra & [0.40, 0.0, 0.20, 0.036, 0.36, 0.0, 0.0, 0.0, 0.0] \\ \hline
 \end{tabular} 
 }
 \end{center}
-\caption{Test case 17 and 18 to explain the limitation of our LP model for methionine molecule}
+\caption{Test case 17 and 18 to explain the limitation of our LP model for methionine molecule. For more precise result data refer Table \ref{tab:7.2}.}
 \label{tab:4.4}
 \end{table}	
 

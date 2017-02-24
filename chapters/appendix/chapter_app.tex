@@ -158,3 +158,43 @@ $}\label{eqn:A.10}
 \caption{SFG $zzz$ projection spectrum for alanine candidate with $\theta$ of $0^{\circ}$ is not identical to alanine candidate with $\theta$ of $180^{\circ}$, but symmetric along wavelength} 
 \label{fig:A.3}
 \end{figure}
+
+\begin{table} \tiny
+\begin{center}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{| l | p{3cm} | l | l |}
+\hline
+Number of Candidates & \multicolumn{2}{l|}{5} \\ \hline
+Candidates & \multicolumn{2}{l|}{[0, 10, 20, 30, 40]} \\ \hline
+Target Composition & \multicolumn{2}{l|}{[0.2, 0.2, 0.2, 0.2, 0.2]} \\ \hline
+Test case index & Constraints & Result  \\ \hline
+10 & 200 $x$ \newline 200 $z$& [0.607766, 0, 0, 0, 0.392234]  \\ \hline
+11 & 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$& [0.247792, 0, 0.502139, 0, 0.250069]  \\ \hline
+12 & 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.321014, 0, 0.31018, 0.163041, 0.205764]  \\ \hline
+13 & 200 $x$ \newline 200 $z$ \newline 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$& [0.247792, 0, 0.502139, 0, 0.250069]  \\ \hline
+14 & 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$ \newline 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.321014, 0, 0.31018, 0.163041, 0.205764]  \\ \hline
+15 & 200 $x$ \newline 200 $z$ \newline 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.321014, 0, 0.31018, 0.163041, 0.205764]  \\ \hline
+16 & 200 $x$ \newline 200 $z$ \newline 200 $xx$ \newline 200 $xy$ \newline 200 $xz$ \newline 200 $zz$ \newline 200 $xxz$ \newline 200 $xzx$ \newline 200 $zzz$& [0.321014, 0, 0.31018, 0.163041, 0.205764]  \\ \hline
+\end{tabular} 
+}
+\end{center}
+\caption{More precise result data of Test Case 10 to 16 setting for methionine candidates} \label{tab:7.1}
+\end{table}
+
+\begin{table} 
+\begin{center}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{| l | p{3cm} | l | l }
+\hline
+\# Candidates & \multicolumn{2}{l|}{9} \\ \hline
+Candidates & \multicolumn{2}{l|}{[0, 10, 20, 30, 40, 50, 60, 70, 80]} \\ \hline
+Target Composition & \multicolumn{2}{l|}{[0.2201, 0.28905, 0.05201, 0.08251, 0.35633, 0, 0, 0, 0]} \\ \hline
+Test Case \# & \# of Data Points & Result Composition \\ \hline
+17 & each 5 wavenumber of IR, \newline Raman and SFG spectra & [0.158921, 0.388434, 0.0, 0.0985466, 0.354099, 0.0, 0.0, 0.0, 0.0] \\ \hline
+18 & each 500 wavenumber of IR, \newline Raman and SFG spectra & [0.397991, 0.0, 0.203394, 0.0357663, 0.362848, 0.0, 0.0, 0.0, 0.0] \\ \hline
+\end{tabular} 
+}
+\end{center}
+\caption{More precise result data of Test case 17 and 18 to explain the limitation of our LP model for methionine molecule}
+\label{tab:7.2}
+\end{table}	
