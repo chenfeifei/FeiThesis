@@ -12,13 +12,13 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Test Case 3 and 4 setting for methionine candidates\relax }}{35}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Test case 5 to 9 setting for methionine candidates\relax }}{37}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Test Case 10 to 16 setting for methionine candidates. For more precise result data refer Table A.1\hbox {}.\relax }}{39}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Test case 17 and 18 to explain the limitation of our LP model for methionine molecule. For more precise result data refer Table A.2\hbox {}.\relax }}{40}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Test case 17 and 18 to explain the limitation of our LP model for methionine molecule. For more precise result data refer Table A.2\hbox {}.\relax }}{41}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Detailed test cases set setting for the mixture of amino acids\relax }}{48}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces More precise result data of Test Case 10 to 16 setting for methionine candidates\relax }}{69}
-\contentsline {table}{\numberline {A.2}{\ignorespaces More precise result data of Test case 17 and 18 to explain the limitation of our LP model for methionine molecule\relax }}{70}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Constraint study based on Case 4 of simplified molecule.\relax }}{70}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Constraint study based on Case 5 of simplified molecule.\relax }}{71}
+\contentsline {table}{\numberline {A.1}{\ignorespaces More precise result data of Test Case 10 to 16 setting for methionine candidates\relax }}{68}
+\contentsline {table}{\numberline {A.2}{\ignorespaces More precise result data of Test case 17 and 18 to explain the limitation of our LP model for methionine molecule\relax }}{69}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Constraint study based on Case 4 of simplified molecule.\relax }}{69}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Constraint study based on Case 5 of simplified molecule.\relax }}{70}
