@@ -8,11 +8,11 @@
 \contentsline {table}{\numberline {3.4}{\ignorespaces Constraint study based on Case 4 of simplified molecular model. For more precise result data, refer Table A.3\hbox {}.\relax }}{29}
 \contentsline {table}{\numberline {3.5}{\ignorespaces Constraint study based on Case 5 of simplified molecular model. For more precise result data, refer Table A.4\hbox {}.\relax }}{32}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Test Case 1 and 2 setting for methionine candidates\relax }}{35}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Test Case 3 and 4 setting for methionine candidates\relax }}{35}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Test case 5 to 9 setting for methionine candidates\relax }}{37}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Test Case 10 to 16 setting for methionine candidates. For more precise result data refer Table A.1\hbox {}.\relax }}{39}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Test case 17 and 18 to explain the limitation of our LP model for methionine molecule. For more precise result data refer Table A.2\hbox {}.\relax }}{41}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Test Case 1 and 2 setting for Met candidates\relax }}{35}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Test Case 3 and 4 setting for Met candidates\relax }}{35}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Test case 5 to 9 setting for Met candidates\relax }}{37}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Test Case 10 to 16 setting for Met candidates. For more precise result data refer Table A.1\hbox {}.\relax }}{39}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Test case 17 and 18 to explain the limitation of our LP model for Met molecule. For more precise result data refer Table A.2\hbox {}.\relax }}{41}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Detailed test cases set setting for the mixture of amino acids\relax }}{48}
 \addvspace {10\p@ }
