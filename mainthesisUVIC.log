@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  26 FEB 2017 20:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.8.11)  28 FEB 2017 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1559,13 +1559,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-[47] [48]
+
 Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[47] [48]
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
@@ -1579,67 +1579,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
- []
-
-[49]
-<Figures/accuracy_pecent_result8_mixture.png, id=248, 578.16pt x 433.62pt>
+<Figures/accuracy_pecent_result8_mixture.png, id=245, 578.16pt x 433.62pt>
 File: Figures/accuracy_pecent_result8_mixture.png Graphic file (type png)
 
 <use Figures/accuracy_pecent_result8_mixture.png>
 Package pdftex.def Info: Figures/accuracy_pecent_result8_mixture.png used on in
-put line 64.
+put line 62.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-[50 <./Figures/accuracy_pecent_result8_mixture.png>]
 
-LaTeX Warning: Reference `fig:5.8' on page 51 undefined on input line 75.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
-<Figures/chapter5_result_target_residual_plotting__ir_result8_run1.png, id=254,
+<Figures/chapter5_result_target_residual_plotting__ir_result8_run1.png, id=249,
  615.86609pt x 183.81717pt>
 File: Figures/chapter5_result_target_residual_plotting__ir_result8_run1.png Gra
 phic file (type png)
 
 <use Figures/chapter5_result_target_residual_plotting__ir_result8_run1.png>
 Package pdftex.def Info: Figures/chapter5_result_target_residual_plotting__ir_r
-esult8_run1.png used on input line 79.
+esult8_run1.png used on input line 77.
 (pdftex.def)             Requested size: 431.10332pt x 128.67113pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-[51 <./Figures/chapter5_result_target_residual_plotting__ir_result8_run1.png>]
-<Figures/accuracy_pecent_result10_mixture.png, id=258, 578.16pt x 433.62pt>
+[50 <./Figures/accuracy_pecent_result8_mixture.png>]
+<Figures/accuracy_pecent_result10_mixture.png, id=255, 578.16pt x 433.62pt>
 File: Figures/accuracy_pecent_result10_mixture.png Graphic file (type png)
 
 <use Figures/accuracy_pecent_result10_mixture.png>
 Package pdftex.def Info: Figures/accuracy_pecent_result10_mixture.png used on i
-nput line 88.
+nput line 86.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-
+[51 <./Figures/chapter5_result_target_residual_plotting__ir_result8_run1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
@@ -1649,54 +1644,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
-
- []
-
-[52]
-<Figures/mixture_target_composition_for_one_run_theta_0_180.png, id=262, 439.11
+[52 <./Figures/accuracy_pecent_result10_mixture.png>]
+<Figures/mixture_target_composition_for_one_run_theta_0_180.png, id=263, 439.11
 88pt x 171.24847pt>
 File: Figures/mixture_target_composition_for_one_run_theta_0_180.png Graphic fi
 le (type png)
 
 <use Figures/mixture_target_composition_for_one_run_theta_0_180.png>
 Package pdftex.def Info: Figures/mixture_target_composition_for_one_run_theta_0
-_180.png used on input line 102.
+_180.png used on input line 100.
 (pdftex.def)             Requested size: 395.20326pt x 154.1222pt.
- [53 <./Figures/accuracy_pecent_result10_mixture.png>]
-<Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png, id=267, 
+
+<Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png, id=264, 
 441.47543pt x 170.46294pt>
 File: Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png Grap
 hic file (type png)
 
 <use Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png>
 Package pdftex.def Info: Figures/mixture_return_composition_of_E1_for_one_run_t
-heta_0_180.png used on input line 109.
+heta_0_180.png used on input line 107.
 (pdftex.def)             Requested size: 397.32422pt x 153.4152pt.
 
-<Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png, id=268, 
+<Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png, id=265, 
 441.47543pt x 168.89185pt>
 File: Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png Grap
 hic file (type png)
 
 <use Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png>
 Package pdftex.def Info: Figures/mixture_return_composition_of_E6_for_one_run_t
-heta_0_180.png used on input line 116.
+heta_0_180.png used on input line 114.
 (pdftex.def)             Requested size: 397.32422pt x 152.00124pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 125--19
+Underfull \hbox (badness 10000) in paragraph at lines 123--19
 
  []
 
-[54 <./Figures/mixture_target_composition_for_one_run_theta_0_180.png> <./Figur
-es/mixture_return_composition_of_E1_for_one_run_theta_0_180.png>] [55 <./Figure
-s/mixture_return_composition_of_E6_for_one_run_theta_0_180.png>]
+[53 <./Figures/mixture_target_composition_for_one_run_theta_0_180.png>]
+[54 <./Figures/mixture_return_composition_of_E1_for_one_run_theta_0_180.png> <.
+/Figures/mixture_return_composition_of_E6_for_one_run_theta_0_180.png>]
 \openout2 = `chapters/6/chapter_experimental.aux'.
 
 
@@ -1712,7 +1702,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[56
+[55
 
 
 
@@ -1731,7 +1721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<Figures/chapter6_figure_one.png, id=279, 441.47543pt x 302.43423pt>
+<Figures/chapter6_figure_one.png, id=275, 441.47543pt x 302.43423pt>
 File: Figures/chapter6_figure_one.png Graphic file (type png)
 
 <use Figures/chapter6_figure_one.png>
@@ -1739,7 +1729,7 @@ Package pdftex.def Info: Figures/chapter6_figure_one.png used on input line 17.
 
 (pdftex.def)             Requested size: 397.32422pt x 272.18828pt.
 
-<Figures/chapter6_figure_two.png, id=280, 417.12358pt x 324.42946pt>
+<Figures/chapter6_figure_two.png, id=276, 417.12358pt x 324.42946pt>
 File: Figures/chapter6_figure_two.png Graphic file (type png)
 
 <use Figures/chapter6_figure_two.png>
@@ -1747,7 +1737,7 @@ Package pdftex.def Info: Figures/chapter6_figure_two.png used on input line 23.
 
 (pdftex.def)             Requested size: 375.40775pt x 291.9838pt.
 
-<Figures/chapter6_1.png, id=281, 578.16pt x 433.62pt>
+<Figures/chapter6_1.png, id=277, 578.16pt x 433.62pt>
 File: Figures/chapter6_1.png Graphic file (type png)
 
 <use Figures/chapter6_1.png>
@@ -1758,12 +1748,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[57]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-[58 <./Figures/chapter6_figure_one.png>]
+[57 <./Figures/chapter6_figure_one.png>]
 Overfull \hbox (3.31451pt too wide) in paragraph at lines 42--42
 []\OT1/cmr/bx/n/14.4 Test Cases with Scal-ing Fac-tor Con-sid-er-ing Each Amino
 
@@ -1779,7 +1769,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-[59 <./Figures/chapter6_figure_two.png>]
+[58 <./Figures/chapter6_figure_two.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -1789,8 +1779,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-[60 <./Figures/chapter6_1.png>]
-<Figures/chapter6_figure_five.png, id=295, 443.04652pt x 168.89185pt>
+[59 <./Figures/chapter6_1.png>]
+<Figures/chapter6_figure_five.png, id=292, 443.04652pt x 168.89185pt>
 File: Figures/chapter6_figure_five.png Graphic file (type png)
 
 <use Figures/chapter6_figure_five.png>
@@ -1798,7 +1788,7 @@ Package pdftex.def Info: Figures/chapter6_figure_five.png used on input line 54
 .
 (pdftex.def)             Requested size: 398.73819pt x 152.00124pt.
 
-<Figures/chapter6_figure_three.png, id=296, 442.26097pt x 190.10152pt>
+<Figures/chapter6_figure_three.png, id=293, 442.26097pt x 190.10152pt>
 File: Figures/chapter6_figure_three.png Graphic file (type png)
 
 <use Figures/chapter6_figure_three.png>
@@ -1806,7 +1796,7 @@ Package pdftex.def Info: Figures/chapter6_figure_three.png used on input line 6
 0.
 (pdftex.def)             Requested size: 398.03119pt x 171.08977pt.
 
-<Figures/chapter6_figure_four.png, id=297, 445.40315pt x 192.45815pt>
+<Figures/chapter6_figure_four.png, id=294, 445.40315pt x 192.45815pt>
 File: Figures/chapter6_figure_four.png Graphic file (type png)
 
 <use Figures/chapter6_figure_four.png>
@@ -1818,7 +1808,7 @@ Package pdftex.def Info: Figures/chapter6_figure_four.png used on input line 66
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 73.
 
-[61 <./Figures/chapter6_figure_five.png> <./Figures/chapter6_figure_three.png>]
+[60 <./Figures/chapter6_figure_five.png> <./Figures/chapter6_figure_three.png>]
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
@@ -1829,7 +1819,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--20
 
  []
 
-[62 <./Figures/chapter6_figure_four.png>]
+[61 <./Figures/chapter6_figure_four.png>]
 \openout2 = `chapters/7/chapter_conclusions.aux'.
 
  (./chapters/7/chapter_conclusions.tex
@@ -1854,7 +1844,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[63
+[62
 
 
 
@@ -1863,21 +1853,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-) [64]
+) [63]
 \openout2 = `chapters/appendix/chapter_app.aux'.
 
  (./chapters/appendix/chapter_app.tex
 Appendix A.
-[65
+[64
 
 
 
-] [66]
+] [65]
 
 Package amsmath Warning: Cannot use `split' here;
 (amsmath)                trying to recover with `aligned' on input line 139.
 
-<Figures/Ala_candidates_plotting_ir_z_2.png, id=317, 578.16pt x 433.62pt>
+<Figures/Ala_candidates_plotting_ir_z_2.png, id=314, 578.16pt x 433.62pt>
 File: Figures/Ala_candidates_plotting_ir_z_2.png Graphic file (type png)
 
 <use Figures/Ala_candidates_plotting_ir_z_2.png>
@@ -1885,7 +1875,7 @@ Package pdftex.def Info: Figures/Ala_candidates_plotting_ir_z_2.png used on inp
 ut line 145.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-<Figures/Ala_candidates_plotting_raman_zz_2.png, id=318, 578.16pt x 433.62pt>
+<Figures/Ala_candidates_plotting_raman_zz_2.png, id=315, 578.16pt x 433.62pt>
 File: Figures/Ala_candidates_plotting_raman_zz_2.png Graphic file (type png)
 
 <use Figures/Ala_candidates_plotting_raman_zz_2.png>
@@ -1893,7 +1883,7 @@ Package pdftex.def Info: Figures/Ala_candidates_plotting_raman_zz_2.png used on
  input line 151.
 (pdftex.def)             Requested size: 404.70924pt x 303.53192pt.
 
-<Figures/Ala_candidates_plotting_sfg_zzz_2.png, id=319, 578.16pt x 433.62pt>
+<Figures/Ala_candidates_plotting_sfg_zzz_2.png, id=316, 578.16pt x 433.62pt>
 File: Figures/Ala_candidates_plotting_sfg_zzz_2.png Graphic file (type png)
 
 <use Figures/Ala_candidates_plotting_sfg_zzz_2.png>
@@ -1930,8 +1920,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--230
 []|\OT1/cmr/m/n/6 Test
  []
 
-) [67 <./Figures/Ala_candidates_plotting_ir_z_2.png>] [68] [69] [70] [71 <./Fig
-ures/Ala_candidates_plotting_raman_zz_2.png>] [72 <./Figures/Ala_candidates_plo
+) [66 <./Figures/Ala_candidates_plotting_ir_z_2.png>] [67] [68] [69] [70 <./Fig
+ures/Ala_candidates_plotting_raman_zz_2.png>] [71 <./Figures/Ala_candidates_plo
 tting_sfg_zzz_2.png>] (./mainthesisUVIC.bbl
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1939,10 +1929,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[73
+[72
 
 
-]) [74] (./mainthesisUVIC.aux (./chapters/1/chapter_intro.aux)
+]) [73] (./mainthesisUVIC.aux (./chapters/1/chapter_intro.aux)
 (./chapters/2/chapter_methods.aux)
 (./chapters/3/chapter_simplified_molecular_model.aux)
 (./chapters/4/chapter_realistic_molecular_model.aux)
@@ -1953,14 +1943,14 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 12289 strings out of 493304
- 224811 string characters out of 6139871
- 298517 words of memory out of 5000000
- 15393 multiletter control sequences out of 15000+600000
+ 12288 strings out of 493304
+ 224802 string characters out of 6139871
+ 299517 words of memory out of 5000000
+ 15392 multiletter control sequences out of 15000+600000
  22793 words of font info for 93 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  49i,14n,45p,10480b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1978,10 +1968,10 @@ share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf/fonts/t
 ype1/public/cm-super/sfrm1200.pfb>
-Output written on mainthesisUVIC.pdf (85 pages, 2394016 bytes).
+Output written on mainthesisUVIC.pdf (84 pages, 2391978 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
+ 395 PDF objects out of 1000 (max. 8388607)
+ 231 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  196 words of extra memory for PDF output out of 10000 (max. 10000000)
 
