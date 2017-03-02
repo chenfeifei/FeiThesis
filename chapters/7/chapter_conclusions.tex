@@ -5,7 +5,7 @@ In addition to existing two common approaches in studying the possible compositi
 
 The achieve the first goal, a simplified molecular model is designed to analyze the nature of the LP model. It has shown that as long as there is the right data set, the target composition is obtained. If the target composition is not returned correctly, then there is not sufficient spectral information to describe the test cases to the LP model \\
 
-Furthermore, I apply all the spectral information of a realistic molecule (Met) to the LP model, it is not guaranteed to return the target composition all the time. The spectral information we collect is not sufficient in describing the test cases to the LP model most of the time. \\
+Furthermore, we apply all the spectral information of a realistic molecule (Met) to the LP model, it is not guaranteed to return the target composition all the time. The spectral information we collect is not sufficient in describing the test cases to the LP model most of the time. \\
 
 %With a detailed analysis of applying toy model IR spectral information to our LP model, we have learnt that the reason why our LP model does not return the target composition is that: the spectral data we extract does not always contain sufficient information in order for the LP model to converge to the target composition. As long as the data we collect is sufficient, the LP model guarantees to return a composition we expect. \\
 
@@ -14,6 +14,8 @@ Furthermore, I apply all the spectral information of a realistic molecule (Met) 
 Following the scenario of having one type of realistic molecule at surfaces, the test cases of having multiple types of realistic molecules at surface are also explored. When each molecule's candidates expanded from $0^{\circ}$ to $80^{\circ}$ on $\theta$, Raman or SFG spectral information alone is sufficient to obtain the target composition. When the candidates are expanded from $0^{\circ}$ to $180^{\circ}$ on $\theta$, SFG spectral information needs to combine with IR or Raman in order to obtain the target composition. \\
 
 At last, instead of generating the target spectra by combining different candidates directly, they are obtained from real experimental data. Therefore, for each spectroscopy technique, there is a scaling factor between the candidate spectra generated theoretically and the real experimental target spectra. When consider a mixture of realistic molecules with candidates expanded from $0^{\circ}$ to $80^{\circ}$ on $\theta$, Raman spectral information alone is sufficient to obtain the target composition. Because the target composition can be re-constructed from the return SV and composition. The SF equals 1 minus SV. When each realistic molecule's candidates are expanded from $0^{\circ}$ to $180^{\circ}$, both return compositions of using only Raman spectral information and using Raman and SFG spectral information are needed to obtain the target composition. \\
+\section{Contributions}
+
 
 \section{Future Work}
 Our LP model has proven its efficiency in studying molecular orientation distribution at surfaces when different molecules are considered. However, when considering one type of molecule at the surface, there is not enough spectral information for the LP model to obtain the target composition. One of the most important direction is to collect more spectral information to the LP model. Another direction is to combine LP technique with other computation model to further constraint the solution space of the target composition.

@@ -83,7 +83,7 @@ Dietary Fiber [g/kg] & 30 & 20 & 10 & 4g \\ \hline
 price[$\$$/kg] & 0.75 & 0.5 & 0.15 & - \\ \hline
 \end{tabular} 
 \end{center}
-\caption{Sample input of the diet problem}
+\caption{Sample input of the diet problem.}
 \label{tab:1.1}
 \end{table}	
 
@@ -128,7 +128,7 @@ The last but not the least advantage of LP is the speed of existing LP solvers. 
 
 The LP solver we use is called ``GNU linear programming tool kit" (GLPK). It has implemented both simplex and interior point methods in C programming language. It is open-source and intended to solve large scale LP problems. \\
 
-Currently there are two main approaches in studying the orientation distribution of molecules at surface. One is comparing the experimental spectra with few predicted ones, and select the one that most matches to the experimental one. Another one is running an exhaustive algorithm to explore the most possible solution space \cite{hore0033-rotations}. However, both approaches take a lot of time and computational resources. Therefore, applying LP will result a large gain in computation.\\
+Currently there are two main approaches in studying the orientation distribution of molecules at surface. One is comparing the experimental spectra with few predicted ones, and select the one that most matches the experimental one. Another one is running an exhaustive algorithm to explore the most possible solution space \cite{hore0033-rotations}. However, both approaches take a lot of time and computational resources. Therefore, applying LP will result a large gain in computation.\\
 
 \section{Conclusion and Open Questions from Previous Study \cite{KuoKaiHung:Thesis:2015}}
 %In Hung's study \cite{KuoKaiHung:Thesis:2015}, the new approach of applying LP to vibrational spectra to extract the molecular orientation distribution at surfaces is introduced. The LP approach helped to return the target orientation distribution information when the mock experimental spectrum consisted of different amino acids. However, when candidates are coming from the same amino acid, LP approach failed to return the target orientation distribution information. The reason why LP failed to return the target composition has not been thoroughly studied in Hung's study. Whether and how LP approach can be generally applied to different case studies have not been explored neither. Moreover, in Hung's study, only SFG spectral information is applied to the LP model. The case of combining different spectral techniques to the LP model was not considered. Only mock experimental spectral information is considered.
