@@ -2,23 +2,23 @@
 \contentsline {table}{\numberline {1.1}{\ignorespaces Sample input of the diet problem\relax }}{5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Test case 1 and 2 setting using simplified molecular model\relax }}{24}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Test case 3 setting of simplified molecule\relax }}{25}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Test case 4 and 5 setting of simplified molecule\relax }}{27}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Constraint study based on Case 4 of simplified molecular model. For more precise result data, refer Table A.3\hbox {}.\relax }}{29}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Constraint study based on Case 5 of simplified molecular model. For more precise result data, refer Table A.4\hbox {}.\relax }}{32}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Test cases 1 and 2 for the simplified molecular model\relax }}{25}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Test case 3 for the simplified molecular model\relax }}{26}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Test cases 4 and 5 for the simplified molecular model\relax }}{28}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Constraint study based on Case 4 for the simplified molecular model. For more detailed result data, refer to Table A.3\hbox {}.\relax }}{30}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Constraint study based on Case 5 of simplified molecular model. For more detailed result data, refer to Table A.4\hbox {}.\relax }}{32}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Test Case 1 and 2 setting for Met candidates\relax }}{35}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Test Case 3 and 4 setting for Met candidates\relax }}{35}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Test case 5 to 9 setting for Met candidates\relax }}{37}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Test Case 10 to 16 setting for Met candidates. For more precise result data refer Table A.1\hbox {}.\relax }}{39}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Test case 17 and 18 to explain the limitation of our LP model for Met molecule. For more precise result data refer Table A.2\hbox {}.\relax }}{41}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Test Case 1 and 2 setting for Met candidates\relax }}{36}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Test Case 3 and 4 setting for Met candidates\relax }}{36}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Test case 5 to 9 setting for Met candidates\relax }}{38}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Test Case 10 to 16 setting for Met candidates. For more detailed result data refer to Table A.1\hbox {}.\relax }}{40}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Test case 17 and 18 to explain the limitation of our LP model for Met molecule. For more detailed result data refer to Table A.2\hbox {}.\relax }}{42}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Detailed test cases set setting for the mixture of amino acids\relax }}{48}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Detailed test cases set setting for the mixture of amino acids\relax }}{49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces More precise result data of Test Case 10 to 16 setting for methionine candidates\relax }}{67}
-\contentsline {table}{\numberline {A.2}{\ignorespaces More precise result data of Test case 17 and 18 to explain the limitation of our LP model for methionine molecule\relax }}{68}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Constraint study based on Case 4 of simplified molecule.\relax }}{68}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Constraint study based on Case 5 of simplified molecule.\relax }}{69}
+\contentsline {table}{\numberline {A.1}{\ignorespaces More detailed result data of Test Case 10 to 16 setting for methionine candidates\relax }}{68}
+\contentsline {table}{\numberline {A.2}{\ignorespaces More detailed result data of Test case 17 and 18 to explain the limitation of our LP model for methionine molecule\relax }}{69}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Constraint study based on Case 4 of simplified molecular model.\relax }}{69}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Constraint study based on Case 5 of simplified molecular model.\relax }}{70}
