@@ -4,21 +4,21 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Test cases 1 and 2 for the simplified molecular model.\relax }}{25}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Test case 3 for the simplified molecular model.\relax }}{26}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Test cases 4 and 5 for the simplified molecular model.\relax }}{28}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Constraint study based on Case 4 for the simplified molecular model. For more detailed result data, refer to Table A.3\hbox {}.\relax }}{30}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Constraint study based on Case 5 of simplified molecular model. For more detailed result data, refer to Table A.4\hbox {}.\relax }}{32}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Test cases 4 and 5 for the simplified molecular model.\relax }}{27}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Constraint study based on Case 4 for the simplified molecular model. For more detailed result data, refer to Table A.3\hbox {}.\relax }}{29}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Constraint study based on Case 5 of simplified molecular model. For more detailed result data, refer to Table A.4\hbox {}.\relax }}{31}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Test Case 1 and 2 for Met candidates.\relax }}{36}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Test Case 3 and 4 for Met candidates.\relax }}{36}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Test case 5 to 9 for Met candidates.\relax }}{38}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Test Case 10 to 16 for Met candidates. For more detailed result data refer to Table A.1\hbox {}.\relax }}{40}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Test case 17 and 18 to explain the limitation of our LP model for Met molecule. For more detailed result data refer to Table A.2\hbox {}.\relax }}{42}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Test Case 1 and 2 for Met candidates.\relax }}{34}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Test Case 3 and 4 for Met candidates.\relax }}{34}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Test case 5 to 9 for Met candidates.\relax }}{36}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Test Case 10 to 16 for Met candidates. For more detailed result data refer to Table A.1\hbox {}.\relax }}{38}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Test case 17 and 18 to explain the limitation of our LP model for Met molecule. For more detailed result data refer to Table A.2\hbox {}.\relax }}{39}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Detailed test cases set for the mixture of amino acids.\relax }}{49}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Detailed test cases set for the mixture of amino acids.\relax }}{46}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces More detailed result data of Test Case 10 to 16 for methionine candidates.\relax }}{70}
-\contentsline {table}{\numberline {A.2}{\ignorespaces More detailed result data of Test case 17 and 18 to explain the limitation of our LP model for methionine molecule.\relax }}{70}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Constraint study based on Case 4 of simplified molecular model.\relax }}{71}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Constraint study based on Case 5 of simplified molecular model.\relax }}{72}
+\contentsline {table}{\numberline {A.1}{\ignorespaces More detailed result data of Test Case 10 to 16 for methionine candidates.\relax }}{69}
+\contentsline {table}{\numberline {A.2}{\ignorespaces More detailed result data of Test case 17 and 18 to explain the limitation of our LP model for methionine molecule.\relax }}{69}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Constraint study based on Case 4 of simplified molecular model.\relax }}{70}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Constraint study based on Case 5 of simplified molecular model.\relax }}{71}

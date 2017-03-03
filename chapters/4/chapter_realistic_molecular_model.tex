@@ -11,7 +11,7 @@ The goal is to check with all these spectral information available, is it suffic
 
 \section{Test Cases}
 
-\begin{table} 
+\begin{table}[ht!]
 \begin{center}
 \begin{tabular}{| l | l | l |  }
 \hline
@@ -34,7 +34,7 @@ Return Composition & [0.70, 0, 0, 0.30] & [0.70, 0, 0, 0.30] \\
 \label{tab:4.1}
 \end{table}	
 
-\begin{table} 
+\begin{table}[ht!]
 \begin{center}
 \begin{tabular}{| l | p{3cm}| p{3cm} | }
 \hline
@@ -69,7 +69,7 @@ When merely using IR information, the return composition is the same in Case 1, 
 
 In Case 4, combining the spectral information of IR and Raman is sufficient to obtain the target composition. When the difference in degree $\theta$ for candidates decreases from $20^{\circ}$ to $10^{\circ}$, understanding if Raman and IR together is still sufficient to derive the target composition is desired. Therefore, the following test cases shown in Table \ref{tab:4.2} are conducted. \\
 
-\begin{table} \tiny 
+\begin{table}[ht!] \tiny 
 \resizebox{\textwidth}{!}{
 \begin{tabular}{| l | p{3cm} | l | l |}
 \hline
@@ -98,7 +98,7 @@ Case 10 uses only IR spectral information to build the LP instance, and the retu
 
 The results of Cases 10 to 16 indicate that despite combining all the spectral information of IR, Raman and SFG, it is still not sufficient to attain the target composition for the test cases set up in Table \ref{tab:4.3}. The spectral information we apply to the LP model is showing its limitation in these test cases. In order to confirm the reason causing the LP solver to return the target composition due to insufficient information, further test cases are conducted in Table \ref{tab:4.4}. \\
 
-\begin{table} \tiny
+\begin{table}[ht!] \tiny
 \begin{center}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{| l | p{3cm} | l | l |}
@@ -126,7 +126,7 @@ To further explore the reasons when our  LP model reaches its limitation for the
 
 However, in both Case 17 and 18, when the return composition is used to generate the IR, Raman and SFG spectra, these spectra are plotted together with the spectra created by the target composition. Note that all spectral data are identical for IR, Raman and SFG. Figures \ref{fig:4.2}, \ref{fig:4.3} and \ref{fig:4.4} display the spectra plotted by using the return composition and the target one of Case 17. All spectra is almost identical to each other as shown in the figures. The same is true for Case 18, as shown in Figures \ref{fig:4.5}, \ref{fig:4.6} and \ref{fig:4.7}. These figures show that there is more than one composition that can perfectly construct the target spectra. The data information used to construct the instances of our LP model is not sufficient to converge to the return composition that exactly matches the target one. This conclusion exactly fits the result obtained from the test cases we have done with the simplified molecular model.\\
 
-\begin{table} 
+\begin{table}[ht!]
 \begin{center}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{| l | p{3cm} | l | l }

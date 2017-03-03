@@ -74,7 +74,7 @@ Among Cases 1, 2 and 3, only the return composition of Case 1 matches its target
 
 The above observation demonstrates that there are multiple compositions can achieve in constructing the spectrum that are close to the target one. The numerical limitation helps the LP solver to converge to a unique optimum solution. The reason for Case 1 to return a composition that matches the target one, is that the spectral information applied to the LP model is competent. The constraints constructed in the LP model for Case 1 eventually converge to the target composition. \\ 
 
-\begin{table} 
+\begin{table}[ht!]
 \begin{center}
 {\def\arraystretch{1.5}
 \begin{tabular}{| l | l | l | }
@@ -106,7 +106,7 @@ Return Composition & [0.1, 0.5, 0.4, 0] & [0, 0.80, 0.10, 0.1] \\
 \label{fig:3.2}
 \end{figure}
 
-\begin{table} 
+\begin{table}[ht!]
 \begin{center}
 \begin{tabular}{| l | p{7cm} | }
 \hline
@@ -144,7 +144,7 @@ In order to add necessary information to construct the constraints in our LP mod
 \caption{$x$-polaried IR spectra of candidates of simplified molecular model with $\theta$ value expanded from $0^{\circ}$ to $90^{\circ}$.}  \label{fig:3.4}
 \end{figure}
 
-\begin{table} \small 
+\begin{table}[ht!] \small 
 \begin{center}
 {\def\arraystretch{1.5}
 \begin{tabular}{| l | p{3cm} | p{6cm} |}
@@ -173,10 +173,11 @@ From Cases 1 to 5 for our simplified molecular model, we know that having an ins
 
 Based on Case 4, test cases about creating different LP instances using different spectral information are designed in Table \ref{tab:3.4}. The number of data points indicates how many data points are selected. Points Selection shows how data points are selected. For example, [2800, 3300, 50] means along wavenumber from 2500 to 3300, every 50 wavenumber a data point is selected along a spectrum. $z$ and $x$ indicate the corresponding polarization of IR spectrum. \\
 
-\begin{table} \small
+\begin{table}[ht!] \small
 \begin{center}
 {\def\arraystretch{1.5}
-\begin{tabular}{| p{3cm} | p{3cm} | p{4cm} | l |} \hline
+\begin{tabular}{| p{3cm} | p{3cm} | p{4cm} | l |}
+\hline
 	Test Case \# & \# Data Points & Points Selection & Return Composition \\ \hline
 	6 & 10 & [2800, 3300, 50], $z$ & [0, 0.8, 0.10, 0.1] \\ \hline
 	7 & 20 & [2800, 3300, 25], $z$ & [0, 0.8, 0.10, 0.1 \\ \hline
@@ -210,10 +211,10 @@ As Table \ref{tab:3.4} indicates, the return compositions in Cases 6 to 14 do no
 
 Based on Case 5, similar constraint study is conducted as displayed in Table \ref{tab:3.5}, and the same observation is obtained as the test cases in Table \ref{tab:3.4}. When the result composition $[0, 0, 0.73, 0, 0.21,0, 0, 0.057, 0, 0]$ and target one are used to plot the spectra, the produced spectra are identical, as shown in Figure \ref{fig:3.6}. Although these two constraint studies do not give a clear answer about how many data points are enough to get the target composition, it confirms that as long as the spectral information is sufficient, the LP solver will return the target composition.
 %$[0, 0, 0.730541, 0, 0.212061,0, 0, 0.0573978, 0, 0]$
-\begin{table} \small
+\begin{table}[ht!] \small 
 \begin{center} 
 {\def\arraystretch{1.5}
-\begin{tabular}{| p{1cm} | p{2cm} | p{4cm}  | l |}
+\begin{tabular}{| p{1cm} | p{2cm} | p{4cm}  | l |} 
 \hline
 Test Case \# & \# of Data Points & Point Selection & Return Composition \\ \hline
 17 & 10 & [2800, 3300, 50], $z$ & [0.16, 0, 0, 0.83, 0, 0, 0, 0, 0, 0.017] \\ \hline
