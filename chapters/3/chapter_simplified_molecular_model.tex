@@ -3,7 +3,7 @@
 \section{Description}
 The goal of this chapter is to introduce our LP model, as well as exploring its properties by using a simplified molecular model. The purpose of introducing the simplified molecular model is to limit the complexity that comes from the parameters needed to describe the realistic models, so that the analysis of the nature of the LP model can be focused. \\
 
-Only IR spectroscopy is considered for the simplified molecular model. Equation \ref{eq:3.1} is used to generate the $z$-polarized IR spectrum. Moreover, both Euler angles $\varphi$ and $\psi$ are integrated into uniform distribution, only the difference on angle $\theta$ is considered. \\
+Only IR spectroscopy is considered for the simplified molecular model. Equation \ref{eq:3.1} is used to generate the $z$-polarized IR spectrum. Moreover, both Euler angles $\varphi$ and $\psi$ are are assumed to be isotropic, only the difference on angle $\theta$ is considered. \\
 
 \begin{eqnarray} \label{eq:3.1}
 & f_{\theta}(\omega_{\rm IR}) = \displaystyle\sum^{4}_{q=1} A_q^2 cos^2(\theta - \theta_q)\frac{\Gamma^2}{(\omega_{\rm IR}- \omega_{\rm q})^2 + \Gamma^2} 
@@ -79,7 +79,7 @@ The above observation demonstrates that there are multiple compositions can achi
 {\def\arraystretch{1.5}
 \begin{tabular}{| l | l | l | }
 \hline
-Test Case index & 1 & 2  \\
+Test Case & 1 & 2  \\
 \hline
 Number of Candidates & 4 & 4  \\
 \hline
@@ -110,7 +110,7 @@ Return Composition & [0.1, 0.5, 0.4, 0] & [0, 0.80, 0.10, 0.1] \\
 \begin{center}
 \begin{tabular}{| l | p{7cm} | }
 \hline
-Test Case index & 3  \\
+Test Case & 3  \\
 \hline
 Number of Candidates & 10   \\
 \hline
@@ -149,7 +149,7 @@ In order to add necessary information to construct the constraints in our LP mod
 {\def\arraystretch{1.5}
 \begin{tabular}{| l | p{3cm} | p{6cm} |}
 \hline
-Test Case index & 4 & 5\\
+Test Case & 4 & 5\\
 \hline
 Number of Candidates & 4 & 10 \\
 \hline
@@ -178,7 +178,7 @@ Based on Case 4, test cases about creating different LP instances using differen
 {\def\arraystretch{1.5}
 \begin{tabular}{| p{3cm} | p{3cm} | p{4cm} | l |}
 \hline
-	Test Case \# & \# Data Points & Points Selection & Return Composition \\ \hline
+	Test Case & \# Data Points & Points Selection & Return Composition \\ \hline
 	6 & 10 & [2800, 3300, 50], $z$ & [0, 0.8, 0.10, 0.1] \\ \hline
 	7 & 20 & [2800, 3300, 25], $z$ & [0, 0.8, 0.10, 0.1 \\ \hline
 	8 & 25 & [2800, 3300, 20], $z$ & [0, 0.8, 0.10, 0.1] \\ \hline
@@ -216,7 +216,7 @@ Based on Case 5, similar constraint study is conducted as displayed in Table \re
 {\def\arraystretch{1.5}
 \begin{tabular}{| p{1cm} | p{2cm} | p{4cm}  | l |} 
 \hline
-Test Case \# & \# of Data Points & Point Selection & Return Composition \\ \hline
+Test Case & \# of Data Points & Point Selection & Return Composition \\ \hline
 17 & 10 & [2800, 3300, 50], $z$ & [0.16, 0, 0, 0.83, 0, 0, 0, 0, 0, 0.017] \\ \hline
 18 & 25 & [2800, 3300, 20], $z$ & [0, 0, 0.73, 0, 0.21, 0, 0, 0.057, 0, 0, 0] \\ \hline
 19 & 50 & [2800, 3300, 10], $z$ & [0, 0, 0.73, 0, 0.21, 0, 0, 0.057, 0, 0, 0] \\ \hline

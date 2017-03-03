@@ -1,11 +1,11 @@
 \startchapter{Realistic Molecular Model} \label{ch:4}
 \section{Description}
 
-From experimenting with the simplified molecular model, we learnt that lacking sufficient spectral information is the key cause for the failure of obtaining the target composition. First of all, in the simplified molecular model, there are only four vibrational modes, and thus the spectral information is limited. Secondly, the similarity among the candidates is high, as all the candidates are coming from one same molecule. Third, only IR spectra is considered. \\
+From experimenting with the simplified molecular model, we learnt that lacking sufficient spectral information appears to be the key cause for the failure of obtaining the target composition. First of all, in the simplified molecular model, there are only four vibrational modes, and thus the spectral information is limited. Secondly, the similarity among the candidates is high, as all the candidates are coming from the same molecule. Third, only IR spectra is considered. \\
 
-In test cases discussed this chapter are conducted using realistic molecules. In addition to IR, both Raman and SFG spectra are calculated for these molecules, which makes the study one step closer to the overall goal and scope. The realistic molecule focused on this chapter is Met amino acid. \\
+In test cases discussed this chapter are conducted using realistic molecules. In addition to IR, both Raman and SFG spectra are calculated for these molecules, which makes the study one step closer to the overall goal and scope. The realistic molecule studied in this chapter is the Met amino acid. \\
 
-Same as with the simplified molecular model, in order to limit the possible candidate space of Met, $twist$ and $azimuthal$ angular distributions are assumed to be isotropic, which are integrated into uniform distribution. Only Euler angle $\theta$ is considered in Met's surface orientation distribution function. In Section 2.3, we explained how a molecule's IR, Raman and SFG spectra are generated. Two unique IR spectra can be obtained from $x$-, and $z$-polarizations. Four unique Raman spectra can be obtained from $xx$-, $xy$-, $xz$- and $zz$-polarizations. Three unique SFG spectra can be obtained from $xxz$-, $xzx$- and $zzz$-polarizations.\\
+Same as with the simplified molecular model, in order to limit the possible candidate space of Met, $twist$ and $azimuthal$ angular distributions are assumed to be isotropic. Only Euler angle $tilt$ is considered in Met's surface orientation distribution function. In Section 2.3, we explained how a molecule's IR, Raman and SFG spectra are generated. Two unique IR spectra can be obtained from $x$-, and $z$-polarizations. Four unique Raman spectra can be obtained from $xx$-, $xy$-, $xz$- and $zz$-polarizations. Three unique SFG spectra can be obtained from $xxz$-, $xzx$- and $zzz$-polarizations.\\
 
 The goal is to check with all these spectral information available, is it sufficient for the LP solver to help the corresponding LP instances to return the target composition of the candidates of Met at a surface. If yes, we need to figure out which spectral information is sufficient. If no, we need to check if the cause of the failure is the same as in the case of the simplified molecular model. \\
 
@@ -13,51 +13,30 @@ The goal is to check with all these spectral information available, is it suffic
 
 \begin{table}[ht!]
 \begin{center}
-\begin{tabular}{| l | l | l |  }
+\resizebox{\textwidth}{!}{
+\begin{tabular}{| l | p{3cm}| p{3cm} | p{3cm} | p{3cm} | }
 \hline
-Test Case \# & 1 & 2 \\
+Test Case & 1 & 2 & 3 & 4\\
 \hline
-\# Candidates & 4 & 4 \\
+\# Candidates & 4 & 4 & 4 & 4\\
 \hline
-Candidates & [0, 20, 40, 60] & [0, 20, 40, 60] \\
+Candidates & [0, 20, 40, 60] & [0, 20, 40, 60] & [0, 20, 40, 60] & [0, 20, 40, 60]\\
 \hline
-Target Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0.5, 0.4, 0] \\
+Target Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0.5, 0.4, 0] & [0.1, 0.5, 0.4, 0] & [0.1, 0.5, 0.4, 0]\\
 \hline
-\# Data Points & 200, $x$ & 200, $z$ \\
+\# Data Points & 200, $x$ & 200, $z$ & 200, $x$ \newline 200, $z$ & 200, $x$ \newline 200, $xx$\\
 \hline
 %Return Composition & [0.701654, 0, 0, 0.298346] & [0.701654, 0, 0, 0.298346] \\
-Return Composition & [0.70, 0, 0, 0.30] & [0.70, 0, 0, 0.30] \\
+Return Composition & [0.70, 0, 0, 0.30] & [0.70, 0, 0, 0.30] & [0.70, 0, 0, 0.30] & [0.1, 0.5, 0.4, 0]\\
 \hline
 \end{tabular} 
+}
 \end{center}
 \caption{Test Case 1 and 2 for Met candidates.} 
 \label{tab:4.1}
 \end{table}	
 
-\begin{table}[ht!]
-\begin{center}
-\begin{tabular}{| l | p{3cm}| p{3cm} | }
-\hline
-Test Case \# & 3 & 4 \\
-\hline
-\# Candidates & 4 & 4  \\
-\hline
-Candidates & [0, 20, 40, 60] & [0, 20, 40, 60]\\
-\hline
-Target Composition & [0.1, 0.5, 0.4, 0] & [0.1, 0.5, 0.4, 0]\\
-\hline
-\# Data Points & 200, $x$ \newline 200, $z$ & 200, $x$ \newline 200, $xx$\\
-\hline
-%Return Composition & [0.701654, 0, 0, 0.298346] & [0.1, 0.5, 0.4, 0]\\
-Return Composition & [0.70, 0, 0, 0.30] & [0.1, 0.5, 0.4, 0]\\
-\hline
-\end{tabular} 
-\end{center}
-\caption{Test Case 3 and 4 for Met candidates.} 
-\label{tab:case3and4}
-\end{table}	
-
-In Table \ref{tab:4.1} and \ref{tab:case3and4}, four test cases are set up with four candidates and one same target composition. These four candidates have the following $\theta$ values: $0^{\circ}$, $20^{\circ}$, $40^{\circ}$ and $60^{\circ}$. The only difference among these four test cases is the spectroscopy information we select to build the LP instances, and this is indicated by the Number of Data Points. In Case 1, only $x$-polarized IR spectral information is used. This means that only data points from $x$-polarized IR are selected as input to the LP model. Accordingly for Case 2, data points are obtained from spectra of IR's $z$-polarized IR. In Test Case 3, the spectral information of $x$- and $z$-polarized IR is combined. At last, in Case 4, spectral information of $x$-polarized IR and $xx$-polarized Raman are combined. Case 4 contains the most abundant spectral information, as its return composition matches the target one. \\
+In Table \ref{tab:4.1}, four test cases are set up with four candidates and one same target composition. These four candidates have the following $\theta$ values: $0^{\circ}$, $20^{\circ}$, $40^{\circ}$ and $60^{\circ}$. The only difference among these four test cases is the spectroscopy information we select to build the LP instances, and this is indicated by the number of data points. In Case 1, only $x$-polarized IR spectral information is used. This means that only data points from $x$-polarized IR are selected as input to the LP model. Accordingly for Case 2, data points are obtained from spectra of IR's $z$-polarized IR. In Test Case 3, the spectral information of $x$- and $z$-polarized IR is combined. At last, in Case 4, spectral information of $x$-polarized IR and $xx$-polarized Raman are combined. Case 4 returns a composition matches the target one, as it contains the most abundant spectral information. \\
 
 When merely using IR information, the return composition is the same in Case 1, 2 and 3. Figure \ref{fig:4.1} displays the resulting spectra generated by using the return composition obtained from the first three test cases. The resulting spectra is almost identical to the target ones. It indicates that with only IR spectral information is not sufficient to get the target composition.  However, the spectra built by the return composition matches the target spectra. This means that further information is needed to build the constraints of the LP model. The more valid constraints are introduced, the more accurate the return composition will be. \\
 
@@ -67,7 +46,7 @@ When merely using IR information, the return composition is the same in Case 1, 
 \caption{Comparing target IR spectra with the ones generated by the return composition of Cases 1, 2 and 3.}  \label{fig:4.1}
 \end{figure}
 
-In Case 4, combining the spectral information of IR and Raman is sufficient to obtain the target composition. When the difference in degree $\theta$ for candidates decreases from $20^{\circ}$ to $10^{\circ}$, understanding if Raman and IR together is still sufficient to derive the target composition is desired. Therefore, the following test cases shown in Table \ref{tab:4.2} are conducted. \\
+In Case 4, combining the spectral information of IR and Raman is sufficient to obtain the target composition. When the difference in $tilt$ angle for candidates decreases from $20^{\circ}$ to $10^{\circ}$, understanding if Raman and IR together is still sufficient to derive the target composition is desired. Therefore, the following test cases shown in Table \ref{tab:4.2} are conducted. \\
 
 \begin{table}[ht!] \tiny 
 \resizebox{\textwidth}{!}{
@@ -76,7 +55,7 @@ In Case 4, combining the spectral information of IR and Raman is sufficient to o
 \# Candidates & \multicolumn{2}{l|}{4} \\ \hline
 Candidates & \multicolumn{2}{l|}{[0, 10, 20, 30]} \\ \hline
 Target Composition & \multicolumn{2}{l|}{[0.1, 0.5, 0.4, 0]} \\ \hline
-Test Case index & \# Data Points & Result Composition \\ \hline
+Test Case & \# Data Points & Result Composition \\ \hline
 %5 & 200 $x$ \newline 200 $z$ & [0.752528, 0, 0, 0.247472]  \\ \hline
 5 & 200, $x$ \newline 200, $z$ & [0.75, 0, 0, 0.23]  \\ \hline
 6 & 200, $x$  \newline 200, $z$ \newline 200, $xx$& [0.1, 0.5, 0.4, 0] \\ \hline
@@ -88,6 +67,7 @@ Test Case index & \# Data Points & Result Composition \\ \hline
 }
 \caption{Test case 5 to 9 for Met candidates.}
 \label{tab:4.2}
+
 \end{table}	
 
 Case 5 shows that the LP model with instance built by merely using IR spectral information is not sufficient to derive the target composition. Case 6 indicates that combining IR and Raman spectral information helps to derive the target composition. Case 7, 8 and 9, illustrate that Raman spectral information itself is sufficient to obtain the target composition. \\
@@ -96,7 +76,9 @@ For test cases in Table \ref{tab:4.1}, \ref{tab:case3and4} and \ref{tab:4.2}, co
 
 Case 10 uses only IR spectral information to build the LP instance, and the return composition does not match the target one. Case 11 uses only Raman spectral information, and the return composition does not match the target neither. Same for Case 12 that uses only SFG spectral information. From Case 13, different kinds of spectral information are combined. In Case 13, IR and Raman spectral information is used to produce the LP model, still the return composition is different from the target one. Case 14 combines Raman and SFG, Case 15 uses IR and SFG, Case 16 cooperates all the three spectral information, however, none of them returns a composition that matches the target one. \\
 
-The results of Cases 10 to 16 indicate that despite combining all the spectral information of IR, Raman and SFG, it is still not sufficient to attain the target composition for the test cases set up in Table \ref{tab:4.3}. The spectral information we apply to the LP model is showing its limitation in these test cases. In order to confirm the reason causing the LP solver to return the target composition due to insufficient information, further test cases are conducted in Table \ref{tab:4.4}. \\
+The results of Cases 10 to 16 indicate that despite combining all the spectral information of IR, Raman and SFG, it is still not sufficient to attain the target composition for the test cases set up in Table \ref{tab:4.3}. The spectral information we apply to the LP model is showing its limitation in these test cases. \\
+
+From all the test cases, we learn that when studying one type of realistic molecular model at surface, even combing all the three spectral information, the LP instances may not help us to obtain the target composition. It appears that the lack of sufficient information is the reason, in order to confirm this reason, further test cases are conducted in Table \ref{tab:4.4}. \\
 
 \begin{table}[ht!] \tiny
 \begin{center}
@@ -106,7 +88,7 @@ The results of Cases 10 to 16 indicate that despite combining all the spectral i
 Number of Candidates & \multicolumn{2}{l|}{5} \\ \hline
 Candidates & \multicolumn{2}{l|}{[0, 10, 20, 30, 40]} \\ \hline
 Target Composition & \multicolumn{2}{l|}{[0.2, 0.2, 0.2, 0.2, 0.2]} \\ \hline
-Test case index & Constraints & Result  \\ \hline
+Test case & Constraints & Result  \\ \hline
 10 & 200, $x$ \newline 200, $z$& [0.61, 0, 0, 0, 0.40]  \\ \hline
 11 & 200, $xx$ \newline 200, $xy$ \newline 200, $xz$ \newline 200, $zz$& [0.25, 0, 0.50, 0, 0.25]  \\ \hline
 12 & 200, $xxz$ \newline 200, $xzx$ \newline 200, $zzz$& [0.32, 0, 0.31, 0.16, 0.21]  \\ \hline
@@ -122,7 +104,7 @@ Test case index & Constraints & Result  \\ \hline
 
 \section{Test Cases to Explain the Limitation of our LP Model for instances obtained for the Met Molecule}
 
-To further explore the reasons when our  LP model reaches its limitation for the realistic molecule, Cases 17 and 18 are conducted. To make the est case more general than Cases 1 to 16, candidates' $\theta$ values are expanded from $0^{\circ}$ to $80^{\circ}$. In total, there are nine candidates. Because the SFG spectra for $\theta$ of $90^{\circ}$ is a straight line, it is excluded from all the test cases related to realistic molecules. As target compositions, five candidates are randomly selected. The difference between Case 17 and 18 is that different amount of data points are selected to build the instances of our LP model. From all three spectroscopy techniques' spectral information, every $5^{th}$ wavenumber a data point is selected for Case 17. Every $500^{th}$ wavenumber a data point is selected for Case 18. As a result, Case 17 and 18 each returns a different composition. Both compositions do not match the target one. \\
+To further explore the reasons when our  LP model reaches its limitation for the realistic molecule, Cases 17 and 18 are conducted. To make the est case more general than Cases 1 to 16, candidates' $\theta$ values are expanded from $0^{\circ}$ to $80^{\circ}$. In total, there are nine candidates. Because the SFG spectra for $\theta$ of $90^{\circ}$ has zero intensity, it is excluded from all the test cases related to realistic molecules. As target compositions, five candidates are randomly selected. The difference between Case 17 and 18 is that different amount of data points are selected to build the instances of our LP model. From all three spectroscopy techniques' spectral information, every $5^{th}$ wavenumber a data point is selected for Case 17. Every $500^{th}$ wavenumber a data point is selected for Case 18. As a result, Case 17 and 18 each returns a different composition. Both compositions do not match the target one. \\
 
 However, in both Case 17 and 18, when the return composition is used to generate the IR, Raman and SFG spectra, these spectra are plotted together with the spectra created by the target composition. Note that all spectral data are identical for IR, Raman and SFG. Figures \ref{fig:4.2}, \ref{fig:4.3} and \ref{fig:4.4} display the spectra plotted by using the return composition and the target one of Case 17. All spectra is almost identical to each other as shown in the figures. The same is true for Case 18, as shown in Figures \ref{fig:4.5}, \ref{fig:4.6} and \ref{fig:4.7}. These figures show that there is more than one composition that can perfectly construct the target spectra. The data information used to construct the instances of our LP model is not sufficient to converge to the return composition that exactly matches the target one. This conclusion exactly fits the result obtained from the test cases we have done with the simplified molecular model.\\
 
@@ -134,7 +116,7 @@ However, in both Case 17 and 18, when the return composition is used to generate
 \# Candidates & \multicolumn{2}{l|}{9} \\ \hline
 Candidates & \multicolumn{2}{l|}{[0, 10, 20, 30, 40, 50, 60, 70, 80]} \\ \hline
 Target Composition & \multicolumn{2}{l|}{[0.22, 0.29, 0.052, 0.083, 0.36, 0, 0, 0, 0]} \\ \hline
-Test Case \# & \# of Data Points & Result Composition \\ \hline
+Test Case & \# of Data Points & Result Composition \\ \hline
 17 & each 5 wavenumber of IR, \newline Raman and SFG spectra & [0.16, 0.39, 0.0, 0.099, 0.35, 0.0, 0.0, 0.0, 0.0] \\ \hline
 18 & each 500 wavenumber of IR, \newline Raman and SFG spectra & [0.40, 0.0, 0.20, 0.036, 0.36, 0.0, 0.0, 0.0, 0.0] \\ \hline
 \end{tabular} 
@@ -181,7 +163,7 @@ Test Case \# & \# of Data Points & Result Composition \\ \hline
 \end{figure} 
 
 \section{Conclusion}
-With all the test cases we have run with Met, we figure out that even combine all the available spectral information to the LP model, it is not guaranteed to return the target composition. The reason is the same as applying spectral information of the simplified molecular model to the LP model. The spectral information is not sufficient for the LP model in order to obtain the desired target composition. The spectra constructed by the return composition is identical to the target spectra. 
+With all the test cases we have run with Met, we figure out that even combine all the available spectral information to the LP model, it is not guaranteed to return the target composition. The reason is the same as applying spectral information of the simplified molecular model to the LP model. The spectral information is not sufficient for the LP instances built to obtain the  target composition. The spectra constructed by the return composition of these LP instances is identical to the target spectra. 
 
 
 %\section{Extra Test Cases}
