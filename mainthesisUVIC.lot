@@ -13,7 +13,9 @@
 \contentsline {table}{\numberline {4.3}{\ignorespaces Test Case 10 to 16 for Met candidates. For more detailed result data refer to Table A.1\hbox {}.\relax }}{37}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Test case 17 and 18 to explain the limitation of our LP model for Met molecule. For more detailed result data refer to Table A.2\hbox {}.\relax }}{39}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Detailed test cases set for the mixture of amino acids.\relax }}{45}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Detailed test cases set for the mixture of amino acids.\relax }}{46}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Result analysis for test cases considering a mixture of amino acids with candidates expanded in $[0^{\circ }, 80^{\circ })$ on $\theta $ for each amino acid. \# of returning target composition indicates how many times each test case in the set return a composition that matches the target one.\relax }}{47}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Result analysis for test cases considering a mixture of amino acids with candidates expanded in $[0^{\circ }, 180^{\circ }]$ on $\theta $ for each amino acid, excluding $90^{\circ }$. \# of returning target composition indicates how many times each test case in the set return a composition that matches the target one.\relax }}{49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
