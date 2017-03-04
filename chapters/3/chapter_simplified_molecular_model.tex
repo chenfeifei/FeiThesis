@@ -35,18 +35,18 @@ The optimal solution returned by the LP solver is then compared with the target 
 However, because of the absolute signs in the objective function, Equation \ref{eq:3.2} is not an LP problem. We transform Equation \ref{eq:3.2} by getting rid of the absolute signs. We introduce one more variable $\rm X$ and two more constraints to each data point as shown in Equation \ref{eq:3.3}. The previous model in Equation \ref{eq:3.2} is then converted into the one in Equation \ref{eq:3.4}, and it can be solved by LP solvers. \\
 
 \begin{eqnarray} \label{eq:3.3}
-& X = \left| \rm Target-\displaystyle\sum^{N_{p}}_{c=1}p_{c}f_{\theta}(x) \right| \nonumber \\
-&  X \geq \rm Target-\displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x)   \nonumber \\
-& X \geq -\rm Target+\displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x)  
+& X = \left| {\text{Target}} - \displaystyle\sum^{N_{p}}_{c=1}p_{c}f_{\theta}(x) \right| \nonumber \\
+&  X \geq {\text{Target}} - \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x)   \nonumber \\
+& X \geq - {\text{Target}} + \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x)  
 \end{eqnarray} 
 
 \begin{eqnarray} \label{eq:3.4}
-& minimize \displaystyle\sum^{N_{p}}_{n=1} X_p \nonumber \\
-& \rm X_1 - \rm Target_1 + \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x_1) \geq 0 \nonumber \\
-& \rm X_1 + \rm Target_1 - \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x_1) \geq 0 \nonumber \\
+& \text{minimize} \displaystyle\sum^{N_{p}}_{n=1} X_p \nonumber \\
+&  X_1 - {\text{Target}}_{1} + \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x_1) \geq 0 \nonumber \\
+&  X_1 + {\text{Target}}_{1} - \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x_1) \geq 0 \nonumber \\
 &\vdots  \nonumber \\
-& \rm X_n - \rm Target_n + \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x_n) \geq 0 \nonumber \\
-& \rm X_n + \rm Target_n - \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x_n) \geq 0 \nonumber \\
+& X_n - {\text{Target}}_{n} + \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x_n) \geq 0 \nonumber \\
+& X_n + {\text{Target}}_{n} - \displaystyle\sum^{N_{c}}_{c=1}p_{c}f_{\theta}(x_n) \geq 0 \nonumber \\
 & \displaystyle\sum^{N_{c}}_{c=1}p_{c} = 1 
 \end{eqnarray} 
 
