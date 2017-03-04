@@ -6,7 +6,7 @@ In Chapter \ref{ch:4}, test cases indicate that for one type of molecule at surf
 \section{Test Cases}
 The first part of this section, we study the test cases where each molecule's candidates expanded in $[0^{\circ}, 90^{\circ})$ on $\theta$, to see which spectral information is sufficient in obtaining the target composition. Then in the second part, we study the cases where each molecule's candidates expanded in $[0^{\circ}, 180^{\circ}]$ on $\theta$. \\
 
-\subsection{Test Cases Considering Candidates of Each Amino Acid expanded in $[0^{\circ}$,$90^{\circ})$ on $\theta$ in a Mixture of Realistic Molecules} \label{testcase51}
+\subsection{Test Cases Considering Candidates of Each Amino Acid Expanded in $[0^{\circ}$, $90^{\circ})$ on $\theta$ in a Mixture of Amino Acids} \label{testcase51}
 To study the molecular orientation distribution of various molecules at surfaces, further test cases are constructed. These test cases have the following common settings. \\
 
 First, as mentioned in Chapter \ref{ch:1}, there are six different amino acids in the mixture: Met, Leu, Ile, Ala, Thr and Val. For each amino acid, only the difference of $\theta$ is considered. Each amino acid has nine candidates in the mixture. They have the following $\theta$ values: $0^{\circ}$,  $10^{\circ}$, $20^{\circ}$, $30^{\circ}$, $40^{\circ}$, $50^{\circ}$, $60^{\circ}$, $70^{\circ}$ and $80^{\circ}$. When $\theta$ equals $90^{\circ}$, the SFG spectra has zero intensity. Therefore the corresponding candidate is excluded from all the test cases. As a result, there are 54 candidates in the mixture. \\
@@ -94,7 +94,7 @@ To gain more understanding of the return composition of Case 1, the test case se
 \caption{IR spectra plotted by the result composition and the target composition of one ramdon run when considering each amino acid candidates expanded in $[0^{\circ}, 90^{\circ})$ on $\theta$ in a mixture of realistic molecules.} \label{fig:5.1}
 \end{figure}
 
-\subsection{Test Cases Considering Candidates of Each Amino Acid candidates expanded in $[0^{\circ}$,$180^{\circ}]$ on $\theta$ in a Mixture of Realistic Molecules}
+\subsection{Test Cases Considering Candidates of Each Amino Acid candidates Expanded in $[0^{\circ}$,$180^{\circ}]$ on $\theta$ in a Mixture of Amino Acids}
 To further study the capacity of the LP models, the candidate pool is expanded in $[0^{\circ}, 180^{\circ}]$ in terms of the $\theta$ value, excluding $90^{\circ}$. Therefore, each amino acid has $18$ candidates. In total, there are $108$ candidates in the mixture. The same set of test cases as in Table \ref{tab:5.1} is used. The only difference is that instead of randomly selecting one candidate from nine candidates, it is selected from eighteen. All $108$ candidates' IR, Raman and SFG spectra need to be generated. Table \ref{tab:5.3} illustrates the results obtained in $100$ runs. The accuracy in Case 1 is still low. This is not surprising as the complexity of the candidates has increased. Moreover, IR spectra for candidate of $\theta$ is identical to $180^{\circ}-\theta$, as shown in Figure \ref{fig:A.1}. This also increases the difficulty for the LP solver to return the target composition. \\
 
 %\begin{figure}[!ht]
