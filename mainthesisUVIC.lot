@@ -17,6 +17,7 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces Result analysis for test cases considering a mixture of amino acids with candidates expanded in $[0^{\circ }, 90^{\circ })$ on $\theta $ for each amino acid. \# of returning target composition indicates how many times each test case in the set return a composition that matches the target one.\relax }}{47}
 \contentsline {table}{\numberline {5.3}{\ignorespaces Result analysis for test cases considering a mixture of amino acids with candidates expanded in $[0^{\circ }, 180^{\circ }]$ on $\theta $ for each amino acid, excluding $90^{\circ }$. \# of returning target composition indicates how many times each test case in the set return a composition that matches the target one.\relax }}{49}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces The number of each test case returns the target composition when experimental spectra data is used, and the candidates of each amino acid expanded in $[0^{\circ }$, $90^{\circ })$ on $\theta $.\relax }}{56}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {A.1}{\ignorespaces More detailed result data of Test Case 10 to 16 for methionine candidates.\relax }}{67}
