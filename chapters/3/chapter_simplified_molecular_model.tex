@@ -209,7 +209,7 @@ As Table \ref{tab:3.4} indicates, the return compositions in Cases 6 to 14 do no
 
 \section{Constraint Study Based on Test Case 5}
 
-Based on Case 5, similar constraint study is conducted as displayed in Table \ref{tab:3.5}, and the same observation is obtained as the test cases in Table \ref{tab:3.4}. When the result composition $[0, 0, 0.73, 0, 0.21,0, 0, 0.057, 0, 0]$ and target one are used to plot the spectra, the produced spectra are identical, as shown in Figure \ref{fig:3.6}. Although these two constraint studies do not give a clear answer about how many data points are enough to get the target composition, it confirms that as long as the spectral information is sufficient, the LP solver will return the target composition.
+Based on Case 5, similar constraint study is conducted as displayed in Table \ref{tab:3.5}, and the same observation is obtained as the test cases in Table \ref{tab:3.4}. When the result composition $[0, 0, 0.73, 0, 0.21,0, 0, 0.057, 0, 0]$ and target one are used to plot the spectra, the produced spectra are identical, as shown in Figure \ref{fig:3.6}. Although these two constraint studies do not give a clear answer about how many data points are enough to get the target composition, it confirms that as long as the spectral information carries sufficient data set, the LP solver returns the target composition.
 %$[0, 0, 0.730541, 0, 0.212061,0, 0, 0.0573978, 0, 0]$
 \begin{table}[ht!] \small 
 \begin{center} 
@@ -248,7 +248,7 @@ Recall that our LP model, for sufficient data sets are expected to return the ta
 
 However, when the target composition is not returned correctly, the return composition does build spectra that are identical to the target ones. This means that there is more than one composition that can build the spectra that are identical to the target ones. \\
 
-With the help of the simplified molecular model, we know the reason why the LP model cannot return the target composition in some test cases. In the next step, we want to figure out with all the spectral information available for a realistic molecular model, can the  instances of our LP model return the target composition?
+With the help of the simplified molecular model, we know the reason why the LP instance do not return the target composition in the failed cases. In the next step, we want to figure out with all the spectral information available for a realistic molecular model, can the instances of our LP model return the target composition?
 
 %The above conclusion leaves us a new question: how do we know there is sufficient spectral information in order to obtain the target composition of candidates at interfaces? To answer this question, further test cases are conducted by applying the spectral information of realistic molecules to the LP model. The goal is to investigate with all the spectral information we can obtain for realistic molecules, can the LP model return the target composition of candidates at interfaces. If this goal can be achieved, can this approach be applied systematically to different circumstances?
 
